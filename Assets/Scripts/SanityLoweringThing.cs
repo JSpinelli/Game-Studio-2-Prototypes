@@ -11,7 +11,6 @@ public class SanityLoweringThing : MonoBehaviour
     {
         if (!triggered)
         {
-            Debug.Log("ENTERED");
             if (other.gameObject.tag == "Player")
             {
                 triggered = true;
