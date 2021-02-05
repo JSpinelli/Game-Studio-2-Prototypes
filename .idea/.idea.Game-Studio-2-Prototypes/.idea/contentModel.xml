@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Alise\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Alise\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Game-Studio-2-Prototypes.-1191551674.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Alise\Dropbox\My PC (DESKTOP-5H29H7I)\Desktop\gc\semester 2\game studio 2\Game-Studio-2-Prototypes" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="First Person Drifter Controller" t="Include">
+          <e p="info.txt" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="FirstPersonDrifter.cs" t="Include" />
+            <e p="LockMouse.cs" t="Include" />
+            <e p="MouseLook.cs" t="Include" />
+            <e p="Optional" t="Include">
+              <e p="CameraFadeOnStart.cs" t="Include" />
+              <e p="CameraZoom.cs" t="Include" />
+              <e p="CheckIfBelowLevel.cs" t="Include" />
+              <e p="HeadBob.cs" t="Include" />
+              <e p="PauseMenu.cs" t="Include" />
+            </e>
+            <e p="Utils" t="Include">
+              <e p="CameraFade.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="ClickObject.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
+          <e p="PlayerManager.cs" t="Include" />
+          <e p="SanityLoweringThing.cs" t="Include" />
+          <e p="Services.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Game-Studio-2-Prototypes.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
