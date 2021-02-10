@@ -3,25 +3,25 @@ using TMPro;
 public class PlayerManager
 {
 
-    public float sanity;
+    public float calmness;
     private float rateOfDecay;
-    public TextMeshProUGUI sanityMeter;
+    public TextMeshProUGUI calmnessMeter;
 
-    public PlayerManager(float initial, float rate, TextMeshProUGUI sanityMtr){
-        sanity = initial;
+    public PlayerManager(float initial, float rate, TextMeshProUGUI calmnessMtr){
+        calmness = initial;
         rateOfDecay = rate;
-        sanityMeter = sanityMtr;
-        float fillSanity = sanity/10;
-        sanityMeter.text= "";
+        calmnessMeter = calmnessMtr;
+        float fillSanity = calmness/10;
+        calmnessMeter.text= "";
         for (int i =0;  i < fillSanity; i++){
-            sanityMeter.text += "|";
+            calmnessMeter.text += "|";
         }
     }
 
-    public void decreaseSanity(){
-        sanity -= rateOfDecay;
-        string temp = sanityMeter.text;
-        sanityMeter.text = temp.Substring(0,temp.Length - 1);
-        Debug.Log("SANITY DECREASED NOW: "+sanity);
+    public void decreaseCalmness(){
+        calmness -= rateOfDecay;
+        string temp = calmnessMeter.text;
+        calmnessMeter.text = temp.Substring(0,temp.Length - 1);
+        Debug.Log("CALMNESS DECREASED NOW: "+calmness);
     }
 }
