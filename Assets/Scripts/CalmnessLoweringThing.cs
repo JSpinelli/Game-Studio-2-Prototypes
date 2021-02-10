@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class SanityLoweringThing : MonoBehaviour
+public class CalmnessLoweringThing : MonoBehaviour
 {
     private bool triggered = false;
     public GameManager gameManager;
@@ -14,7 +12,7 @@ public class SanityLoweringThing : MonoBehaviour
             if (other.gameObject.tag == "Player")
             {
                 triggered = true;
-                gameManager.player_manager.decreaseSanity();
+                gameManager.player_manager.decreaseCalmness();
             }
 
         }
