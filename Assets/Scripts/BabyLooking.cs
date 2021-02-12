@@ -5,35 +5,12 @@ using UnityEngine;
 public class BabyLooking : MonoBehaviour
 {
     bool triggered = false;
-    public GameObject babyLookingPrompt;
+    public Camera cam;
 
-    private void OnTriggerEnter(Collider other)
+    void Update() 
     {
-        Debug.Log("Something Entered");
-        if (!triggered)
-        {
-            Debug.Log(other.gameObject.tag);
-            if (other.gameObject.tag == "Baby")
-            {
-                Debug.Log("YOU ARE LOOKING AT BABY");
-                triggered = true;
-                babyLookingPrompt.SetActive(true);
-            }
-
-        }
+        Vector3 CameraCenter = cam.ScreenToWorldPoint(new Vector3(Screen.width/2, Screen.height/2, cam.nearClipPlane));
+        if (Physics.Raycast(CameraCenter,  transform.forward, 100))
+            Debug.Log("Ou yeah!");
     }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (triggered)
-        {
-            if (other.gameObject.tag == "Baby")
-            {
-                triggered = false;
-                babyLookingPrompt.SetActive(false);
-            }
-
-        }
-    }
-
 }
