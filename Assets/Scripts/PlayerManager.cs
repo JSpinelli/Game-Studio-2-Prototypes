@@ -24,4 +24,5 @@ public class PlayerManager
         calmnessMeter.text = temp.Substring(0,temp.Length - 1);
         Debug.Log("CALMNESS DECREASED NOW: "+calmness);
     }
+
 }
