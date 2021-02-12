@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Baby
+  - ball
+  - Note
   layers:
   - Default
   - TransparentFX
