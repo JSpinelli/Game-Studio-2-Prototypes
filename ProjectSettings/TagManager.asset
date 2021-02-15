@@ -7,6 +7,7 @@ TagManager:
   - Baby
   - ball
   - Note
+  - Interactable
   layers:
   - Default
   - TransparentFX

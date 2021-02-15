@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interact : MonoBehaviour
+public class WalkUpAndInteract : MonoBehaviour
 {
    public GameObject text;
  

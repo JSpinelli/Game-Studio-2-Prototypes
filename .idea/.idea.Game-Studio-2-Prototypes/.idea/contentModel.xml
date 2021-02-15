@@ -377,14 +377,21 @@
           <e p="BabyLooking.cs" t="Include" />
           <e p="CalmnessLoweringThing.cs" t="Include" />
           <e p="ClickObject.cs" t="Include" />
+          <e p="CursorHover.cs" t="Include" />
           <e p="FlashlightController.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="HoldItem.cs" t="Include" />
-          <e p="Interact.cs" t="Include" />
-          <e p="Note.cs" t="Include" />
+          <e p="Interactable.cs" t="Include" />
           <e p="Object_Chase.cs" t="Include" />
+          <e p="PhysicsInteraction.cs" t="Include" />
+          <e p="PickUpBaby.cs" t="Include" />
           <e p="PlayerManager.cs" t="Include" />
           <e p="Services.cs" t="Include" />
+          <e p="WalkUpAndInteract.cs" t="Include" />
+        </e>
+        <e p="Shaders" t="Include">
+          <e p="TestShader.shader" t="Include" />
+          <e p="ToonTestShader.shader" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
