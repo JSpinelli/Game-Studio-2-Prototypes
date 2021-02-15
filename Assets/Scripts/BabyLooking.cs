@@ -4,27 +4,13 @@ using UnityEngine;
 
 public class BabyLooking : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    bool triggered = false;
+    public Camera cam;
+
+    void Update() 
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        RaycastHit hit;
-        Ray ray = GetComponent<Camera>().ViewportPointToRay(new Vector3(0.5F, 0.5F, 0));
-
-        Debug.DrawRay(transform.position, transform.forward * 100.0f, Color.yellow);
-
-        if (Physics.Raycast(ray, out hit))
-        {
-            Transform objectHit = hit.transform;
-            if (objectHit.gameObject.tag=="Baby"){
-                Debug.Log("Stop Looking at the baby");
-            }
-        }
-
+        // Vector3 CameraCenter = cam.ScreenToWorldPoint(new Vector3(Screen.width/2, Screen.height/2, cam.nearClipPlane));
+        // if (Physics.Raycast(CameraCenter,  transform.forward, 100))
+        //     Debug.Log("Ou yeah!");
     }
 }
