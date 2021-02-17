@@ -5,15 +5,12 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-
-    public PlayerManager player_manager;
-
-
-    public TextMeshProUGUI calmnessMeter;
+    public TextMeshProUGUI borednessMeter;
     public TextMeshProUGUI dialogBox;
 
-    public float initialCalmness;
-    public float calmnessDecreaseRate;
+    public float borednessIncrease;
+    public float borednessIncreaseWhileNotMoving;
+    public float borednessTickRate;
 
     public GameObject baby1;
     public GameObject baby2;
@@ -26,14 +23,21 @@ public class GameManager : MonoBehaviour
 
     public Transform[] babySpawns;
 
+    public Light[] lights;
+
     public float textOnScreenTime = 8f;
 
     private bool babySpawned = false;
 
-    private bool firstStepTriggered = false;
-    private bool secondStepTriggered = false;
+    private float babyBoreness;
 
-    private string[] dialogs = {
+    private bool babyTeleported = false;
+
+
+    private float borednessTimer;
+
+    private string[] dialogs =
+    {
         "ads",
         "dsada"
     };
@@ -41,42 +45,64 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         _InitializeServices();
+        babyBoreness = 0;
+        borednessMeter.text = "";
     }
-    
+
     void _InitializeServices()
     {
         Services.gameManager = this;
         Services.EventManager = new EventManager();
-        Services.EventManager.Register<CalmnessDecreased>(OnCalmDecrease);
+        Services.EventManager.Register<BorednessChange>(OnBorednessChange);
     }
 
-    public void OnCalmDecrease(GameEvent e)
+    public void OnBorednessChange(GameEvent e)
     {
-        CalmnessDecreased ev = (CalmnessDecreased) e;
-        // if (ev.currentCalmness == 70)
-        // {
-        //     baby2.SetActive(baby1.activeSelf);
-        //     baby1.SetActive(!baby1.activeSelf);
-        //     activeBaby = baby1.activeSelf ? baby1 : baby2;
-        // }        
-        // if (ev.currentCalmness == 30)
-        // {
-        //     baby3.SetActive(baby2.activeSelf);
-        //     baby2.SetActive(!baby2.activeSelf);
-        //     activeBaby = baby3;
-        // }        
-        // if (ev.currentCalmness == 70)
-        // {
-        // }        
-        // if (ev.currentCalmness == 70)
-        // {
-        // }
+        BorednessChange ev = (BorednessChange) e;
+
+        if (ev.calmnessChange > 0)
+        {
+            borednessMeter.text += "|";
+        }
+        else
+        {
+            borednessMeter.text = borednessMeter.text.Substring(0,borednessMeter.text.Length - 1);
+        }
+
+        if (babyBoreness == 20)
+        {
+            baby2.SetActive(baby1.activeSelf);
+            baby1.SetActive(!baby1.activeSelf);
+            activeBaby = baby1.activeSelf ? baby1 : baby2;
+            foreach (Light light1 in lights)
+            {
+                light1.color = Color.blue;
+            }
+        }
+
+        if (babyBoreness == 50)
+        {
+            baby3.SetActive(baby2.activeSelf);
+            baby2.SetActive(!baby2.activeSelf);
+            activeBaby = baby3;
+            foreach (Light light1 in lights)
+            {
+                light1.color = Color.red;
+            }
+        }
+        if ((babyBoreness == 100 && !babyTeleported) && !babySpawned)
+        {
+            StartCoroutine(Countdown("Baby: This sucks! Kill him! I'm bored"));
+            babyTeleported = true;
+            babyBoreness = 0;
+            borednessMeter.text = "";
+            SpawnBaby();
+        }
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        player_manager = new PlayerManager(initialCalmness, calmnessDecreaseRate, calmnessMeter);
         StartCoroutine(Countdown("Something is at my door! I hope is not a demon baby"));
         activeBaby = baby1;
     }
@@ -84,46 +110,18 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (baby1.activeSelf && player_manager.calmness < 70)
+        if (!babySpawned)
         {
-            baby1.SetActive(false);
-            baby2.SetActive(true);
-            activeBaby = baby2;
-        }
-        if (baby2.activeSelf && player_manager.calmness < 30)
-        {
-            baby2.SetActive(false);
-            baby3.SetActive(true);
-            activeBaby = baby3;
-        }
-        if (baby2.activeSelf && player_manager.calmness >= 70)
-        {
-            baby1.SetActive(true);
-            baby2.SetActive(false);
-            activeBaby = baby1;
-        }
-        if (baby3.activeSelf && player_manager.calmness >= 30)
-        {
-            baby2.SetActive(true);
-            baby3.SetActive(false);
-            activeBaby = baby2;
-        }
-
-        if ((player_manager.calmness == 80 && !firstStepTriggered) && !babySpawned){
-            firstStepTriggered = true;
-            SpawnBaby();
-        }
-        if ( (player_manager.calmness == 40 && !secondStepTriggered) && !babySpawned){
-            secondStepTriggered = true;
-            SpawnBaby();
-        }
-
-        if (player_manager.calmness == 50 && secondStepTriggered){
-            secondStepTriggered = false;
-        }
-
-        if (player_manager.calmness == 90 && firstStepTriggered){
-            firstStepTriggered = false;
+            if (borednessTimer < borednessTickRate)
+            {
+                borednessTimer += Time.deltaTime;
+            }
+            else
+            {
+                borednessTimer = 0;
+                babyBoreness += borednessIncrease;
+                OnBorednessChange(new BorednessChange(borednessIncrease));
+            }
         }
     }
 
@@ -144,9 +142,9 @@ public class GameManager : MonoBehaviour
     {
         babySpawned = true;
         activeBaby.SetActive(false);
-        spawnedBaby= Instantiate(babyToSpawn, babySpawns[Random.Range(0,babySpawns.Length)].position , Quaternion.identity);
+        spawnedBaby = Instantiate(babyToSpawn, babySpawns[Random.Range(0, babySpawns.Length)].position,
+            Quaternion.identity);
         spawnedBaby.GetComponent<PickUpBaby>().gm = this;
-
     }
 
     public void DeSpawnBaby()
@@ -154,5 +152,10 @@ public class GameManager : MonoBehaviour
         activeBaby.SetActive(true);
         Destroy(spawnedBaby);
         babySpawned = false;
+        StartCoroutine(Countdown("Baby: Ohhh, you found me, I guess we can play again"));
+        foreach (Light light1 in lights)
+        {
+            light1.color = Color.white;
+        }
     }
 }

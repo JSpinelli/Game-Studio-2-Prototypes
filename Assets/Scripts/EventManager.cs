@@ -80,12 +80,12 @@ public class BabyMoved : GameEvent
 	}
 }
 
-public class CalmnessDecreased : GameEvent
+public class BorednessChange: GameEvent
 {
-	public float currentCalmness;
-	public CalmnessDecreased( float cCalmness)
+	public float calmnessChange;
+	public BorednessChange( float cCalmness)
 	{
-		currentCalmness = cCalmness;
+		calmnessChange = cCalmness;
 	}
 }
 
