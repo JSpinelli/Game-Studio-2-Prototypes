@@ -37,6 +37,42 @@ public class GameManager : MonoBehaviour
         "ads",
         "dsada"
     };
+
+    void Awake()
+    {
+        _InitializeServices();
+    }
+    
+    void _InitializeServices()
+    {
+        Services.gameManager = this;
+        Services.EventManager = new EventManager();
+        Services.EventManager.Register<CalmnessDecreased>(OnCalmDecrease);
+    }
+
+    public void OnCalmDecrease(GameEvent e)
+    {
+        CalmnessDecreased ev = (CalmnessDecreased) e;
+        // if (ev.currentCalmness == 70)
+        // {
+        //     baby2.SetActive(baby1.activeSelf);
+        //     baby1.SetActive(!baby1.activeSelf);
+        //     activeBaby = baby1.activeSelf ? baby1 : baby2;
+        // }        
+        // if (ev.currentCalmness == 30)
+        // {
+        //     baby3.SetActive(baby2.activeSelf);
+        //     baby2.SetActive(!baby2.activeSelf);
+        //     activeBaby = baby3;
+        // }        
+        // if (ev.currentCalmness == 70)
+        // {
+        // }        
+        // if (ev.currentCalmness == 70)
+        // {
+        // }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
