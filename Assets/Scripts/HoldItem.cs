@@ -30,8 +30,7 @@ void OnTriggerEnter(Collider col)
         if (!ball) // if we don't have anything holding
             ball = col.gameObject;
 }
- 
-//We can use trigger or Collision
+
 void OnTriggerExit(Collider col)
 {
     if (col.gameObject.tag == "ball")

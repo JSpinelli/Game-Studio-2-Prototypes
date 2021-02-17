@@ -19,7 +19,19 @@ public class GameManager : MonoBehaviour
     public GameObject baby2;
     public GameObject baby3;
 
+    public GameObject babyToSpawn;
+    private GameObject spawnedBaby;
+
+    private GameObject activeBaby;
+
+    public Transform[] babySpawns;
+
     public float textOnScreenTime = 8f;
+
+    private bool babySpawned = false;
+
+    private bool firstStepTriggered = false;
+    private bool secondStepTriggered = false;
 
     private string[] dialogs = {
         "ads",
@@ -30,6 +42,7 @@ public class GameManager : MonoBehaviour
     {
         player_manager = new PlayerManager(initialCalmness, calmnessDecreaseRate, calmnessMeter);
         StartCoroutine(Countdown("Something is at my door! I hope is not a demon baby"));
+        activeBaby = baby1;
     }
 
     // Update is called once per frame
@@ -39,11 +52,42 @@ public class GameManager : MonoBehaviour
         {
             baby1.SetActive(false);
             baby2.SetActive(true);
+            activeBaby = baby2;
         }
         if (baby2.activeSelf && player_manager.calmness < 30)
         {
             baby2.SetActive(false);
             baby3.SetActive(true);
+            activeBaby = baby3;
+        }
+        if (baby2.activeSelf && player_manager.calmness >= 70)
+        {
+            baby1.SetActive(true);
+            baby2.SetActive(false);
+            activeBaby = baby1;
+        }
+        if (baby3.activeSelf && player_manager.calmness >= 30)
+        {
+            baby2.SetActive(true);
+            baby3.SetActive(false);
+            activeBaby = baby2;
+        }
+
+        if ((player_manager.calmness == 80 && !firstStepTriggered) && !babySpawned){
+            firstStepTriggered = true;
+            SpawnBaby();
+        }
+        if ( (player_manager.calmness == 40 && !secondStepTriggered) && !babySpawned){
+            secondStepTriggered = true;
+            SpawnBaby();
+        }
+
+        if (player_manager.calmness == 50 && secondStepTriggered){
+            secondStepTriggered = false;
+        }
+
+        if (player_manager.calmness == 90 && firstStepTriggered){
+            firstStepTriggered = false;
         }
     }
 
@@ -58,5 +102,21 @@ public class GameManager : MonoBehaviour
             yield return null;
         }
         dialogBox.text = "";
+    }
+
+    private void SpawnBaby()
+    {
+        babySpawned = true;
+        activeBaby.SetActive(false);
+        spawnedBaby= Instantiate(babyToSpawn, babySpawns[Random.Range(0,babySpawns.Length)].position , Quaternion.identity);
+        spawnedBaby.GetComponent<PickUpBaby>().gm = this;
+
+    }
+
+    public void DeSpawnBaby()
+    {
+        activeBaby.SetActive(true);
+        Destroy(spawnedBaby);
+        babySpawned = false;
     }
 }
