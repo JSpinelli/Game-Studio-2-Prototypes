@@ -59,14 +59,15 @@ public class GameManager : MonoBehaviour
     public void OnBorednessChange(GameEvent e)
     {
         BorednessChange ev = (BorednessChange) e;
-
+        babyBoreness += ev.calmnessChange;
         if (ev.calmnessChange > 0)
         {
             borednessMeter.text += "|";
         }
         else
         {
-            borednessMeter.text = borednessMeter.text.Substring(0,borednessMeter.text.Length - 1);
+            if (borednessMeter.text.Length > 0)
+                borednessMeter.text = borednessMeter.text.Substring(0,borednessMeter.text.Length - 1);
         }
 
         if (babyBoreness == 20)
@@ -119,7 +120,6 @@ public class GameManager : MonoBehaviour
             else
             {
                 borednessTimer = 0;
-                babyBoreness += borednessIncrease;
                 OnBorednessChange(new BorednessChange(borednessIncrease));
             }
         }
@@ -152,6 +152,7 @@ public class GameManager : MonoBehaviour
         activeBaby.SetActive(true);
         Destroy(spawnedBaby);
         babySpawned = false;
+        babyTeleported = false;
         StartCoroutine(Countdown("Baby: Ohhh, you found me, I guess we can play again"));
         foreach (Light light1 in lights)
         {
