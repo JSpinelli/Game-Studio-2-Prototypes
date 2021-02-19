@@ -18,11 +18,4 @@ public class PlayerManager
         }
     }
 
-    public void decreaseCalmness(){
-        calmness -= rateOfDecay;
-        string temp = calmnessMeter.text;
-        calmnessMeter.text = temp.Substring(0,temp.Length - 1);
-        Debug.Log("CALMNESS DECREASED NOW: "+calmness);
-    }
-
 }
