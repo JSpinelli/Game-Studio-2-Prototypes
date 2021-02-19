@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class GameManager : MonoBehaviour
     public float borednessIncreaseWhileNotMoving;
     public float borednessTickRate;
 
+    public Transform playerPos;
+    
     public GameObject baby1;
     public GameObject baby2;
     public GameObject baby3;
@@ -21,11 +24,18 @@ public class GameManager : MonoBehaviour
 
     private GameObject activeBaby;
 
+    public GameObject kitchenObjects;
+    public GameObject livingRoomObjects;
+    public GameObject hallwayObjects;
+    public GameObject bathroomObjects;
+    public GameObject bedroomObjects;
+
     public Transform[] babySpawns;
 
     public Light[] lights;
 
     public float textOnScreenTime = 8f;
+    public float effect = 0.5f;
 
     private bool babySpawned = false;
 
@@ -35,6 +45,16 @@ public class GameManager : MonoBehaviour
 
 
     private float borednessTimer;
+
+    private Vector3 kitchenOriginalPos;
+
+    private bool shooting = false;
+    private bool wasLooking = false;
+    private bool switched = false;
+    private bool flipping = false;
+    private bool levitate = false;
+
+    private bool goingUp = true;
 
     private string[] dialogs =
     {
@@ -47,6 +67,7 @@ public class GameManager : MonoBehaviour
         _InitializeServices();
         babyBoreness = 0;
         borednessMeter.text = "";
+        kitchenOriginalPos = kitchenObjects.transform.position;
     }
 
     void _InitializeServices()
@@ -123,6 +144,107 @@ public class GameManager : MonoBehaviour
                 OnBorednessChange(new BorednessChange(borednessIncrease));
             }
         }
+        
+        if (babyBoreness == 20 && !shooting)
+        {
+            shooting = true;
+            var colChildren = kitchenObjects.GetComponentsInChildren<Collider>();
+            foreach (Collider collider in colChildren)
+            {
+                collider.enabled = false;
+            }
+        }        
+        
+        if (babyBoreness == 40 && !flipping)
+        {
+            flipping = true;
+        }        
+        if (babyBoreness == 60 && !levitate)
+        {
+            levitate = true;
+        }
+
+        if (shooting)
+        {
+            var meshChildren = kitchenObjects.GetComponentsInChildren<MeshRenderer>();
+            bool oneIsVisible = false;
+            foreach (MeshRenderer meshes in meshChildren)
+            {
+                oneIsVisible = oneIsVisible || meshes.isVisible;
+            }
+
+            if (oneIsVisible)
+            {
+                kitchenObjects.transform.position = Vector3.Lerp(kitchenObjects.transform.position, playerPos.transform.position, Time.deltaTime / 5);
+            }
+            else
+            {
+                kitchenObjects.transform.position = kitchenOriginalPos;
+            }
+        }         
+        if (levitate)
+        {
+            var meshChildren = hallwayObjects.GetComponentsInChildren<MeshRenderer>();
+            bool oneIsVisible = false;
+            foreach (MeshRenderer meshes in meshChildren)
+            {
+                oneIsVisible = oneIsVisible || meshes.isVisible;
+            }
+
+            if (oneIsVisible)
+            {
+                
+                if (Vector3.Distance(hallwayObjects.transform.localPosition, new Vector3(0, 2, 0)) < 0.1f && goingUp)
+                {
+                    goingUp = false;
+                }                
+                if (Vector3.Distance(hallwayObjects.transform.localPosition, new Vector3(0, 2, 0)) > 1.9f && !goingUp)
+                {
+                    goingUp = true;
+                }
+
+                if ( goingUp)
+                {
+                    hallwayObjects.transform.localPosition = Vector3.Lerp(hallwayObjects.transform.localPosition, new Vector3(0,2,0), Time.deltaTime * effect); 
+                }
+                else
+                {
+                    hallwayObjects.transform.localPosition = Vector3.Lerp(hallwayObjects.transform.localPosition, new Vector3(0,0,0), Time.deltaTime * effect); 
+                }
+            }
+        }        
+        
+        if (flipping)
+        {
+            var meshChildren = livingRoomObjects.GetComponentsInChildren<MeshRenderer>();
+            bool oneIsVisible = false;
+            foreach (MeshRenderer meshes in meshChildren)
+            {
+                oneIsVisible = oneIsVisible || meshes.isVisible;
+            }
+
+            if (!oneIsVisible && wasLooking)
+            {
+                if (!switched){
+                    livingRoomObjects.transform.localScale = new Vector3(1, -1, 1);
+                    livingRoomObjects.transform.localPosition = new Vector3(0, -4, 0);
+                    switched = true;
+                }
+                else
+                {
+                    livingRoomObjects.transform.localScale = new Vector3(1, 1, 1);
+                    livingRoomObjects.transform.localPosition = new Vector3(0, 0, 0);
+                    switched = false;
+                }
+            }
+
+            wasLooking = oneIsVisible;
+        }
+
+        // if (babyBoreness > 40)
+        // {
+        //     hallwayObjects.transform.rotation = Quaternion.Lerp(hallwayObjects.transform.rotation, Quaternion.Euler(Vector3.left), Time.deltaTime / 10);
+        // }
     }
 
     private IEnumerator Countdown(string textToDisplay)
