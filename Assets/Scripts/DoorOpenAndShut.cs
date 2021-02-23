@@ -5,6 +5,8 @@ using UnityEngine;
 public class DoorOpenAndShut : MonoBehaviour
 {
     private bool doorisOpen;
+    public GameObject rug;
+    public GameObject trapdoor;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +35,8 @@ public class DoorOpenAndShut : MonoBehaviour
                 transform.Rotate(new Vector3(0, 90, 0));
                 doorisOpen = true;
                 Debug.Log("door opened!");
+                rug.SetActive(false);
+                trapdoor.SetActive(true);
             }
         }
     }
