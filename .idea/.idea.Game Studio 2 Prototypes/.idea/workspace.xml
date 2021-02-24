@@ -1,7 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0543311-8c26-4bf6-b4d7-382aa6cce3fd" name="Default Changelist" comment="" />
+    <list default="true" id="c0543311-8c26-4bf6-b4d7-382aa6cce3fd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/Baby 2 Material.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/Baby 2 Material.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/Baby 3 Material.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/Baby 3 Material.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/New Material.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/New Material.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/ShaderTestMaterial.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/ShaderTestMaterial.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/ToonTestMaterial.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/ToonTestMaterial.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/kichenBackGroundTry.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/kichenBackGroundTry.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/mat_Object.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/mat_Object.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/mtr_TestCeiling.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/mtr_TestCeiling.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/mtr_TestFloor.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/mtr_TestFloor.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/mtr_TestWall.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/mtr_TestWall.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/mtr_TestWall2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/mtr_TestWall2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/mtr_TestWall3.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/mtr_TestWall3.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/mtr_WallCreepy1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/mtr_WallCreepy1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/mtr_WallCreepy2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/mtr_WallCreepy2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/mtr_WallCreepy3.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/mtr_WallCreepy3.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/mtr_door.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/mtr_door.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/mtr_floor.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/mtr_floor.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/mtr_wall.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Materials 1/mtr_wall.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/929e5047ec7e2e78c5833f18d3bc67cb 1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/929e5047ec7e2e78c5833f18d3bc67cb 1.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/O_28202_718.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/O_28202_718.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/WallTextureBright2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/WallTextureBright2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/arroway.de_concrete45_d101.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/arroway.de_concrete45_d101.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/dee5aff087a5c76ef184acaaa70c4cbd 1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/dee5aff087a5c76ef184acaaa70c4cbd 1.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/kichenBackGroundTry10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/kichenBackGroundTry10.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/kichenBackGroundTry2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/kichenBackGroundTry2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/kichenBackGroundTry3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/kichenBackGroundTry3.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/kichenBackGroundTry4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/kichenBackGroundTry4.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/kichenBackGroundTry5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/kichenBackGroundTry5.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/kichenBackGroundTry6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/kichenBackGroundTry6.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/kichenBackGroundTry7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/kichenBackGroundTry7.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/kichenBackGroundTry8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/kichenBackGroundTry8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/wood-texture 1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/wood-texture 1.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

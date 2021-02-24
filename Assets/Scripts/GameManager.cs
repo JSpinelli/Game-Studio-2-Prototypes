@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     public GameObject baby2;
     public GameObject baby3;
 
+    public GameObject wallChange;
+
     public GameObject babyToSpawn;
     private GameObject spawnedBaby;
 
@@ -68,6 +70,7 @@ public class GameManager : MonoBehaviour
         babyBoreness = 0;
         borednessMeter.text = "";
         kitchenOriginalPos = kitchenObjects.transform.position;
+        wallChange.SetActive(false);
     }
 
     void _InitializeServices()
@@ -100,6 +103,11 @@ public class GameManager : MonoBehaviour
             {
                 light1.color = Color.blue;
             }
+        }        
+        
+        if (babyBoreness == 70)
+        {
+            wallChange.SetActive(true);
         }
 
         if (babyBoreness == 50)
@@ -112,9 +120,10 @@ public class GameManager : MonoBehaviour
                 light1.color = Color.red;
             }
         }
+        
         if ((babyBoreness == 100 && !babyTeleported) && !babySpawned)
         {
-            StartCoroutine(Countdown("Baby: This sucks! Kill him! I'm bored"));
+           // StartCoroutine(Countdown("Baby: This sucks! Kill him! I'm bored"));
             babyTeleported = true;
             babyBoreness = 0;
             borednessMeter.text = "";
@@ -125,7 +134,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(Countdown("Something is at my door! I hope is not a demon baby"));
+        //StartCoroutine(Countdown("Something is at my door! I hope is not a demon baby"));
         activeBaby = baby1;
     }
 
@@ -275,7 +284,7 @@ public class GameManager : MonoBehaviour
         Destroy(spawnedBaby);
         babySpawned = false;
         babyTeleported = false;
-        StartCoroutine(Countdown("Baby: Ohhh, you found me, I guess we can play again"));
+        //StartCoroutine(Countdown("Baby: Ohhh, you found me, I guess we can play again"));
         foreach (Light light1 in lights)
         {
             light1.color = Color.white;
