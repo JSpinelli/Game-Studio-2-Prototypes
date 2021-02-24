@@ -27,6 +27,11 @@
           </e>
         </e>
         <e p="Plugins" t="Include">
+          <e p="Breakable Windows" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="BreakableWindow.cs" t="Include" />
+            </e>
+          </e>
           <e p="RealtimeCSG" t="Include">
             <e p="API" t="Include">
               <e p="Components" t="Include">
@@ -380,6 +385,7 @@
           <e p="CalmnessLoweringThing.cs" t="Include" />
           <e p="ClickObject.cs" t="Include" />
           <e p="CursorHover.cs" t="Include" />
+          <e p="DoorOpenAndShut.cs" t="Include" />
           <e p="EventManager.cs" t="Include" />
           <e p="FlashlightController.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />

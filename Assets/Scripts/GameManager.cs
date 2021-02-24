@@ -188,6 +188,7 @@ public class GameManager : MonoBehaviour
             }
             else
             {
+                shooting = false;
                 kitchenObjects.transform.position = kitchenOriginalPos;
             }
         }         
