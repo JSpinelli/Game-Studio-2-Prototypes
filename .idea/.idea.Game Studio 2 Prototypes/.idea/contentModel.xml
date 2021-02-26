@@ -381,7 +381,6 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="AddForce.cs" t="Include" />
-          <e p="BabyLooking.cs" t="Include" />
           <e p="CalmnessLoweringThing.cs" t="Include" />
           <e p="ClickObject.cs" t="Include" />
           <e p="CursorHover.cs" t="Include" />
@@ -391,10 +390,16 @@
           <e p="GameManager.cs" t="Include" />
           <e p="HoldItem.cs" t="Include" />
           <e p="Interactable.cs" t="Include" />
+          <e p="Object Changing" t="Include">
+            <e p="Levitate.cs" t="Include" />
+            <e p="ObjectChange.cs" t="Include" />
+            <e p="Rotate.cs" t="Include" />
+          </e>
           <e p="Object_Chase.cs" t="Include" />
           <e p="PhysicsInteraction.cs" t="Include" />
           <e p="PickUpBaby.cs" t="Include" />
           <e p="PlayerManager.cs" t="Include" />
+          <e p="RoomManager.cs" t="Include" />
           <e p="Services.cs" t="Include" />
           <e p="WalkUpAndInteract.cs" t="Include" />
         </e>

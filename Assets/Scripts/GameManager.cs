@@ -99,10 +99,10 @@ public class GameManager : MonoBehaviour
             baby2.SetActive(baby1.activeSelf);
             baby1.SetActive(!baby1.activeSelf);
             activeBaby = baby1.activeSelf ? baby1 : baby2;
-            foreach (Light light1 in lights)
-            {
-                light1.color = Color.blue;
-            }
+            // foreach (Light light1 in lights)
+            // {
+            //     light1.color = Color.blue;
+            // }
         }        
         
         if (babyBoreness == 70)
@@ -115,10 +115,10 @@ public class GameManager : MonoBehaviour
             baby3.SetActive(baby2.activeSelf);
             baby2.SetActive(!baby2.activeSelf);
             activeBaby = baby3;
-            foreach (Light light1 in lights)
-            {
-                light1.color = Color.red;
-            }
+            // foreach (Light light1 in lights)
+            // {
+            //     light1.color = Color.red;
+            // }
         }
         
         if ((babyBoreness == 100 && !babyTeleported) && !babySpawned)
