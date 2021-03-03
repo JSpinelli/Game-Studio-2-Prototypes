@@ -81,7 +81,6 @@ public class RoomManager : MonoBehaviour
     private void OnSpookyMeterChange(GameEvent e)
     {
         SpookyMeterChange smc = (SpookyMeterChange) e;
-        Debug.Log(smc.CurrentSpookyValue);
         if (smc.CurrentSpookyValue >= 10)
         {
             effectActive = true;
