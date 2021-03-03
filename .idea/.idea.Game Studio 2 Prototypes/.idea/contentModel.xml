@@ -385,11 +385,18 @@
           <e p="ClickObject.cs" t="Include" />
           <e p="CursorHover.cs" t="Include" />
           <e p="DoorOpenAndShut.cs" t="Include" />
-          <e p="EventManager.cs" t="Include" />
           <e p="FlashlightController.cs" t="Include" />
-          <e p="GameManager.cs" t="Include" />
           <e p="HoldItem.cs" t="Include" />
           <e p="Interactable.cs" t="Include" />
+          <e p="Managers" t="Include">
+            <e p="DialogManager.cs" t="Include" />
+            <e p="EventManager.cs" t="Include" />
+            <e p="GameManager.cs" t="Include" />
+            <e p="PlayerManager.cs" t="Include" />
+            <e p="RadioShow.cs" t="Include" />
+            <e p="RoomManager.cs" t="Include" />
+            <e p="Services.cs" t="Include" />
+          </e>
           <e p="Object Changing" t="Include">
             <e p="Levitate.cs" t="Include" />
             <e p="ObjectChange.cs" t="Include" />
@@ -398,9 +405,6 @@
           <e p="Object_Chase.cs" t="Include" />
           <e p="PhysicsInteraction.cs" t="Include" />
           <e p="PickUpBaby.cs" t="Include" />
-          <e p="PlayerManager.cs" t="Include" />
-          <e p="RoomManager.cs" t="Include" />
-          <e p="Services.cs" t="Include" />
           <e p="WalkUpAndInteract.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">

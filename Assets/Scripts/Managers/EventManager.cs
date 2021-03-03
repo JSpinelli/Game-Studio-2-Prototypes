@@ -60,13 +60,6 @@ public class EventManager {
 
 public abstract class GameEvent 
 {
-	public readonly float creationTime;
-
-	public GameEvent ()
-	{
-		creationTime = Time.time;
-	}
-
 	public delegate void Handler (GameEvent e);
 }
 
@@ -80,22 +73,22 @@ public class BabyMoved : GameEvent
 	}
 }
 
-public class BorednessChange: GameEvent
+public class SpookyMeterChange: GameEvent
 {
-	public float calmnessChange;
-	public BorednessChange( float cCalmness)
+	public float CurrentSpookyValue;
+	public SpookyMeterChange( float currentSpooky)
 	{
-		calmnessChange = cCalmness;
+		CurrentSpookyValue = currentSpooky;
 	}
 }
-
-public class GameEnd : GameEvent
+public class DialogTriggered : GameEvent
 {
-	public readonly bool team1won;
-	
-	public GameEnd(bool team1won)
+	public string dialog;
+	public AudioClip soundClip;
+	public DialogTriggered( string txt, AudioClip sound)
 	{
-		this.team1won = team1won;
+		dialog = txt;
+		soundClip = sound;
 	}
 }
 
