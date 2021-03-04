@@ -5,6 +5,7 @@ using UnityEngine;
 public class WalkUpAndInteract : MonoBehaviour
 {
    public GameObject text;
+   public float radius = 3f;
  
     void OnTriggerEnter ()
     {
@@ -21,5 +22,11 @@ public class WalkUpAndInteract : MonoBehaviour
     void OnTriggerExit ()
     {
         text.SetActive(false);
+    }
+    
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, radius);
     }
 }
