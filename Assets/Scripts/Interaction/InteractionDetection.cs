@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class InteractionDetection : MonoBehaviour
@@ -12,6 +13,7 @@ public class InteractionDetection : MonoBehaviour
     public Vector3 scale;
     bool m_HitDetect;
     RaycastHit m_Hit;
+    private InteractableObject currentInteractable;
 
     void Start()
     {
@@ -33,11 +35,20 @@ public class InteractionDetection : MonoBehaviour
         if (m_HitDetect)
         {
             customImage.transform.position = _cam.WorldToScreenPoint(m_Hit.point);
+            currentInteractable = m_Hit.collider.gameObject.GetComponent<InteractableObject>();
             customImage.enabled = true;
         }
         else
         {
             customImage.enabled = false;
+        }
+    }
+
+    private void Update()
+    {
+        if (customImage.enabled && Input.GetKeyDown(KeyCode.E))
+        {
+            currentInteractable.OnInteract();
         }
     }
 

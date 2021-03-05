@@ -388,9 +388,11 @@
           <e p="HoldItem.cs" t="Include" />
           <e p="Interactable.cs" t="Include" />
           <e p="Interaction" t="Include">
+            <e p="DialogTrigger.cs" t="Include" />
             <e p="InteractableObject.cs" t="Include" />
             <e p="InteractionDetection.cs" t="Include" />
             <e p="Movable.cs" t="Include" />
+            <e p="SoundTrigger.cs" t="Include" />
           </e>
           <e p="Managers" t="Include">
             <e p="DialogManager.cs" t="Include" />
@@ -409,6 +411,7 @@
           <e p="Object_Chase.cs" t="Include" />
           <e p="PhysicsInteraction.cs" t="Include" />
           <e p="PickUpBaby.cs" t="Include" />
+          <e p="RotateSkyBox.cs" t="Include" />
           <e p="WalkUpAndInteract.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">
