@@ -74,7 +74,7 @@ public class RoomManager : MonoBehaviour
 
         if (effectActive)
         {
-            actionToDo();
+            actionToDo?.Invoke();
         }
     }
 
