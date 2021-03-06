@@ -19,6 +19,11 @@ public class Movable : InteractableObject
         _originalPosition = gameObject.transform.position;
     }
 
+    public override bool CanInteract()
+    {
+        return true;
+    }
+
     public override void OnInteract()
     {
         if (!_moved)

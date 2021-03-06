@@ -6,7 +6,6 @@ public abstract class InteractableObject : MonoBehaviour
     public float interactRadius;
     public Vector3 interactSpherePosition;
     private SphereCollider _interactCollider;
-
     public void Start()
     {
         _interactCollider = gameObject.AddComponent<SphereCollider>();
@@ -21,6 +20,8 @@ public abstract class InteractableObject : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(interactSpherePosition, interactRadius);
     }
+
+    public abstract bool CanInteract();
 
     public abstract void OnInteract();
 }

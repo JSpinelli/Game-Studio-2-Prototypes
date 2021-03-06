@@ -1,8 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
-using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,15 +10,37 @@ public class GameManager : MonoBehaviour
 
     private bool babySpawned = false;
 
-    private float _spookyLevel;
+    
 
     private float _borednessTimer;
 
+    public TextAsset savedData;
+    
+    private float _spookyLevel;
+    private int _currentTask;
+    private List<int> _completedTasks;
+    private List<string> _triggeredInteractions;
 
     void Awake()
     {
+        if (savedData)
+        {
+            SaveData saveData = JsonUtility.FromJson<SaveData>(savedData.text);
+            _spookyLevel = saveData.spookyMeter;
+            _currentTask = saveData.currentTask;
+            _completedTasks = new List<int>(saveData.completedTask);
+            _triggeredInteractions = new List<string>(saveData.triggeredInteractions);
+        }
+        else
+        {
+            _spookyLevel = 0;
+            _currentTask = 0;
+            _completedTasks = new List<int>();
+            _triggeredInteractions = new List<string>();
+        }
+
+        _borednessTimer = 0;
         _InitializeServices();
-        _spookyLevel = 0;
     }
 
     void _InitializeServices()
@@ -32,6 +51,10 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            OnSave();
+        }
         if (!babySpawned)
         {
             if (_borednessTimer < spookyTickRate)
@@ -47,19 +70,29 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // private void SpawnBaby()
-    // {
-    //     babySpawned = true;
-    //     activeBaby.SetActive(false);
-    //     spawnedBaby = Instantiate(babyToSpawn, babySpawns[Random.Range(0, babySpawns.Length)].position, Quaternion.identity);
-    //     spawnedBaby.GetComponent<PickUpBaby>().gm = this;
-    // }
+    void OnSave()
+    {
+        SaveData saveData = new SaveData();
+        saveData.completedTask = _completedTasks.ToArray();
+        saveData.currentTask = _currentTask;
+        saveData.triggeredInteractions = _triggeredInteractions.ToArray();
+        saveData.spookyMeter = _spookyLevel;
+        string json = JsonUtility.ToJson(saveData);
+        System.IO.File.WriteAllText(Application.dataPath + "/Saves/" + "spooky_data.json", json);
+        Debug.Log("Game Saved");
+        
+    }
 
-    // public void DeSpawnBaby()
-    // {
-    //     activeBaby.SetActive(true);
-    //     Destroy(spawnedBaby);
-    //     babySpawned = false;
-    //     babyTeleported = false;
-    // }
+    public void AddTriggeredInteraction(string interaction)
+    {
+        if (!_triggeredInteractions.Exists((item) => item == interaction))
+        {
+            _triggeredInteractions.Add(interaction);
+        }
+    }
+
+    public bool InteractionTriggered(string interaction)
+    {
+        return _triggeredInteractions.Exists((item) => item == interaction);
+    }
 }

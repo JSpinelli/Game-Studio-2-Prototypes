@@ -11,6 +11,11 @@ public class DialogTrigger : InteractableObject
         base.Start();
     }
 
+    public override bool CanInteract()
+    {
+        return true;
+    }
+
     public override void OnInteract()
     {
         Services.EventManager.Fire(new DialogTriggered(text,sound));

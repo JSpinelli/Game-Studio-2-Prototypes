@@ -36,7 +36,8 @@ public class InteractionDetection : MonoBehaviour
         {
             customImage.transform.position = _cam.WorldToScreenPoint(m_Hit.point);
             currentInteractable = m_Hit.collider.gameObject.GetComponent<InteractableObject>();
-            customImage.enabled = true;
+            if (currentInteractable.CanInteract())
+                customImage.enabled = true;
         }
         else
         {
