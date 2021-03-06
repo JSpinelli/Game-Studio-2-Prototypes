@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0543311-8c26-4bf6-b4d7-382aa6cce3fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Saves.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Saves/spooky_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Saves/spooky_data.json.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SaveData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CursorHover.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CursorHover.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractableObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/SoundTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/SoundTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PhysicsInteraction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PhysicsInteraction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WalkUpAndInteract.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WalkUpAndInteract.cs.meta" beforeDir="false" />
-    </list>
+    <list default="true" id="c0543311-8c26-4bf6-b4d7-382aa6cce3fd" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,15 +45,15 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/WalkUpAndInteract.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PickUpBaby.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Object_Chase.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/Movable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Managers/RoomManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractionDetection.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Managers/DialogManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/DialogTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SaveData.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractableObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/SoundTrigger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/Movable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/DialogTrigger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractionDetection.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1oc3bth2r4flW2DCjCNV0vxifDD" />
@@ -131,7 +113,7 @@
       <workItem from="1614778599584" duration="8621000" />
       <workItem from="1614866158898" duration="5436000" />
       <workItem from="1614950863513" duration="11669000" />
-      <workItem from="1615039189592" duration="2747000" />
+      <workItem from="1615039189592" duration="3601000" />
     </task>
     <servers />
   </component>
