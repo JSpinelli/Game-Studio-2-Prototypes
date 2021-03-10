@@ -11,7 +11,7 @@ public class PickUpBaby : MonoBehaviour
 
         if (other.gameObject.tag == "Player")
         {
-            gm.DeSpawnBaby();
+            //gm.DeSpawnBaby();
         }
 
     }

@@ -17,7 +17,6 @@ public class CalmnessLoweringThing : MonoBehaviour
                 triggered = true;
                 timerCurrent = timer;
                 timerActive = true;
-                Services.EventManager.Fire(new BorednessChange(-10));
             }
 
         }
