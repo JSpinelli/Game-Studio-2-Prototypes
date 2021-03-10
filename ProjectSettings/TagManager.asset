@@ -4,7 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Baby
   - ball
+  - Note
+  - Interactable
   layers:
   - Default
   - TransparentFX
@@ -14,8 +17,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - PostProc
+  - Interactable
   - 
   - 
   - 

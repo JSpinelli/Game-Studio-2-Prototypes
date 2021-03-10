@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\RivaWang\AppData\local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\RivaWang\AppData\local\JetBrains\Rider2020.3\resharper-host\local\Transient\Rider\v203\SolutionCaches\_Game-Studio-2-Prototypes.551898647.00" t="ExcludeRecursive" />
+    <e p="D:\NYU\研一冬季\Game Studio II\Game-Studio-2-Prototypes" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="First Person Drifter Controller" t="Include">
+          <e p="info.txt" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="FirstPersonDrifter.cs" t="Include" />
+            <e p="LockMouse.cs" t="Include" />
+            <e p="MouseLook.cs" t="Include" />
+            <e p="Optional" t="Include">
+              <e p="CameraFadeOnStart.cs" t="Include" />
+              <e p="CameraZoom.cs" t="Include" />
+              <e p="CheckIfBelowLevel.cs" t="Include" />
+              <e p="HeadBob.cs" t="Include" />
+              <e p="PauseMenu.cs" t="Include" />
+            </e>
+            <e p="Utils" t="Include">
+              <e p="CameraFade.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="Breakable Windows" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="BreakableWindow.cs" t="Include" />
+            </e>
+          </e>
+          <e p="RealtimeCSG" t="Include">
+            <e p="API" t="Include">
+              <e p="Components" t="Include">
+                <e p="Runtime" t="Include">
+                  <e p="CSGBrush.cs" t="Include" />
+                  <e p="CSGModel.cs" t="Include" />
+                  <e p="CSGNode.cs" t="Include" />
+                  <e p="CSGOperation.cs" t="Include" />
+                  <e p="Utility" t="Include">
+                    <e p="ChildNodeData.cs" t="Include" />
+                    <e p="CompareShape.cs" t="Include" />
+                    <e p="CompareTransformation.cs" t="Include" />
+                    <e p="ComponentUpgrader.cs" t="Include" />
+                    <e p="GeometryWireframe.cs" t="Include" />
+                    <e p="HierarchyItem.cs" t="Include" />
+                    <e p="ParentNodeData.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="Foundation" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="BrushMesh.cs" t="Include" />
+                  <e p="BrushMeshInstance.cs" t="Include" />
+                  <e p="BrushMeshUtility.cs" t="Include" />
+                  <e p="BrushValidation.cs" t="Include" />
+                  <e p="CSGManager.cs" t="Include" />
+                  <e p="CSGTree.cs" t="Include" />
+                  <e p="CSGTreeBranch.cs" t="Include" />
+                  <e p="CSGTreeBrush.cs" t="Include" />
+                  <e p="CSGTreeNode.cs" t="Include" />
+                  <e p="Native" t="Include">
+                    <e p="BrushMeshInstance.Native.cs" t="Include" />
+                    <e p="CSGManager.Native.cs" t="Include" />
+                    <e p="CSGTree.Native.cs" t="Include" />
+                    <e p="CSGTreeBranch.Native.cs" t="Include" />
+                    <e p="CSGTreeBrush.Native.cs" t="Include" />
+                    <e p="CSGTreeNode.Native.cs" t="Include" />
+                  </e>
+                  <e p="Version.cs" t="Include" />
+                </e>
+                <e p="Runtime" t="Include">
+                  <e p="CSGOperationType.cs" t="Include" />
+                  <e p="GeneratedMeshContents.cs" t="Include" />
+                  <e p="GeneratedMeshDescription.cs" t="Include" />
+                  <e p="MeshQuery.cs" t="Include" />
+                  <e p="SurfaceLayers.cs" t="Include" />
+                  <e p="VertexChannelFlags.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Legacy" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="BrushFactory.cs" t="Include" />
+                  <e p="BrushFactory.Legacy.cs" t="Include" />
+                </e>
+                <e p="Runtime" t="Include">
+                  <e p="ControlMesh.cs" t="Include" />
+                  <e p="CSGPlane.cs" t="Include" />
+                  <e p="Shape.cs" t="Include" />
+                  <e p="Surface.cs" t="Include" />
+                  <e p="TexGen.cs" t="Include" />
+                  <e p="TexGenFlags.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Editor" t="Include">
+              <e p="Resources" t="Include">
+                <e p="Shaders" t="Include">
+                  <e p="background.shader" t="Include" />
+                  <e p="coloredPolygon.shader" t="Include" />
+                  <e p="customDot.shader" t="Include" />
+                  <e p="customNoDepthSurface.shader" t="Include" />
+                  <e p="customSurface.shader" t="Include" />
+                  <e p="customThickWire.shader" t="Include" />
+                  <e p="customWire.shader" t="Include" />
+                  <e p="customWireDotted.shader" t="Include" />
+                  <e p="genericLine.shader" t="Include" />
+                  <e p="grid.shader" t="Include" />
+                  <e p="noZTestGenericLine.shader" t="Include" />
+                  <e p="orthogrid.shader" t="Include" />
+                  <e p="specialSurface.shader" t="Include" />
+                  <e p="transparentSpecialSurface.shader" t="Include" />
+                  <e p="zTestGenericLine.shader" t="Include" />
+                </e>
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="Control" t="Include">
+                  <e p="Attributes" t="Include">
+                    <e p="CSGModelModifiedEventAttribute.cs" t="Include" />
+                  </e>
+                  <e p="Bindings" t="Include">
+                    <e p="NativeMethodBindings.cs" t="Include" />
+                    <e p="NativeMethods.cs" t="Include" />
+                  </e>
+                  <e p="BrushTraits.cs" t="Include" />
+                  <e p="BrushUtility.cs" t="Include" />
+                  <e p="Helpers" t="Include">
+                    <e p="ControlMeshUtility.cs" t="Include" />
+                    <e p="GeometryUtility.cs" t="Include" />
+                    <e p="MaterialUtility.cs" t="Include" />
+                    <e p="ModelTraits.cs" t="Include" />
+                    <e p="OperationsUtility.cs" t="Include" />
+                    <e p="ShapePolygonUtility.cs" t="Include" />
+                    <e p="ShapeUtility.cs" t="Include" />
+                    <e p="SurfaceUtility.cs" t="Include" />
+                  </e>
+                  <e p="Managers" t="Include">
+                    <e p="CSGModelManager.cs" t="Include" />
+                    <e p="CSGSceneManagerInstance.cs" t="Include" />
+                    <e p="InternalCSGModelManager.Caches.cs" t="Include" />
+                    <e p="InternalCSGModelManager.DefaultModel.cs" t="Include" />
+                    <e p="InternalCSGModelManager.Hierarchy.cs" t="Include" />
+                    <e p="InternalCSGModelManager.Lifetime.cs" t="Include" />
+                    <e p="InternalCSGModelManager.Registration.cs" t="Include" />
+                    <e p="InternalCSGModelManager.UpdateMeshes.cs" t="Include" />
+                    <e p="MeshInstanceManager.Build.cs" t="Include" />
+                    <e p="MeshInstanceManager.cs" t="Include" />
+                    <e p="MeshInstanceManager.Export.cs" t="Include" />
+                    <e p="RectangleSelectionManager.cs" t="Include" />
+                    <e p="SceneViewEventHandler.cs" t="Include" />
+                    <e p="UnityCompilerDefineManager.cs" t="Include" />
+                    <e p="UnityGridManager.cs" t="Include" />
+                    <e p="UpdateLoop.cs" t="Include" />
+                  </e>
+                  <e p="Operations" t="Include">
+                    <e p="BrushOperations.cs" t="Include" />
+                    <e p="ControlMeshOperations.cs" t="Include" />
+                    <e p="TransformOperations.cs" t="Include" />
+                  </e>
+                  <e p="UndoGroup.cs" t="Include" />
+                </e>
+                <e p="Data" t="Include">
+                  <e p="GUIConstants.cs" t="Include" />
+                  <e p="Hierarchy" t="Include">
+                    <e p="HierarchyItemExtension.cs" t="Include" />
+                    <e p="ParentNodeDataExtension.cs" t="Include" />
+                  </e>
+                  <e p="SceneQuery" t="Include">
+                    <e p="AABB.cs" t="Include" />
+                    <e p="BoundsUtilities.cs" t="Include" />
+                    <e p="BrushIntersection.cs" t="Include" />
+                    <e p="SceneQueryUtility.cs" t="Include" />
+                  </e>
+                  <e p="Selection" t="Include">
+                    <e p="BrushSelection.cs" t="Include" />
+                    <e p="ControlMeshState.cs" t="Include" />
+                    <e p="ControlMeshState.Selection.cs" t="Include" />
+                    <e p="FilteredSelection.cs" t="Include" />
+                    <e p="SelectBrushSurface.cs" t="Include" />
+                    <e p="SelectionUtility.cs" t="Include" />
+                    <e p="TransformSelection.cs" t="Include" />
+                  </e>
+                  <e p="Settings" t="Include">
+                    <e p="ColorSettings.cs" t="Include" />
+                    <e p="CSGSettings.cs" t="Include" />
+                    <e p="KeyEvent.cs" t="Include" />
+                    <e p="Keys.cs" t="Include" />
+                  </e>
+                  <e p="SnappedPoint.cs" t="Include" />
+                  <e p="TexGenState.cs" t="Include" />
+                  <e p="TypeConstants.cs" t="Include" />
+                </e>
+                <e p="Utility" t="Include">
+                  <e p="PrefabUtility.cs" t="Include" />
+                  <e p="VisibilityUtility.cs" t="Include" />
+                </e>
+                <e p="View" t="Include">
+                  <e p="DragAndDrop" t="Include">
+                    <e p="ISceneDragTool.cs" t="Include" />
+                    <e p="SceneDragTool.BrushDragOnSurface.cs" t="Include" />
+                    <e p="SceneDragTool.Materials.cs" t="Include" />
+                    <e p="SceneDragTool.Meshes.cs" t="Include" />
+                    <e p="SceneDragToolManager.cs" t="Include" />
+                  </e>
+                  <e p="GUI" t="Include">
+                    <e p="ComponentEditorWindows" t="Include">
+                      <e p="CSGModelComponent.Inspector.GUI.cs" t="Include" />
+                      <e p="CSGModelComponent.Inspector.GUIContents.cs" t="Include" />
+                      <e p="ExportedModelComponent.Editor.cs" t="Include" />
+                      <e p="GeneratedMeshesComponent.Editor.cs" t="Include" />
+                    </e>
+                    <e p="EditModeGUI" t="Include">
+                      <e p="EditModeManager.cs" t="Include" />
+                      <e p="EditModes" t="Include">
+                        <e p="EditMode.Clip.cs" t="Include" />
+                        <e p="EditMode.Clip.GUI.cs" t="Include" />
+                        <e p="EditMode.Clip.GUIContents.cs" t="Include" />
+                        <e p="EditMode.Common.GUI.cs" t="Include" />
+                        <e p="EditMode.Common.GUIContents.cs" t="Include" />
+                        <e p="EditMode.Edit.cs" t="Include" />
+                        <e p="EditMode.Edit.GUI.cs" t="Include" />
+                        <e p="EditMode.Edit.GUIContents.cs" t="Include" />
+                        <e p="EditMode.Generate.cs" t="Include" />
+                        <e p="EditMode.Generate.GUI.cs" t="Include" />
+                        <e p="EditMode.Generate.GUIContents.cs" t="Include" />
+                        <e p="EditMode.Place.cs" t="Include" />
+                        <e p="EditMode.Place.GUI.cs" t="Include" />
+                        <e p="EditMode.Place.GUIContents.cs" t="Include" />
+                        <e p="EditMode.Surface.cs" t="Include" />
+                        <e p="EditMode.Surface.GUI.cs" t="Include" />
+                        <e p="EditMode.Surface.GUIContents.cs" t="Include" />
+                        <e p="Generators" t="Include">
+                          <e p="CylinderDefinition.cs" t="Include" />
+                          <e p="Generator.Base.cs" t="Include" />
+                          <e p="Generator.Box.cs" t="Include" />
+                          <e p="Generator.Box.GUI.cs" t="Include" />
+                          <e p="Generator.Box.GUIContents.cs" t="Include" />
+                          <e p="Generator.Box.Settings.cs" t="Include" />
+                          <e p="Generator.Cylinder.cs" t="Include" />
+                          <e p="Generator.Cylinder.GUI.cs" t="Include" />
+                          <e p="Generator.Cylinder.GUIContents.cs" t="Include" />
+                          <e p="Generator.Cylinder.Settings.cs" t="Include" />
+                          <e p="Generator.ExtrudedBase.cs" t="Include" />
+                          <e p="Generator.FreeDraw.cs" t="Include" />
+                          <e p="Generator.FreeDraw.GUI.cs" t="Include" />
+                          <e p="Generator.FreeDraw.GUIContents.cs" t="Include" />
+                          <e p="Generator.LinearStairs.cs" t="Include" />
+                          <e p="Generator.LinearStairs.GUI.cs" t="Include" />
+                          <e p="Generator.LinearStairs.GUIContents.cs" t="Include" />
+                          <e p="Generator.LinearStairs.Settings.cs" t="Include" />
+                          <e p="Generator.Sphere.cs" t="Include" />
+                          <e p="Generator.Sphere.GUI.cs" t="Include" />
+                          <e p="Generator.Sphere.GUIContents.cs" t="Include" />
+                          <e p="Generator.Sphere.Settings.cs" t="Include" />
+                          <e p="Generator.SpiralStairs.cs" t="Include" />
+                          <e p="Generator.SpiralStairs.GUI.cs" t="Include" />
+                          <e p="Generator.SpiralStairs.GUIContents.cs" t="Include" />
+                          <e p="Generator.SpiralStairs.Settings.cs" t="Include" />
+                          <e p="IGenerator.cs" t="Include" />
+                          <e p="IShapeSettings.cs" t="Include" />
+                          <e p="Outline2D.cs" t="Include" />
+                        </e>
+                        <e p="IEditMode.cs" t="Include" />
+                      </e>
+                      <e p="EditModeSelection.GUI.cs" t="Include" />
+                      <e p="EditModeSelection.GUIContents.cs" t="Include" />
+                      <e p="EditModeToolWindow.Editor.cs" t="Include" />
+                      <e p="EditModeToolWindow.SceneGUI.cs" t="Include" />
+                    </e>
+                    <e p="EditorWindow" t="Include">
+                      <e p="Debug.HierarchyWindow.cs" t="Include" />
+                    </e>
+                    <e p="HierarchyWindowItemGUI" t="Include">
+                      <e p="HierarchyWindowItemGUI.cs" t="Include" />
+                    </e>
+                    <e p="PreferenceWindows" t="Include">
+                      <e p="CSGKeys.PreferenceWindow.cs" t="Include" />
+                      <e p="CSGOptions.PreferenceWindow.cs" t="Include" />
+                    </e>
+                    <e p="PropertyDrawers" t="Include">
+                      <e p="EnumAsFlags.PropertyDrawer.cs" t="Include" />
+                    </e>
+                    <e p="SceneViewBottomBarGUI" t="Include">
+                      <e p="SceneViewBottomBar.GUI.cs" t="Include" />
+                      <e p="SceneViewBottomBar.GUIContents.cs" t="Include" />
+                      <e p="SurfaceVisibilityPopup.cs" t="Include" />
+                    </e>
+                    <e p="SceneViewInfoGUI" t="Include">
+                      <e p="SceneViewInfo.GUI.cs" t="Include" />
+                      <e p="SceneViewInfo.GUIContents.cs" t="Include" />
+                    </e>
+                    <e p="Utility" t="Include">
+                      <e p="CameraUtility.cs" t="Include" />
+                      <e p="CSG_EditorGUIUtility.cs" t="Include" />
+                      <e p="CSG_GUIStyleUtility.cs" t="Include" />
+                      <e p="CSG_HandleUtility.cs" t="Include" />
+                      <e p="Tooltip.cs" t="Include" />
+                      <e p="TooltipContentState.cs" t="Include" />
+                      <e p="TooltipUtility.cs" t="Include" />
+                    </e>
+                  </e>
+                  <e p="Scene" t="Include">
+                    <e p="Grid" t="Include">
+                      <e p="CSGGrid.cs" t="Include" />
+                      <e p="GridUtility.cs" t="Include" />
+                    </e>
+                    <e p="Handles" t="Include">
+                      <e p="CSGBounds.cs" t="Include" />
+                      <e p="CSGDisc.cs" t="Include" />
+                      <e p="CSGFreeMove.cs" t="Include" />
+                      <e p="CSGFreeRotate.cs" t="Include" />
+                      <e p="CSGHandles.cs" t="Include" />
+                      <e p="CSGScaleSlider.cs" t="Include" />
+                      <e p="CSGSlider1D.cs" t="Include" />
+                      <e p="CSGSlider2D.cs" t="Include" />
+                    </e>
+                    <e p="Rendering" t="Include">
+                      <e p="BrushOutlineManager.cs" t="Include" />
+                      <e p="BrushOutlineRenderer.cs" t="Include" />
+                      <e p="CSGRenderer.cs" t="Include" />
+                      <e p="LineMeshRenderer.cs" t="Include" />
+                      <e p="PaintUtility.cs" t="Include" />
+                      <e p="PointMeshRenderer.cs" t="Include" />
+                      <e p="PolygonMeshRenderer.cs" t="Include" />
+                      <e p="RotationCircle.cs" t="Include" />
+                    </e>
+                    <e p="SceneToolRenderer.cs" t="Include" />
+                    <e p="Utility" t="Include">
+                      <e p="CursorUtility.cs" t="Include" />
+                    </e>
+                  </e>
+                  <e p="Units.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Thirdparty" t="Include">
+                <e p="UnityFBXExporter" t="Include">
+                  <e p="Editor" t="Include">
+                    <e p="ExporterMenu.cs" t="Include" />
+                  </e>
+                  <e p="FBXExporter.cs" t="Include" />
+                  <e p="FBXMeshToString.cs" t="Include" />
+                  <e p="FBXModelPostProcessor.cs" t="Include" />
+                  <e p="FBXUnityMaterialGetter.cs" t="Include" />
+                  <e p="FBXUnityMeshGetter.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="License.txt" t="Include" />
+            <e p="Release-notes.txt" t="Include" />
+            <e p="Runtime" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="Attributes" t="Include">
+                  <e p="EnumAsFlagsAttribute.cs" t="Include" />
+                </e>
+                <e p="Components" t="Include">
+                  <e p="CSGModelExported.cs" t="Include" />
+                  <e p="GeneratedMeshes.cs" t="Include" />
+                  <e p="GeneratedMeshInstance.cs" t="Include" />
+                  <e p="InternalFlags.cs" t="Include" />
+                  <e p="Legacy" t="Include">
+                    <e p="LegacyGeneratedMeshContainer.cs" t="Include" />
+                  </e>
+                  <e p="Shape" t="Include">
+                    <e p="MathConstants.cs" t="Include" />
+                  </e>
+                </e>
+                <e p="Managers" t="Include">
+                  <e p="CSGSceneManagerInterface.cs" t="Include" />
+                  <e p="CSGSceneManagerRedirector.cs" t="Include" />
+                </e>
+                <e p="Utility" t="Include">
+                  <e p="GameObjectExtensions.cs" t="Include" />
+                  <e p="MeshUtility.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="AddForce.cs" t="Include" />
+          <e p="BabyLooking.cs" t="Include" />
+          <e p="CalmnessLoweringThing.cs" t="Include" />
+          <e p="ClickObject.cs" t="Include" />
+          <e p="CursorHover.cs" t="Include" />
+          <e p="DoorOpenAndShut.cs" t="Include" />
+          <e p="EventManager.cs" t="Include" />
+          <e p="FlashlightController.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
+          <e p="HoldItem.cs" t="Include" />
+          <e p="Interactable.cs" t="Include" />
+          <e p="Object_Chase.cs" t="Include" />
+          <e p="PhysicsInteraction.cs" t="Include" />
+          <e p="PickUpBaby.cs" t="Include" />
+          <e p="PlayerManager.cs" t="Include" />
+          <e p="RotateSkyBox.cs" t="Include" />
+          <e p="Services.cs" t="Include" />
+          <e p="WalkUpAndInteract.cs" t="Include" />
+        </e>
+        <e p="Shaders" t="Include">
+          <e p="TestShader.shader" t="Include" />
+          <e p="ToonTestShader.shader" t="Include" />
+        </e>
+      </e>
+      <e p="Game-Studio-2-Prototypes.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
