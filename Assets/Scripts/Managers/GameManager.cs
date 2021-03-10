@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
     private List<int> _completedTasks;
     private List<string> _triggeredInteractions;
 
+    public AudioSource doorBell;
+
     void Awake()
     {
         if (savedData)
@@ -67,6 +69,11 @@ public class GameManager : MonoBehaviour
                 _spookyLevel += spookyIncreasePerTick;
                 Services.EventManager.Fire(new SpookyMeterChange(_spookyLevel));
             }
+        }
+
+        if (_spookyLevel == 50)
+        {
+            doorBell.Play();
         }
     }
 

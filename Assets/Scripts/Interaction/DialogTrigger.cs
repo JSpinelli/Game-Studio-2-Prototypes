@@ -4,21 +4,26 @@ using UnityEngine;
 
 public class DialogTrigger : InteractableObject
 {
-    public string text="";
-    public AudioClip sound;
+    public string[] text;
+    public AudioClip[] lines;
+    private int lineCounter;
     void Start()
     {
         base.Start();
+        lineCounter = 0;
     }
 
     public override bool CanInteract()
     {
-        return true;
+        return lineCounter < lines.Length;
     }
 
     public override void OnInteract()
     {
-        Services.EventManager.Fire(new DialogTriggered(text,sound));
+        
+        if (lineCounter == lines.Length) return;
+        Services.EventManager.Fire(new DialogTriggered(text[lineCounter],lines[lineCounter]));
+        lineCounter++;
     }
 }
     

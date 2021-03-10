@@ -38,6 +38,8 @@ public class InteractionDetection : MonoBehaviour
             currentInteractable = m_Hit.collider.gameObject.GetComponent<InteractableObject>();
             if (currentInteractable.CanInteract())
                 customImage.enabled = true;
+            else
+                customImage.enabled = false;
         }
         else
         {
