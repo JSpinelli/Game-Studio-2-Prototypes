@@ -7,7 +7,6 @@ public class CalmnessLoweringThing : MonoBehaviour
     private float timer = 10f;
     private float timerCurrent = 10f;
     private bool timerActive = false;
-    public GameManager gameManager;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -18,7 +17,6 @@ public class CalmnessLoweringThing : MonoBehaviour
                 triggered = true;
                 timerCurrent = timer;
                 timerActive = true;
-                gameManager.player_manager.decreaseCalmness();
             }
 
         }
