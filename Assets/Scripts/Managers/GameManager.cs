@@ -18,10 +18,23 @@ public class GameManager : MonoBehaviour
     
     private float _spookyLevel;
     private int _currentTask;
+    
     private List<int> _completedTasks;
     private List<string> _triggeredInteractions;
 
     public AudioSource doorBell;
+
+    public float DoorBellTimer = 0;
+    private float _doorBellTimer = 0;
+    public int InteractionTreshold = 3;
+    private int _interactionCount = 0;
+    
+    //State Managment
+    private bool _babyActive = false;
+    private bool _spookySpike = false;
+
+    public GameObject BabyOutside;
+    public GameObject BabyInArms;
 
     void Awake()
     {
@@ -42,6 +55,8 @@ public class GameManager : MonoBehaviour
         }
 
         _borednessTimer = 0;
+        BabyOutside.SetActive(false);
+        BabyInArms.SetActive(false);
         _InitializeServices();
     }
 
@@ -49,6 +64,7 @@ public class GameManager : MonoBehaviour
     {
         Services.gameManager = this;
         Services.EventManager = new EventManager();
+        Services.EventManager.Register<InteractionTriggered>(AddTriggeredInteraction);
     }
 
     void Update()
@@ -57,7 +73,7 @@ public class GameManager : MonoBehaviour
         {
             OnSave();
         }
-        if (!babySpawned)
+        if (_babyActive)
         {
             if (_borednessTimer < spookyTickRate)
             {
@@ -69,11 +85,26 @@ public class GameManager : MonoBehaviour
                 _spookyLevel += spookyIncreasePerTick;
                 Services.EventManager.Fire(new SpookyMeterChange(_spookyLevel));
             }
-        }
 
-        if (_spookyLevel == 50)
+            if (_spookyLevel > 100)
+            {
+                _spookySpike = true;
+                _spookyLevel = 0;
+                Services.EventManager.Fire(new SpookyMeterChange(_spookyLevel));
+            }
+        }
+        if ( !_babyActive && _interactionCount > InteractionTreshold)
         {
-            doorBell.Play();
+            if (DoorBellTimer > _doorBellTimer)
+            {
+                _doorBellTimer += Time.deltaTime;
+            }
+            else
+            {
+                _doorBellTimer = 0;
+                BabyOutside.SetActive(true);
+                doorBell.Play();
+            }
         }
     }
 
@@ -90,16 +121,36 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public void AddTriggeredInteraction(string interaction)
+    public void AddTriggeredInteraction(GameEvent interaction)
     {
-        if (!_triggeredInteractions.Exists((item) => item == interaction))
+        InteractionTriggered inter = (InteractionTriggered) interaction;
+        if (!_triggeredInteractions.Exists((item) => item == inter.name))
         {
-            _triggeredInteractions.Add(interaction);
+            _triggeredInteractions.Add(inter.name);
+        }
+
+        _interactionCount++;
+
+        if (inter.name == "BabyOutside")
+        {
+            _babyActive = true;
+            BabyOutside.SetActive(false);
+            BabyInArms.SetActive(true);
         }
     }
 
     public bool InteractionTriggered(string interaction)
     {
         return _triggeredInteractions.Exists((item) => item == interaction);
+    }
+
+    public bool IsBabyActive()
+    {
+        return _babyActive;
+    }
+
+    public bool ActiveSpookySpike()
+    {
+        return _spookySpike;
     }
 }

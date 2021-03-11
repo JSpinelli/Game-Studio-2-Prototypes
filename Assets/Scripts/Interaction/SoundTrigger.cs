@@ -29,7 +29,7 @@ public class SoundTrigger : InteractableObject
         {
             source.Play();
         }
-        Services.gameManager.AddTriggeredInteraction(gameObject.name);
+        Services.EventManager.Fire(new InteractionTriggered(gameObject.name));
         _interacted = true;
     }
 }

@@ -23,6 +23,7 @@ public class DialogTrigger : InteractableObject
         
         if (lineCounter == lines.Length) return;
         Services.EventManager.Fire(new DialogTriggered(text[lineCounter],lines[lineCounter]));
+        Services.EventManager.Fire(new InteractionTriggered(gameObject.name));
         lineCounter++;
     }
 }

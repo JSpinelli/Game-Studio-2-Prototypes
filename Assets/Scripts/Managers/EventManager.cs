@@ -92,3 +92,12 @@ public class DialogTriggered : GameEvent
 	}
 }
 
+public class InteractionTriggered : GameEvent
+{
+	public string name;
+	public InteractionTriggered(string interactionName)
+	{
+		name = interactionName;
+	}
+}
+

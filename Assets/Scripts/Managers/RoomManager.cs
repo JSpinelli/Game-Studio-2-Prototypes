@@ -20,11 +20,13 @@ public class RoomManager : MonoBehaviour
     private bool effectActive = false;
     private Vector3 origialPosition;
     private bool goingUp = true;
-    
+
     private bool wasLooking = false;
     private bool switched = false;
 
     private MeshRenderer[] childrenMeshes;
+
+    public float SpookyTreshold = 50;
 
     private delegate void DelegateAction();
 
@@ -33,6 +35,8 @@ public class RoomManager : MonoBehaviour
     public bool objectsFloat;
     public bool objectsFlip;
     public bool objectsShoot;
+
+    private bool _playerInside = false;
 
     private void Start()
     {
@@ -43,11 +47,13 @@ public class RoomManager : MonoBehaviour
         if (objectsFlip)
         {
             actionToDo += Flipping;
-        }        
+        }
+
         if (objectsFloat)
         {
             actionToDo += Levitate;
-        }        
+        }
+
         if (objectsShoot)
         {
             actionToDo += Shooting;
@@ -56,7 +62,8 @@ public class RoomManager : MonoBehaviour
 
     private void Update()
     {
-        if (flickering)
+        if (!Services.gameManager.IsBabyActive()) return;
+        if (_playerInside && Services.gameManager.ActiveSpookySpike())
         {
             if (timer > 0)
             {
@@ -81,10 +88,24 @@ public class RoomManager : MonoBehaviour
     private void OnSpookyMeterChange(GameEvent e)
     {
         SpookyMeterChange smc = (SpookyMeterChange) e;
-        if (smc.CurrentSpookyValue >= 10)
+        if (smc.CurrentSpookyValue >= SpookyTreshold)
         {
             effectActive = true;
         }
+        else if (smc.CurrentSpookyValue < SpookyTreshold)
+        {
+            effectActive = false;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        _playerInside = true;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        _playerInside = false;
     }
 
     private void Shooting()
@@ -150,7 +171,8 @@ public class RoomManager : MonoBehaviour
 
         if (!oneIsVisible && wasLooking)
         {
-            if (!switched){
+            if (!switched)
+            {
                 gameObject.transform.localScale = new Vector3(1, -1, 1);
                 gameObject.transform.localPosition = new Vector3(0, -4, 0);
                 switched = true;
