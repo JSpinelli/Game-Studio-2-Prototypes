@@ -1,11 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class RoomManager : MonoBehaviour
 {
     public ObjectSwitch[] changedObjects;
-    private int switchCounter = 0;
+    public float chanceOfSwitch = 5;
+    private List<ObjectSwitch> possibleObjects;
 
     public Light[] roomLights;
 
@@ -57,6 +59,8 @@ public class RoomManager : MonoBehaviour
         {
             actionToDo += Shooting;
         }
+
+        possibleObjects = new List<ObjectSwitch>(changedObjects);
     }
 
     private void Update()
@@ -99,11 +103,13 @@ public class RoomManager : MonoBehaviour
     private void OnSpookyMeterChange(GameEvent e)
     {
         SpookyMeterChange smc = (SpookyMeterChange) e;
-        float chance = Random.Range(1, 10);
-        if (chance > 9 && changedObjects.Length >0 && !_playerInside && switchCounter < changedObjects.Length )
+        float chance = Random.Range(1f, 10f);
+        if (chance < chanceOfSwitch && changedObjects.Length >0 && !_playerInside)
         {
-            changedObjects[switchCounter].Change();
-            switchCounter++;
+            int randomIndex = Random.Range(0, possibleObjects.Count);
+            possibleObjects[randomIndex].Change();
+            if (possibleObjects[randomIndex].IsOver())
+                possibleObjects.RemoveAt(randomIndex);
         }
 
         if (smc.CurrentSpookyValue >= SpookyTreshold)

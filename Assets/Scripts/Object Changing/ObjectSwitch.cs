@@ -2,24 +2,38 @@
 
 public class ObjectSwitch : MonoBehaviour
 {
-    public GameObject firstItem;
+    public GameObject[] itemProgression;
+    public AudioSource[] sounds;
 
-    public GameObject secondItem;
-
-    public AudioSource sound;
-
+    private int currentItem = 0;
     public void Start()
     {
-        firstItem.SetActive(true);
-        secondItem.SetActive(false);
+        foreach (var item in itemProgression)
+        {
+            item.SetActive(false);
+        }
+
+        itemProgression[0].SetActive(true);
     }
 
     // Start is called before the first frame update
     public void Change()
     {
-        firstItem.SetActive(false);
-        if (sound)
-            sound.Play();
-        secondItem.SetActive(true);
+        if (currentItem < itemProgression.Length - 1)
+        {
+            itemProgression[currentItem].SetActive(false);
+            itemProgression[currentItem+1].SetActive(true);
+        }
+
+        if (currentItem < sounds.Length)
+        {
+            if (sounds[currentItem])
+                sounds[currentItem].Play();
+        }
+    }
+
+    public bool IsOver()
+    {
+        return currentItem >= itemProgression.Length;
     }
 }

@@ -395,6 +395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51b1cd2f6aa495e43afd0fadfa21467f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstItem: {fileID: 8066052373357859426}
-  secondItem: {fileID: 8066052372869921499}
-  sound: {fileID: 8066052373548224640}
+  itemProgression:
+  - {fileID: 8066052373357859426}
+  - {fileID: 8066052372869921499}
+  sounds: []
