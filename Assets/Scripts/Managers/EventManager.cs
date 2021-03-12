@@ -83,11 +83,13 @@ public class SpookyMeterChange: GameEvent
 }
 public class DialogTriggered : GameEvent
 {
-	public string dialog;
+	public string[] dialog;
+	public float[] timers;
 	public AudioClip soundClip;
-	public DialogTriggered( string txt, AudioClip sound)
+	public DialogTriggered( string[] txt, float[] timers, AudioClip sound)
 	{
 		dialog = txt;
+		this.timers = timers;
 		soundClip = sound;
 	}
 }

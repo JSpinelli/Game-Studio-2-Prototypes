@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
     public float spookyIncreasePerTick;
     public float spookyTickRate;
 
+    public bool startWithBaby = false;
+
     public Transform playerPos;
 
     private bool babySpawned = false;
@@ -36,6 +38,8 @@ public class GameManager : MonoBehaviour
     public GameObject BabyOutside;
     public GameObject BabyInArms;
 
+    public Movable[] doors;
+
     void Awake()
     {
         if (savedData)
@@ -55,8 +59,17 @@ public class GameManager : MonoBehaviour
         }
 
         _borednessTimer = 0;
-        BabyOutside.SetActive(false);
-        BabyInArms.SetActive(false);
+        if (!startWithBaby)
+        {
+            BabyOutside.SetActive(false);
+            BabyInArms.SetActive(false);
+        }
+        else
+        {
+            BabyOutside.SetActive(false);
+            BabyInArms.SetActive(true);
+            _babyActive = true;
+        }
         _InitializeServices();
     }
 
@@ -88,6 +101,7 @@ public class GameManager : MonoBehaviour
 
             if (_spookyLevel > 100)
             {
+                CloseDoors();
                 _spookySpike = true;
                 _spookyLevel = 0;
                 Services.EventManager.Fire(new SpookyMeterChange(_spookyLevel));
@@ -119,6 +133,14 @@ public class GameManager : MonoBehaviour
         System.IO.File.WriteAllText(Application.dataPath + "/Saves/" + "spooky_data.json", json);
         Debug.Log("Game Saved");
         
+    }
+
+    public void CloseDoors()
+    {
+        foreach (var door in doors)
+        {
+            door.Reset(true);
+        }
     }
 
     public void AddTriggeredInteraction(GameEvent interaction)

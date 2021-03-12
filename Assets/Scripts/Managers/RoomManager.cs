@@ -4,9 +4,8 @@ using Random = UnityEngine.Random;
 
 public class RoomManager : MonoBehaviour
 {
-    public GameObject[] objectsInRoom;
-
-    private GameObject[] changedObjects;
+    public ObjectSwitch[] changedObjects;
+    private int switchCounter = 0;
 
     public Light[] roomLights;
 
@@ -15,26 +14,26 @@ public class RoomManager : MonoBehaviour
     public float maxflickerSpeed = 0.8f;
     public float timer = 0.7f;
 
+    //THINGS TO REMOVE
     public float floatEffect;
-
     private bool effectActive = false;
     private Vector3 origialPosition;
     private bool goingUp = true;
-
     private bool wasLooking = false;
     private bool switched = false;
-
     private MeshRenderer[] childrenMeshes;
+    public bool objectsFloat;
+    public bool objectsFlip;
+    public bool objectsShoot;
 
     public float SpookyTreshold = 50;
 
     private delegate void DelegateAction();
 
     private DelegateAction actionToDo;
+    
 
-    public bool objectsFloat;
-    public bool objectsFlip;
-    public bool objectsShoot;
+    public AudioSource windowTapping;
 
     private bool _playerInside = false;
 
@@ -79,6 +78,18 @@ public class RoomManager : MonoBehaviour
             }
         }
 
+        if (_playerInside && effectActive)
+        {
+            if (windowTapping)
+            {
+                float chance = Random.Range(1, 10);
+                if (chance > 9)
+                {
+                    windowTapping.Play();
+                }
+            }
+        }
+
         if (effectActive)
         {
             actionToDo?.Invoke();
@@ -88,6 +99,13 @@ public class RoomManager : MonoBehaviour
     private void OnSpookyMeterChange(GameEvent e)
     {
         SpookyMeterChange smc = (SpookyMeterChange) e;
+        float chance = Random.Range(1, 10);
+        if (chance > 9 && changedObjects.Length >0 && !_playerInside && switchCounter < changedObjects.Length )
+        {
+            changedObjects[switchCounter].Change();
+            switchCounter++;
+        }
+
         if (smc.CurrentSpookyValue >= SpookyTreshold)
         {
             effectActive = true;

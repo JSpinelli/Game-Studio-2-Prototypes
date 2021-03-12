@@ -1,11 +1,14 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class DialogTrigger : InteractableObject
 {
     public string[] text;
+    public float[] timers;
     public AudioClip[] lines;
+    public int[] breakdownOfLines;
     private int lineCounter;
     void Start()
     {
@@ -22,7 +25,7 @@ public class DialogTrigger : InteractableObject
     {
         
         if (lineCounter == lines.Length) return;
-        Services.EventManager.Fire(new DialogTriggered(text[lineCounter],lines[lineCounter]));
+        Services.EventManager.Fire(new DialogTriggered(text,timers, lines[lineCounter]));
         Services.EventManager.Fire(new InteractionTriggered(gameObject.name));
         lineCounter++;
     }

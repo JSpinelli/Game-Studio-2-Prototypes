@@ -32,10 +32,11 @@ public class InteractionDetection : MonoBehaviour
             transform.rotation,
             m_MaxDistance,
             ~layerToHit);
-        if (m_HitDetect)
+        if (m_HitDetect && m_Hit.collider.gameObject.CompareTag("Interactable"))
         {
             customImage.transform.position = _cam.WorldToScreenPoint(m_Hit.point);
             currentInteractable = m_Hit.collider.gameObject.GetComponent<InteractableObject>();
+            if (currentInteractable == null) return;
             if (currentInteractable.CanInteract())
                 customImage.enabled = true;
             else
