@@ -544,6 +544,11 @@
             </e>
           </e>
         </e>
+        <e p="Prefabs" t="Include">
+          <e p="TV" t="Include">
+            <e p="ReadMe.txt" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="AddForce.cs" t="Include" />
           <e p="CalmnessLoweringThing.cs" t="Include" />

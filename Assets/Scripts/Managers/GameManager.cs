@@ -1,10 +1,14 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
 public class GameManager : MonoBehaviour
 {
     public float spookyIncreasePerTick;
     public float spookyTickRate;
+
+    public PostProcessProfile profile;
 
     public bool startWithBaby = false;
 
@@ -97,6 +101,7 @@ public class GameManager : MonoBehaviour
                 _borednessTimer = 0;
                 _spookyLevel += spookyIncreasePerTick;
                 Services.EventManager.Fire(new SpookyMeterChange(_spookyLevel));
+                StartCoroutine(GrainEffect(3));
             }
 
             if (_spookyLevel > 100)
@@ -174,5 +179,13 @@ public class GameManager : MonoBehaviour
     public bool ActiveSpookySpike()
     {
         return _spookySpike;
+    }
+    
+    private IEnumerator GrainEffect(float t)
+    {
+        Grain gr = profile.GetSetting<Grain>();
+        gr.active = true;
+        yield return new WaitForSeconds(t);
+        gr.active = false;
     }
 }
