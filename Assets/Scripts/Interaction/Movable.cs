@@ -11,6 +11,8 @@ public class Movable : InteractableObject
     private Vector3 _originalRotation;
     private Vector3 _originalPosition;
 
+    public AudioSource sound;
+
     private bool _moved = false;
 
     private new void Start()
@@ -34,7 +36,14 @@ public class Movable : InteractableObject
         {
             transform.Rotate(-newRotation);
         }
-
+        if(sound) sound.Play();
         _moved = !_moved;
+    }
+
+    public void Reset(bool triggerSound)
+    {
+        _moved = false;
+        transform.Rotate(-newRotation);
+        if (triggerSound && sound) sound.Play();
     }
 }

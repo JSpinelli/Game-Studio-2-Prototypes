@@ -22,19 +22,18 @@ public class DialogManager : MonoBehaviour
             source.clip = dialogInfo.soundClip;
             source.Play();
         }
-        if (dialogInfo.dialog!="")
-            StartCoroutine(Countdown(dialogInfo.dialog));
+        if (dialogInfo.dialog.Length > 0)
+            StartCoroutine(Countdown(dialogInfo.dialog,dialogInfo.timers));
     }
     
-    private IEnumerator Countdown(string textToDisplay)
+    private IEnumerator Countdown(string[] textToDisplay , float[] timer)
     {
-        float duration = textOnScreenTime;
-        float normalizedTime = 0;
-        dialogBox.text = textToDisplay;
-        while (normalizedTime <= 1f)
+        int timerIndex = 0;
+        foreach (var text in textToDisplay)
         {
-            normalizedTime += Time.deltaTime / duration;
-            yield return null;
+            dialogBox.text = text;
+            yield return new WaitForSeconds(timer[timerIndex]);
+            timerIndex++;
         }
         dialogBox.text = "";
     }

@@ -9,6 +9,7 @@ public class SoundTrigger : InteractableObject
     private bool _interacted = false;
     void Start()
     {
+        base.Start();
         _interacted = Services.gameManager.InteractionTriggered(gameObject.name);
     }
 
@@ -28,7 +29,7 @@ public class SoundTrigger : InteractableObject
         {
             source.Play();
         }
-        Services.gameManager.AddTriggeredInteraction(gameObject.name);
+        Services.EventManager.Fire(new InteractionTriggered(gameObject.name));
         _interacted = true;
     }
 }

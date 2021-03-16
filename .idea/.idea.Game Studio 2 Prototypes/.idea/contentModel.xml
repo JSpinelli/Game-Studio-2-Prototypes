@@ -544,6 +544,11 @@
             </e>
           </e>
         </e>
+        <e p="Prefabs" t="Include">
+          <e p="TV" t="Include">
+            <e p="ReadMe.txt" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="AddForce.cs" t="Include" />
           <e p="CalmnessLoweringThing.cs" t="Include" />
@@ -569,6 +574,7 @@
           <e p="Object Changing" t="Include">
             <e p="Levitate.cs" t="Include" />
             <e p="ObjectChange.cs" t="Include" />
+            <e p="ObjectSwitch.cs" t="Include" />
             <e p="Rotate.cs" t="Include" />
           </e>
           <e p="Object_Chase.cs" t="Include" />
@@ -578,6 +584,20 @@
           <e p="SaveData.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">
+          <e p="Number2_Screenspace" t="Include">
+            <e p="ScreenspaceObject.shader" t="Include" />
+            <e p="UIScreenspace.shader" t="Include" />
+          </e>
+          <e p="Number3_MirrorReflection" t="Include">
+            <e p="Mirror.shader" t="Include" />
+            <e p="MirrorReflection.cs" t="Include" />
+          </e>
+          <e p="Number4_JoepieShaderWobble" t="Include">
+            <e p="JoepieShaderWobble.shader" t="Include" />
+          </e>
+          <e p="Number5_Skybox" t="Include">
+            <e p="Horizontal Skybox.shader" t="Include" />
+          </e>
           <e p="TestShader.shader" t="Include" />
           <e p="ToonTestShader.shader" t="Include" />
         </e>
