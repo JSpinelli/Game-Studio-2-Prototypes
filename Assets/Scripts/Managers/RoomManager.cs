@@ -9,11 +9,8 @@ public class RoomManager : MonoBehaviour
     public float chanceOfSwitch = 5;
     private List<ObjectSwitch> possibleObjects;
 
-    public MeshRenderer myMesh;
-
     public Light[] roomLights;
-
-    public bool flickering = false;
+    
     public float minflickerSpeed = 0.2f;
     public float maxflickerSpeed = 0.8f;
     public float timer = 0.7f;
@@ -55,18 +52,6 @@ public class RoomManager : MonoBehaviour
                 }
             }
         }
-
-        if (_playerInside)
-        {
-            if (windowTapping)
-            {
-                float chance = Random.Range(1, 10);
-                if (chance > 9)
-                {
-                    windowTapping.Play();
-                }
-            }
-        }
     }
 
     private void OnSpookyMeterChange(GameEvent e)
@@ -79,6 +64,18 @@ public class RoomManager : MonoBehaviour
             possibleObjects[randomIndex].Change();
             if (possibleObjects[randomIndex].IsOver())
                 possibleObjects.RemoveAt(randomIndex);
+        }
+        
+        if (_playerInside)
+        {
+            if (windowTapping)
+            {
+                float chance1 = Random.Range(1, 10);
+                if (chance1 > 8)
+                {
+                    windowTapping.Play();
+                }
+            }
         }
 
         if (smc.CurrentSpookyValue >= SpookyTreshold)
@@ -100,84 +97,4 @@ public class RoomManager : MonoBehaviour
     {
         _playerInside = false;
     }
-
-    // private void Shooting()
-    // {
-    //     bool oneIsVisible = false;
-    //     foreach (MeshRenderer meshes in childrenMeshes)
-    //     {
-    //         oneIsVisible = oneIsVisible || meshes.isVisible;
-    //     }
-    //
-    //     if (oneIsVisible)
-    //     {
-    //         gameObject.transform.position = Vector3.Lerp(gameObject.transform.position,
-    //             Services.gameManager.playerPos.transform.position, Time.deltaTime / 5);
-    //     }
-    //     else
-    //     {
-    //         effectActive = false;
-    //         gameObject.transform.position = origialPosition;
-    //     }
-    // }
-    //
-    // private void Levitate()
-    // {
-    //     bool oneIsVisible = false;
-    //     foreach (MeshRenderer meshes in childrenMeshes)
-    //     {
-    //         oneIsVisible = oneIsVisible || meshes.isVisible;
-    //     }
-    //
-    //     if (oneIsVisible)
-    //     {
-    //         if (Vector3.Distance(gameObject.transform.localPosition, new Vector3(0, 2, 0)) < 0.1f && goingUp)
-    //         {
-    //             goingUp = false;
-    //         }
-    //
-    //         if (Vector3.Distance(gameObject.transform.localPosition, new Vector3(0, 2, 0)) > 1.9f && !goingUp)
-    //         {
-    //             goingUp = true;
-    //         }
-    //
-    //         if (goingUp)
-    //         {
-    //             gameObject.transform.localPosition = Vector3.Lerp(gameObject.transform.localPosition,
-    //                 new Vector3(0, 2, 0), Time.deltaTime * floatEffect);
-    //         }
-    //         else
-    //         {
-    //             gameObject.transform.localPosition = Vector3.Lerp(gameObject.transform.localPosition,
-    //                 new Vector3(0, 0, 0), Time.deltaTime * floatEffect);
-    //         }
-    //     }
-    // }
-    //
-    // private void Flipping()
-    // {
-    //     bool oneIsVisible = false;
-    //     foreach (MeshRenderer meshes in childrenMeshes)
-    //     {
-    //         oneIsVisible = oneIsVisible || meshes.isVisible;
-    //     }
-    //
-    //     if (!oneIsVisible && wasLooking)
-    //     {
-    //         if (!switched)
-    //         {
-    //             gameObject.transform.localScale = new Vector3(1, -1, 1);
-    //             gameObject.transform.localPosition = new Vector3(0, -4, 0);
-    //             switched = true;
-    //         }
-    //         else
-    //         {
-    //             gameObject.transform.localScale = new Vector3(1, 1, 1);
-    //             gameObject.transform.localPosition = new Vector3(0, 0, 0);
-    //             switched = false;
-    //         }
-    //     }
-    //
-    //     wasLooking = oneIsVisible;
-    // }
 }

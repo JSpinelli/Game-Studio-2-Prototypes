@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0543311-8c26-4bf6-b4d7-382aa6cce3fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/ColliderDialogTrigger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/ColliderDialogTrigger.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/DialogManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/DialogManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/RoomManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/RoomManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,10 +57,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/Movable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractionDetection.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Object Changing/ObjectSwitch.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Managers/RoomManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ColliderDialogTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Managers/DialogManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Managers/RoomManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1oc3bth2r4flW2DCjCNV0vxifDD" />
@@ -130,7 +126,7 @@
       <workItem from="1615485151288" duration="224000" />
       <workItem from="1615485430459" duration="6674000" />
       <workItem from="1615555922206" duration="6661000" />
-      <workItem from="1615926193261" duration="4096000" />
+      <workItem from="1615926193261" duration="5206000" />
     </task>
     <servers />
   </component>
