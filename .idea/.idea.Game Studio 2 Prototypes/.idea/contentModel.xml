@@ -556,6 +556,7 @@
           <e p="FlashlightController.cs" t="Include" />
           <e p="HoldItem.cs" t="Include" />
           <e p="Interaction" t="Include">
+            <e p="ColliderDialogTrigger.cs" t="Include" />
             <e p="DialogTrigger.cs" t="Include" />
             <e p="InteractableObject.cs" t="Include" />
             <e p="InteractionDetection.cs" t="Include" />

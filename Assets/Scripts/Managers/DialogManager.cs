@@ -22,8 +22,8 @@ public class DialogManager : MonoBehaviour
             source.clip = dialogInfo.soundClip;
             source.Play();
         }
-        if (dialogInfo.dialog.Length > 0)
-            StartCoroutine(Countdown(dialogInfo.dialog,dialogInfo.timers));
+        // if (dialogInfo.dialog.Length > 0)
+        //     StartCoroutine(Countdown(dialogInfo.dialog,dialogInfo.timers));
     }
     
     private IEnumerator Countdown(string[] textToDisplay , float[] timer)

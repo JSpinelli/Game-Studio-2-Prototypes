@@ -16,7 +16,9 @@ public class GameManager : MonoBehaviour
 
     private bool babySpawned = false;
 
-    
+    public GameObject begginingObjects;
+    public GameObject doorBellRinging;
+    public GameObject babyPickedUp;
 
     private float _borednessTimer;
 
@@ -67,12 +69,18 @@ public class GameManager : MonoBehaviour
         {
             BabyOutside.SetActive(false);
             BabyInArms.SetActive(false);
+            begginingObjects.SetActive(true);
+            doorBellRinging.SetActive(false);
+            babyPickedUp.SetActive(false);
         }
         else
         {
             BabyOutside.SetActive(false);
             BabyInArms.SetActive(true);
             _babyActive = true;
+            begginingObjects.SetActive(false);
+            doorBellRinging.SetActive(false);
+            babyPickedUp.SetActive(false);
         }
         _InitializeServices();
     }
@@ -123,6 +131,8 @@ public class GameManager : MonoBehaviour
                 _doorBellTimer = 0;
                 BabyOutside.SetActive(true);
                 doorBell.Play();
+                begginingObjects.SetActive(false);
+                doorBellRinging.SetActive(true);
             }
         }
     }
@@ -163,6 +173,8 @@ public class GameManager : MonoBehaviour
             _babyActive = true;
             BabyOutside.SetActive(false);
             BabyInArms.SetActive(true);
+            doorBellRinging.SetActive(false);
+            babyPickedUp.SetActive(true);
         }
     }
 
