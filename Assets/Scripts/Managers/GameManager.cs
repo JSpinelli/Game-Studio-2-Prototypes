@@ -101,7 +101,6 @@ public class GameManager : MonoBehaviour
                 _borednessTimer = 0;
                 _spookyLevel += spookyIncreasePerTick;
                 Services.EventManager.Fire(new SpookyMeterChange(_spookyLevel));
-                StartCoroutine(GrainEffect(3));
             }
 
             if (_spookyLevel > 100)
@@ -109,6 +108,7 @@ public class GameManager : MonoBehaviour
                 CloseDoors();
                 _spookySpike = true;
                 _spookyLevel = 0;
+                StartCoroutine(GrainEffect(3));
                 Services.EventManager.Fire(new SpookyMeterChange(_spookyLevel));
             }
         }
