@@ -1,34 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!65 &6409908127778700296
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6409908128104817766}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.0013895, y: 0.60687155, z: 2.5173776}
-  m_Center: {x: -0.06078267, y: -0.015478641, z: 0.74}
---- !u!114 &6409908127778700297
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6409908128104817766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51b1cd2f6aa495e43afd0fadfa21467f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemProgression:
-  - {fileID: 0}
-  - {fileID: 0}
-  sounds: []
 --- !u!1 &6409908128094823690
 GameObject:
   m_ObjectHideFlags: 0
@@ -40,7 +11,7 @@ GameObject:
   - component: {fileID: 6409908128094823689}
   - component: {fileID: 6409908128094823688}
   m_Layer: 10
-  m_Name: Cabinet
+  m_Name: HallwayDresser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,6 +49,19 @@ MonoBehaviour:
   - {fileID: 6409908128863097156}
   - {fileID: 6409908128104817766}
   sounds: []
+--- !u!65 &6409908127778700296
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6409908128104817766}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0013895, y: 0.60687155, z: 2.5173776}
+  m_Center: {x: -0.06078267, y: -0.015478641, z: 0.74}
 --- !u!65 &6409908128863197169
 BoxCollider:
   m_ObjectHideFlags: 0
