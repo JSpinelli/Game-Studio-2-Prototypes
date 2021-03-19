@@ -2,9 +2,74 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0543311-8c26-4bf6-b4d7-382aa6cce3fd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/LICENSE.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/OutlineEffect.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/OutlineEffect.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/OutlineEffect.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/OutlineEffect/LinkedSet.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/OutlineEffect/LinkedSet.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/OutlineEffect/Outline.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/OutlineEffect/Outline.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/OutlineEffect/OutlineEffect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/OutlineEffect/OutlineEffect.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/OutlineEffect/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/OutlineEffect/Resources/OutlineBufferShader.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/OutlineEffect/Resources/OutlineBufferShader.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/OutlineEffect/Resources/OutlineShader.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/OutlineEffect/Resources/OutlineShader.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/README.rtf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/README.rtf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content/at.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content/at.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content/at.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content/at.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content/chair.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content/chair.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content/chair.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content/chair/black_plastic.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content/chair/black_plastic.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content/chair/brushed_steel.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content/chair/brushed_steel.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content/chair/chrome.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content/chair/chrome.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content/chair/skin.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content/chair/skin.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content/chair/wheel.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content/chair/wheel.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content/floor.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content/floor.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content/grey.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content/grey.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content/logo.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content/logo.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content/logo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content/sky.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Content/sky.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Demo.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Demo.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/MaterialSwitcher.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/MaterialSwitcher.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/OutlineAnimation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/OutlineAnimation.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Rotate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Rotate.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/StressTest.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/StressTest.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Toggle.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/Samples/Demo/Toggle.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OutlineEffect/package.json.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/RoomManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/RoomManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractableObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractionDetection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractionDetection.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,17 +115,17 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PickUpBaby.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Object_Chase.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SaveData.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractableObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/SoundTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Managers/EventManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/DialogTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/Movable.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractionDetection.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Object Changing/ObjectSwitch.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ColliderDialogTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Managers/DialogManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Managers/RoomManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractableObject.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractionDetection.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1oc3bth2r4flW2DCjCNV0vxifDD" />
@@ -126,7 +191,8 @@
       <workItem from="1615485151288" duration="224000" />
       <workItem from="1615485430459" duration="6674000" />
       <workItem from="1615555922206" duration="6661000" />
-      <workItem from="1615926193261" duration="6034000" />
+      <workItem from="1615926193261" duration="6627000" />
+      <workItem from="1616165098276" duration="2441000" />
     </task>
     <servers />
   </component>

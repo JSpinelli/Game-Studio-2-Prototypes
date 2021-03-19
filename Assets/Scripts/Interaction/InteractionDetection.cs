@@ -4,55 +4,66 @@ using UnityEngine.UI;
 
 public class InteractionDetection : MonoBehaviour
 {
-    public Image customImage;
-    private Camera _cam;
-
-    public float m_MaxDistance;
-    public float m_Speed;
+    
+    public float MaxDistance;
     public Vector3 offsetFromCenter;
     public Vector3 scale;
-    bool m_HitDetect;
-    RaycastHit m_Hit;
-    private InteractableObject currentInteractable;
+    
+    private Camera _cam;
+    private bool _mHitDetect;
+    private RaycastHit _mHit;
+    private InteractableObject _currentInteractable;
+    private bool _interactableActive;
 
     void Start()
     {
         _cam = Camera.main;
-        customImage.enabled = false;
+        _interactableActive = false;
     }
 
     void FixedUpdate()
     {
         byte layerToHit = 9;
-        m_HitDetect = Physics.BoxCast(
+        _mHitDetect = Physics.BoxCast(
             transform.position + offsetFromCenter,
             scale,
             transform.forward,
-            out m_Hit,
+            out _mHit,
             transform.rotation,
-            m_MaxDistance,
+            MaxDistance,
             ~layerToHit);
-        if (m_HitDetect && m_Hit.collider.gameObject.CompareTag("Interactable"))
+        if (_mHitDetect && _mHit.collider.gameObject.CompareTag("Interactable"))
         {
-            customImage.transform.position = _cam.WorldToScreenPoint(m_Hit.point);
-            currentInteractable = m_Hit.collider.gameObject.GetComponent<InteractableObject>();
-            if (currentInteractable == null) return;
-            if (currentInteractable.CanInteract())
-                customImage.enabled = true;
+            if (!_interactableActive || _currentInteractable.name != _mHit.collider.gameObject.name)
+                _currentInteractable = _mHit.collider.gameObject.GetComponent<InteractableObject>();
+            if (_currentInteractable.CanInteract())
+            {
+                _currentInteractable.EnableOutline();
+                _interactableActive = true;
+            }
             else
-                customImage.enabled = false;
+            {
+                _currentInteractable.DisableOutline();
+                _interactableActive = false;
+            }
+
+            
         }
         else
         {
-            customImage.enabled = false;
+            if (_interactableActive)
+            {
+                _currentInteractable.DisableOutline();
+                _interactableActive = false;
+            }
         }
     }
 
     private void Update()
     {
-        if (customImage.enabled && Input.GetKeyDown(KeyCode.E))
+        if (_interactableActive && Input.GetKeyDown(KeyCode.E))
         {
-            currentInteractable.OnInteract();
+            _currentInteractable.OnInteract();
         }
     }
 
@@ -62,20 +73,20 @@ public class InteractionDetection : MonoBehaviour
         Gizmos.color = Color.red;
 
         //Check if there has been a hit yet
-        if (m_HitDetect)
+        if (_mHitDetect)
         {
             //Draw a Ray forward from GameObject toward the hit
-            Gizmos.DrawRay(transform.position, transform.forward * m_Hit.distance);
+            Gizmos.DrawRay(transform.position, transform.forward * _mHit.distance);
             //Draw a cube that extends to where the hit exists
-            Gizmos.DrawWireCube(transform.position + offsetFromCenter + transform.forward * m_Hit.distance, scale);
+            Gizmos.DrawWireCube(transform.position + offsetFromCenter + transform.forward * _mHit.distance, scale);
         }
         //If there hasn't been a hit yet, draw the ray at the maximum distance
         else
         {
             //Draw a Ray forward from GameObject toward the maximum distance
-            Gizmos.DrawRay(transform.position, transform.forward * m_MaxDistance);
+            Gizmos.DrawRay(transform.position, transform.forward * MaxDistance);
             //Draw a cube at the maximum distance
-            Gizmos.DrawWireCube(transform.position + offsetFromCenter + transform.forward * m_MaxDistance, scale);
+            Gizmos.DrawWireCube(transform.position + offsetFromCenter + transform.forward * MaxDistance, scale);
         }
     }
 }
