@@ -570,11 +570,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="AddForce.cs" t="Include" />
-          <e p="CalmnessLoweringThing.cs" t="Include" />
-          <e p="DoorOpenAndShut.cs" t="Include" />
-          <e p="FlashlightController.cs" t="Include" />
-          <e p="HoldItem.cs" t="Include" />
+          <e p="Dialog.cs" t="Include" />
           <e p="Interaction" t="Include">
             <e p="ColliderDialogTrigger.cs" t="Include" />
             <e p="DialogTrigger.cs" t="Include" />
@@ -598,10 +594,17 @@
             <e p="ObjectSwitch.cs" t="Include" />
             <e p="Rotate.cs" t="Include" />
           </e>
-          <e p="Object_Chase.cs" t="Include" />
-          <e p="PickUpBaby.cs" t="Include" />
-          <e p="PPSwapper.cs" t="Include" />
-          <e p="RotateSkyBox.cs" t="Include" />
+          <e p="Old_scripts" t="Include">
+            <e p="AddForce.cs" t="Include" />
+            <e p="CalmnessLoweringThing.cs" t="Include" />
+            <e p="DoorOpenAndShut.cs" t="Include" />
+            <e p="FlashlightController.cs" t="Include" />
+            <e p="HoldItem.cs" t="Include" />
+            <e p="Object_Chase.cs" t="Include" />
+            <e p="PickUpBaby.cs" t="Include" />
+            <e p="PPSwapper.cs" t="Include" />
+            <e p="RotateSkyBox.cs" t="Include" />
+          </e>
           <e p="SaveData.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">

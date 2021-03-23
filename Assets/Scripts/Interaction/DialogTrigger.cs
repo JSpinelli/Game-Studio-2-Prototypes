@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class DialogTrigger : InteractableObject
 {
     public string[] text;
@@ -10,6 +11,8 @@ public class DialogTrigger : InteractableObject
     public AudioClip[] lines;
     public int[] breakdownOfLines;
     private int lineCounter;
+
+    public Dialog[] dialogs;
     void Start()
     {
         base.Start();
@@ -18,14 +21,14 @@ public class DialogTrigger : InteractableObject
 
     public override bool CanInteract()
     {
-        return lineCounter < lines.Length;
+        return lineCounter < dialogs.Length;
     }
 
     public override void OnInteract()
     {
         
         if (lineCounter == lines.Length) return;
-        Services.EventManager.Fire(new DialogTriggered(text,timers, lines[lineCounter]));
+        Services.EventManager.Fire(new DialogTriggered(dialogs[lineCounter].line,dialogs[lineCounter].screenTime, dialogs[lineCounter].clip));
         Services.EventManager.Fire(new InteractionTriggered(gameObject.name));
         lineCounter++;
     }
