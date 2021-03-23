@@ -571,6 +571,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Dialog.cs" t="Include" />
+          <e p="DialogTool.cs" t="Include" />
           <e p="Interaction" t="Include">
             <e p="ColliderDialogTrigger.cs" t="Include" />
             <e p="DialogTrigger.cs" t="Include" />
