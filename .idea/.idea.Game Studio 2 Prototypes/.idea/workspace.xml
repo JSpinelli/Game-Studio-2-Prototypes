@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0543311-8c26-4bf6-b4d7-382aa6cce3fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/DialogTool.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/DialogTool.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogTool.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogTool.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/DialogTool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/DialogTool.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +134,7 @@
       <workItem from="1616537220492" duration="481000" />
       <workItem from="1616538090862" duration="3042000" />
       <workItem from="1616595731117" duration="594000" />
-      <workItem from="1616702319636" duration="2697000" />
+      <workItem from="1616702319636" duration="6818000" />
     </task>
     <servers />
   </component>
