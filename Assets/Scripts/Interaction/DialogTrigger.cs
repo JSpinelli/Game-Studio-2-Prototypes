@@ -6,10 +6,7 @@ using UnityEngine;
 
 public class DialogTrigger : InteractableObject
 {
-    public string[] text;
-    public float[] timers;
     public AudioClip[] lines;
-    public int[] breakdownOfLines;
     private int lineCounter;
 
     public Dialog[] dialogs;

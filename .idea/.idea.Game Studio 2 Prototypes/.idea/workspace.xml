@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0543311-8c26-4bf6-b4d7-382aa6cce3fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Julian Scene/LightingData.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Julian Scene/LightingData.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Julian Scene/Lightmap-0_comp_dir.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Julian Scene/Lightmap-0_comp_dir.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Julian Scene/Lightmap-0_comp_light.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Julian Scene/Lightmap-0_comp_light.exr.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Postprocesing Profiles/Preset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Postprocesing Profiles/Preset.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Julian Scene/Lightmap-0_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Julian Scene/Lightmap-0_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Julian Scene/Lightmap-0_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Julian Scene/Lightmap-0_comp_light.exr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/DialogTool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/DialogTool.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/DialogTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/DialogTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/SoundTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/SoundTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/Movable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/Movable.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +56,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Object_Chase.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SaveData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Managers/EventManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/Movable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Object Changing/ObjectSwitch.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ColliderDialogTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
@@ -72,8 +65,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Dialog.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Managers/DialogManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DialogTool.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/DialogTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/SoundTrigger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/DialogTrigger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/Movable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Editor/DialogTool.cs" />
     </changedPaths>
   </component>
@@ -146,7 +140,9 @@
       <workItem from="1616538090862" duration="3042000" />
       <workItem from="1616595731117" duration="594000" />
       <workItem from="1616702319636" duration="7215000" />
-      <workItem from="1616725763610" duration="2895000" />
+      <workItem from="1616725763610" duration="3080000" />
+      <workItem from="1616766705255" duration="617000" />
+      <workItem from="1616783059294" duration="1007000" />
     </task>
     <servers />
   </component>

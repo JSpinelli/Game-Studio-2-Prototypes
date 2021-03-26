@@ -43,7 +43,7 @@ public class Movable : InteractableObject
     public void Reset(bool triggerSound)
     {
         _moved = false;
-        transform.Rotate(-newRotation);
+        transform.Rotate(_originalRotation);
         if (triggerSound && sound) sound.Play();
     }
 }

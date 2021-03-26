@@ -28,6 +28,7 @@ public class DialogTool : EditorWindow
             position.z -= 1f;
             SceneView.lastActiveSceneView.pivot = position;
             SceneView.lastActiveSceneView.Repaint();
+            Selection.objects = new []{interactable.gameObject};
         }
     }
 
@@ -93,11 +94,6 @@ public class DialogTool : EditorWindow
                     serializedObject.Update();
                     list.DoLayoutList();
                     serializedObject.ApplyModifiedProperties();
-                    //EditorGUI.PropertyField(new Rect(0, 0, 500, 30), serializedPropertyMyInt);
-                    // for (int i =0; i< dt.dialogs.Length;i++)
-                    // {
-                    //     dt.dialogs[i] = EditorGUILayout.ObjectField( ""+i, dt.dialogs[i], typeof( Dialog )) as Dialog;
-                    // }
                     EditorGUILayout.Separator();
                 }
                 if (showSoundTriggers && interactable is SoundTrigger)
@@ -109,6 +105,7 @@ public class DialogTool : EditorWindow
                     EditorGUILayout.EndHorizontal();
                     SoundTrigger st = (SoundTrigger) interactable;
                     st.source = EditorGUILayout.ObjectField("Audio Source",st.source,typeof(AudioSource)) as AudioSource;
+                    st.InteractWillTurnOff = EditorGUILayout.Toggle("Interact Will Turn Off", st.InteractWillTurnOff);
                     EditorGUILayout.Separator();
                 }
 
@@ -120,12 +117,17 @@ public class DialogTool : EditorWindow
                     ShowFocusButton(interactable);
                     EditorGUILayout.EndHorizontal();
                     Movable mv = (Movable) interactable;
+                    mv.sound = EditorGUILayout.ObjectField("Sound",mv.sound,typeof(AudioSource)) as AudioSource;
+                    mv.newPosition = EditorGUILayout.Vector3Field("Move to", mv.newPosition);
+                    mv.newRotation = EditorGUILayout.Vector3Field("Rotate to", mv.newRotation);
                     EditorGUILayout.Separator();
                 }
                 
             }
         }
-
+        
+        EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
+        EditorGUILayout.LabelField("Filters");
         showDialogTriggers = EditorGUILayout.Toggle("Show Dialog Triggers",showDialogTriggers);
         showSoundTriggers = EditorGUILayout.Toggle("Show Sound Triggers",showSoundTriggers);
         showMovable = EditorGUILayout.Toggle("Show Movables",showMovable);
