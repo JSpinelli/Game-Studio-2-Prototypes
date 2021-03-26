@@ -13,7 +13,8 @@ public class DialogTrigger : InteractableObject
     private int lineCounter;
 
     public Dialog[] dialogs;
-    void Start()
+
+    private new void Start()
     {
         base.Start();
         lineCounter = 0;

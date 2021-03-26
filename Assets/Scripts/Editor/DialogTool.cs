@@ -1,5 +1,6 @@
 ﻿
 using System.Collections.Generic;
+using System.Linq;
 using UnityEditor;
 using UnityEditorInternal;
 using UnityEngine;
@@ -74,16 +75,24 @@ public class DialogTool : EditorWindow
                     //SerializedProperty serializedPropertyMyInt = serializedObject.FindProperty("dialogs");
                     ReorderableList  list = new ReorderableList(serializedObject, 
                         serializedObject.FindProperty("dialogs"), 
-                        true, true, true, true);
-                    serializedObject.Update();
-                    list.DoLayoutList();
-                    serializedObject.ApplyModifiedProperties();
+                        true, true, true, false);
+                    list.drawHeaderCallback = (Rect rect) => {
+                        EditorGUI.LabelField(rect, "Dialogs attached");
+                    };
                     list.drawElementCallback = 
                         (Rect rect, int index, bool isActive, bool isFocused) => {
                             var element = list.serializedProperty.GetArrayElementAtIndex(index);
                             rect.y += 2;
-                            EditorGUILayout.ObjectField( ""+element, (Dialog) element, typeof( Dialog )) as Dialog;
+                            dt.dialogs[index]  = EditorGUI.ObjectField(new Rect(rect.x, rect.y, rect.width - 20, EditorGUIUtility.singleLineHeight), dt.dialogs[index], typeof(Dialog)) as Dialog;
+                            if (GUI.Button(new Rect(rect.x + rect.width - 20, rect.y, 20, EditorGUIUtility.singleLineHeight), "X"))
+                            {
+                                dt.dialogs = dt.dialogs.Skip(index).ToArray();
+                                serializedObject.ApplyModifiedProperties();
+                            }
                         };
+                    serializedObject.Update();
+                    list.DoLayoutList();
+                    serializedObject.ApplyModifiedProperties();
                     //EditorGUI.PropertyField(new Rect(0, 0, 500, 30), serializedPropertyMyInt);
                     // for (int i =0; i< dt.dialogs.Length;i++)
                     // {

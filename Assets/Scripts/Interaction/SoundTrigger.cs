@@ -7,7 +7,8 @@ public class SoundTrigger : InteractableObject
     public AudioSource source;
     public bool InteractWillTurnOff = false;
     private bool _interacted = false;
-    void Start()
+
+    private new void Start()
     {
         base.Start();
         _interacted = Services.gameManager.InteractionTriggered(gameObject.name);
