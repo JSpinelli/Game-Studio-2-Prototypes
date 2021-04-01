@@ -8,12 +8,12 @@ using UnityEngine;
 public class DialogTool : EditorWindow
 {
     private List<InteractableObject> _interactableObjectsOnScene = new List<InteractableObject>();
-    private bool showDialogTriggers = true;
-    private bool showSoundTriggers = true;
-    private bool showMovable = true;
-    private bool showColliders = true;
+    private bool _showDialogTriggers = true;
+    private bool _showSoundTriggers = true;
+    private bool _showMovable = true;
+    private bool _showPickupables = true;
 
-    private Vector2 scrollPos;
+    private Vector2 _scrollPos;
     [MenuItem("Window/Dialog Tool")]
     public static void ShowWindow()
     {
@@ -53,7 +53,7 @@ public class DialogTool : EditorWindow
             }
         }
         EditorGUILayout.BeginVertical();
-        scrollPos = EditorGUILayout.BeginScrollView(scrollPos);
+        _scrollPos = EditorGUILayout.BeginScrollView(_scrollPos);
         if (_interactableObjectsOnScene.Count == 0)
         {
             GUILayout.Label("No Interactables loaded",EditorStyles.boldLabel);
@@ -62,7 +62,7 @@ public class DialogTool : EditorWindow
         {
             foreach (var interactable in _interactableObjectsOnScene)
             {
-                if (showDialogTriggers && interactable is DialogTrigger)
+                if (_showDialogTriggers && interactable is DialogTrigger)
                 {
                     EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
                     EditorGUILayout.BeginHorizontal();
@@ -96,7 +96,7 @@ public class DialogTool : EditorWindow
                     serializedObject.ApplyModifiedProperties();
                     EditorGUILayout.Separator();
                 }
-                if (showSoundTriggers && interactable is SoundTrigger)
+                if (_showSoundTriggers && interactable is SoundTrigger)
                 {
                     EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
                     EditorGUILayout.BeginHorizontal();
@@ -109,7 +109,7 @@ public class DialogTool : EditorWindow
                     EditorGUILayout.Separator();
                 }
 
-                if (showMovable && interactable is Movable)
+                if (_showMovable && interactable is Movable)
                 {
                     EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
                     EditorGUILayout.BeginHorizontal( );
@@ -123,15 +123,29 @@ public class DialogTool : EditorWindow
                     EditorGUILayout.Separator();
                 }
                 
+                if (_showPickupables && interactable is Pickupable)
+                {
+                    EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
+                    EditorGUILayout.BeginHorizontal( );
+                    ShowName(interactable);
+                    ShowFocusButton(interactable);
+                    EditorGUILayout.EndHorizontal();
+                    // Movable mv = (Movable) interactable;
+                    // mv.sound = EditorGUILayout.ObjectField("Sound",mv.sound,typeof(AudioSource)) as AudioSource;
+                    // mv.newPosition = EditorGUILayout.Vector3Field("Move to", mv.newPosition);
+                    // mv.newRotation = EditorGUILayout.Vector3Field("Rotate to", mv.newRotation);
+                    EditorGUILayout.Separator();
+                }
+                
             }
         }
         
         EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
         EditorGUILayout.LabelField("Filters");
-        showDialogTriggers = EditorGUILayout.Toggle("Show Dialog Triggers",showDialogTriggers);
-        showSoundTriggers = EditorGUILayout.Toggle("Show Sound Triggers",showSoundTriggers);
-        showMovable = EditorGUILayout.Toggle("Show Movables",showMovable);
-        //showColliders = EditorGUILayout.Toggle("Show Collider Dialogs",showColliders);
+        _showDialogTriggers = EditorGUILayout.Toggle("Show Dialog Triggers",_showDialogTriggers);
+        _showSoundTriggers = EditorGUILayout.Toggle("Show Sound Triggers",_showSoundTriggers);
+        _showMovable = EditorGUILayout.Toggle("Show Movables",_showMovable);
+        _showPickupables = EditorGUILayout.Toggle("Show PickUpables",_showPickupables);
         
         EditorGUILayout.EndScrollView();
         EditorGUILayout.EndVertical();

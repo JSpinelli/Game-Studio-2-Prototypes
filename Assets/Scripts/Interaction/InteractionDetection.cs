@@ -12,7 +12,7 @@ public class InteractionDetection : MonoBehaviour
     private Camera _cam;
     private bool _mHitDetect;
     private RaycastHit _mHit;
-    private InteractableObject _currentInteractable;
+    private InteractableObject[] _currentInteractable;
     private bool _interactableActive;
 
     void Start()
@@ -34,26 +34,30 @@ public class InteractionDetection : MonoBehaviour
             ~layerToHit);
         if (_mHitDetect && _mHit.collider.gameObject.CompareTag("Interactable"))
         {
-            if (!_interactableActive || _currentInteractable.name != _mHit.collider.gameObject.name)
-                _currentInteractable = _mHit.collider.gameObject.GetComponent<InteractableObject>();
-            if (_currentInteractable.CanInteract())
+            if (!_interactableActive || _currentInteractable[0].name != _mHit.collider.gameObject.name)
+                _currentInteractable = _mHit.collider.gameObject.GetComponents<InteractableObject>();
+            int i = 0;
+            bool found = false;
+            while (i < _currentInteractable.Length && !found)
             {
-                _currentInteractable.EnableOutline();
-                _interactableActive = true;
+                if (_currentInteractable[i].CanInteract())
+                {
+                    found = true;
+                    _currentInteractable[i].EnableOutline();
+                    _interactableActive = true;
+                }
             }
-            else
+            if (i >= _currentInteractable.Length)
             {
-                _currentInteractable.DisableOutline();
-                _interactableActive = false;
+                _currentInteractable[i].DisableOutline();
+                _interactableActive = false;  
             }
-
-            
         }
         else
         {
             if (_interactableActive)
             {
-                _currentInteractable.DisableOutline();
+                _currentInteractable[0].DisableOutline();
                 _interactableActive = false;
             }
         }
@@ -63,7 +67,14 @@ public class InteractionDetection : MonoBehaviour
     {
         if (_interactableActive && Input.GetKeyDown(KeyCode.E))
         {
-            _currentInteractable.OnInteract();
+            foreach (var interactable in _currentInteractable)
+            {
+                if (interactable.CanInteract())
+                {
+                    interactable.OnInteract();
+                }
+            }
+            
         }
     }
 

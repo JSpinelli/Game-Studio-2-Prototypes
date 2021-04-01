@@ -7,7 +7,6 @@ public class GameManager : MonoBehaviour
 {
     public float spookyIncreasePerTick;
     public float spookyTickRate;
-
     public PostProcessProfile profile;
 
     public bool startWithBaby = false;
@@ -45,6 +44,8 @@ public class GameManager : MonoBehaviour
     public GameObject BabyInArms;
 
     public Movable[] doors;
+
+    public Transform placeForPickedUpObjects;
 
     void Awake()
     {
@@ -90,6 +91,7 @@ public class GameManager : MonoBehaviour
         Services.gameManager = this;
         Services.EventManager = new EventManager();
         Services.EventManager.Register<InteractionTriggered>(AddTriggeredInteraction);
+        Services.EventManager.Register<ObjectPickedUp>(OnObjectPickedUp);
     }
 
     void Update()
@@ -176,6 +178,16 @@ public class GameManager : MonoBehaviour
             doorBellRinging.SetActive(false);
             babyPickedUp.SetActive(true);
         }
+    }
+
+    public void OnObjectPickedUp(GameEvent gameEvent)
+    {
+        ObjectPickedUp objectPickedUp = (ObjectPickedUp) gameEvent;
+        objectPickedUp.objectToMove.transform.parent = gameObject.transform;
+        
+        objectPickedUp.objectToMove.transform.position = placeForPickedUpObjects.position;
+        objectPickedUp.objectToMove.transform.rotation = placeForPickedUpObjects.rotation;
+
     }
 
     public bool InteractionTriggered(string interaction)
