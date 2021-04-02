@@ -2,29 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0543311-8c26-4bf6-b4d7-382aa6cce3fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Silluette.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Silluette.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Spotlight.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Spotlight.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Postprocesing Profiles/Dreamy.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Postprocesing Profiles/Dreamy.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Postprocesing Profiles/Gloomy.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Postprocesing Profiles/Gloomy.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/Pickupable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/Pickupable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/KitchenSequence.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/KitchenSequence.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/First Person Drifter Controller/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/First Person Drifter Controller/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/mat_Object.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/mat_Object.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Postprocesing Profiles/Preset.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Postprocesing Profiles/Preset.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Postprocesing Profiles/Gloomy.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Postprocesing Profiles/Gloomy.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saves/spooky_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saves/spooky_data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/DialogTool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/DialogTool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractionDetection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractionDetection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/EventManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/EventManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/Pickupable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/Pickupable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +38,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction/Movable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction/SoundTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/KitchenSequence.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Object Changing/Levitate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Object Changing/ObjectChange.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Object Changing/ObjectSwitch.cs" root0="FORCE_HIGHLIGHTING" />
@@ -82,10 +70,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/DialogTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/Movable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Managers/EventManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/Pickupable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractionDetection.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Editor/DialogTool.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/Pickupable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/KitchenSequence.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1oc3bth2r4flW2DCjCNV0vxifDD" />
@@ -161,7 +150,8 @@
       <workItem from="1616766705255" duration="617000" />
       <workItem from="1616783059294" duration="1606000" />
       <workItem from="1617131751904" duration="594000" />
-      <workItem from="1617300797514" duration="4255000" />
+      <workItem from="1617300797514" duration="4646000" />
+      <workItem from="1617371258887" duration="2256000" />
     </task>
     <servers />
   </component>

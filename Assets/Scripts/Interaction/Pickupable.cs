@@ -37,6 +37,7 @@ public class Pickupable : InteractableObject
     public override void OnInteract()
     {
         Services.EventManager.Fire(new ObjectPickedUp(gameObject));
+        gameObject.layer = LayerMask.NameToLayer("Default");
         isOnHand = true;
     }
 
@@ -45,6 +46,7 @@ public class Pickupable : InteractableObject
         gameObject.transform.parent = originalParent;
         gameObject.transform.position = initialPosition;
         gameObject.transform.rotation = initialRotation;
+        gameObject.layer = LayerMask.NameToLayer("Interactable");
         isOnHand = false;
     }
 }

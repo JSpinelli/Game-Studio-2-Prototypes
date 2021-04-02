@@ -187,7 +187,6 @@ public class GameManager : MonoBehaviour
         
         objectPickedUp.objectToMove.transform.position = placeForPickedUpObjects.position;
         objectPickedUp.objectToMove.transform.rotation = placeForPickedUpObjects.rotation;
-
     }
 
     public bool InteractionTriggered(string interaction)

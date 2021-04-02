@@ -584,6 +584,7 @@
             <e p="Pickupable.cs" t="Include" />
             <e p="SoundTrigger.cs" t="Include" />
           </e>
+          <e p="KitchenSequence.cs" t="Include" />
           <e p="Managers" t="Include">
             <e p="DialogManager.cs" t="Include" />
             <e p="EventManager.cs" t="Include" />
