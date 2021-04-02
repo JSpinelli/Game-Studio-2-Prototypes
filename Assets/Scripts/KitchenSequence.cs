@@ -4,7 +4,6 @@ using UnityEngine;
 public class KitchenSequence : MonoBehaviour
 {
     public Dialog[] sequence;
-
     public Dialog[] fails;
 
     public bool puzzleStarted = false;
@@ -16,8 +15,7 @@ public class KitchenSequence : MonoBehaviour
     public GameObject[] objectsForPuzzle1;
     public GameObject[] objectsForPuzzle2;
     public GameObject[] objectsForPuzzle3;
-
-
+    
     public string[] puzzle1Solution;
     public string[] puzzle2Solution;
     public string[] puzzle3Solution;
@@ -48,6 +46,18 @@ public class KitchenSequence : MonoBehaviour
         }
     }
 
+    private void PlayFail()
+    {
+        Services.EventManager.Fire( new DialogTriggered(fails[failCounter].line, fails[failCounter].screenTime, fails[failCounter].clip));
+        failCounter++;
+    }    
+    
+    private void PlaySequence()
+    {
+        Services.EventManager.Fire( new DialogTriggered(sequence[sequenceCounter].line, sequence[sequenceCounter].screenTime, sequence[sequenceCounter].clip));
+        sequenceCounter++;
+    }
+
     public void CheckObject(Pickupable obj)
     {
         string[] currentPuzzle = null;
@@ -66,7 +76,7 @@ public class KitchenSequence : MonoBehaviour
 
         if (currentPuzzle.Any((name) => { return name == obj.name; }))
         {
-            Debug.Log("Sucess");
+            Debug.Log("Success");
         }
         else
         {
