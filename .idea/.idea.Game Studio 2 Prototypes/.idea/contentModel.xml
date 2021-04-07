@@ -618,7 +618,6 @@
             <e p="DialogManager.cs" t="Include" />
             <e p="EventManager.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
-            <e p="RadioShow.cs" t="Include" />
             <e p="RoomManager.cs" t="Include" />
             <e p="Services.cs" t="Include" />
           </e>
@@ -653,10 +652,7 @@
         </e>
         <e p="Shaders" t="Include">
           <e p="B&amp;W.shader" t="Include" />
-          <e p="Color Masker.shader" t="Include" />
           <e p="Test-Outline.shader" t="Include" />
-          <e p="TVPostPros.shader" t="Include" />
-          <e p="TvScreen.shader" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">

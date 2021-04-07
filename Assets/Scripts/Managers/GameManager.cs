@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
 
     public bool startWithBaby = false;
 
-    public Transform playerPos;
+    public Transform player;
 
     public GameObject begginingObjects;
     public GameObject doorBellRinging;
@@ -181,7 +181,7 @@ public class GameManager : MonoBehaviour
     public void OnObjectPickedUp(GameEvent gameEvent)
     {
         ObjectPickedUp objectPickedUp = (ObjectPickedUp) gameEvent;
-        objectPickedUp.objectToMove.transform.parent = gameObject.transform;
+        objectPickedUp.objectToMove.transform.parent = player;
         
         objectPickedUp.objectToMove.transform.position = placeForPickedUpObjects.position;
         objectPickedUp.objectToMove.transform.rotation = placeForPickedUpObjects.rotation;
