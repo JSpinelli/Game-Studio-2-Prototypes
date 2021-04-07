@@ -2464,7 +2464,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8559028282992541138}
   m_LocalRotation: {x: -0.023472505, y: -0, z: -0, w: 0.9997245}
-  m_LocalPosition: {x: -53.245014, y: -2.302, z: -3.007}
+  m_LocalPosition: {x: -54.78924, y: -2.302, z: -3.007}
   m_LocalScale: {x: 3.2773638, y: 1.9781585, z: 0.26867485}
   m_Children: []
   m_Father: {fileID: 8559028284304535599}
@@ -2912,7 +2912,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8784001617931360206}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 19.514534, y: 7.2154503, z: -7.499939}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2933,7 +2933,7 @@ PrefabInstance:
     - target: {fileID: 5197929365159237432, guid: 6f28d09fb3567434683fd01f76dbcd1a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.5442276
       objectReference: {fileID: 0}
     - target: {fileID: 5197929365159237432, guid: 6f28d09fb3567434683fd01f76dbcd1a,
         type: 3}
@@ -2989,6 +2989,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BedroomRack
+      objectReference: {fileID: 0}
+    - target: {fileID: 5197929365188640515, guid: 6f28d09fb3567434683fd01f76dbcd1a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.0006976
       objectReference: {fileID: 0}
     - target: {fileID: 5197929365424750171, guid: 6f28d09fb3567434683fd01f76dbcd1a,
         type: 3}
@@ -3352,7 +3357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: dce57d1e50d1fef489ee2d0fe5716701, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -53.116405
+      value: -54.660633
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: dce57d1e50d1fef489ee2d0fe5716701, type: 3}
       propertyPath: m_LocalPosition.y
