@@ -17,16 +17,13 @@ public class DialogManager : MonoBehaviour
     private void OnDialogTriggered(GameEvent e)
     {
         DialogTriggered dialogInfo = (DialogTriggered) e;
-        // if (dialogInfo.soundClip)
-        // {
-        //     
-        // }
+        Debug.Log("Triggered");
         if (dialogInfo.dialog.Length > 0)
         {
-            source.clip = dialogInfo.soundClip;
-            source.Play();
             StartCoroutine(Countdown(dialogInfo.dialog,dialogInfo.timers));
         }
+        source.clip = dialogInfo.soundClip;
+        source.Play();
 
         
     }

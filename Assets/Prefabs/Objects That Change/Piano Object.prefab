@@ -27,14 +27,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactRadius: 1.81
   interactSpherePosition: {x: 0, y: 0.2, z: 2.09}
-  text:
-  - ' '
-  - ' '
-  timers: []
-  lines:
-  - {fileID: 8300000, guid: 6161619942678416eb8a070c3d379452, type: 3}
-  - {fileID: 8300000, guid: 453f88f95baa343e590fa14ad481eb81, type: 3}
-  breakdownOfLines: 
+  outline: {fileID: 0}
+  lines: []
+  dialogs:
+  - {fileID: 11400000, guid: cc0b3ade97b09c447afe930b319dc274, type: 2}
+  - {fileID: 11400000, guid: 5f8a48c345cf88843b3db3d4cab46dbe, type: 2}
 --- !u!65 &893701705188235973
 BoxCollider:
   m_ObjectHideFlags: 0
