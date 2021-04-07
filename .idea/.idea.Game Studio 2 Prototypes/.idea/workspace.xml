@@ -2,54 +2,126 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0543311-8c26-4bf6-b4d7-382aa6cce3fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Tv_screen.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Tv_screen.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractableItems.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractableItems/Answering Machine.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractableItems/Answering Machine.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractableItems/Radio.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractableItems/Radio.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PostProcessing.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PostProcessing.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/B&amp;W.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/B&amp;W.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Color Masker.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Color Masker.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Flora.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Flora.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Grass.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Grass.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Ground.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Ground.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/TVPostPros.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/TVPostPros.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/TvScreen.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/TvScreen.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Fridge_1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Fridge_1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Fridge_2.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Fridge_2.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Morning_already.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Morning_already.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Piano1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Piano1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Piano2.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Piano2.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio_Intro.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio_Intro.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/TvTexture.renderTexture" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/TvTexture.renderTexture.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects That Change/Fridge.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Objects That Change/Fridge.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects That Change/Piano Object.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Objects That Change/Piano Object.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/ToonTestMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/ToonTestMaterial.mat.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/DialogTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/DialogTrigger.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractionDetection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractionDetection.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/DialogManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/DialogManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Piano1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Piano1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/EventManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/EventManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Flora.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Flora.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Grass.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Grass.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Ground.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Ground.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number1_Mystery.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number1_Mystery/Blue.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number1_Mystery/Blue.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number1_Mystery/Cheek.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number1_Mystery/Cheek.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number1_Mystery/Cloth.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number1_Mystery/Cloth.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number1_Mystery/ClothWhite.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number1_Mystery/ClothWhite.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number1_Mystery/Eyes.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number1_Mystery/Eyes.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number1_Mystery/FakeCubemap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number1_Mystery/FakeCubemap.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number1_Mystery/Fur.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number1_Mystery/Fur.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number1_Mystery/Fur_2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number1_Mystery/Fur_2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number1_Mystery/Ground.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number1_Mystery/Ground.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number1_Mystery/IceCube.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number1_Mystery/IceCube.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number1_Mystery/Nose.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number1_Mystery/Nose.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number1_Mystery/Red.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number1_Mystery/Red.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number1_Mystery/StandardShaderScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number1_Mystery/StandardShaderScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number2_Screenspace.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number2_Screenspace/Pattern_circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number2_Screenspace/Pattern_circle.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number2_Screenspace/Pattern_line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number2_Screenspace/Pattern_line.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number2_Screenspace/ScreenspaceCircle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number2_Screenspace/ScreenspaceCircle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number2_Screenspace/ScreenspaceLaptop.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number2_Screenspace/ScreenspaceLaptop.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number2_Screenspace/ScreenspaceLine.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number2_Screenspace/ScreenspaceLine.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number2_Screenspace/ScreenspaceObject.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number2_Screenspace/ScreenspaceObject.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number2_Screenspace/ScreenspaceScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number2_Screenspace/ScreenspaceScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number2_Screenspace/ScreenspaceUI.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number2_Screenspace/ScreenspaceUI.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number2_Screenspace/ScreenspaceUI_2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number2_Screenspace/ScreenspaceUI_2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number2_Screenspace/SlightlyRoundedRect.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number2_Screenspace/SlightlyRoundedRect.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number2_Screenspace/UIScreenspace.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number2_Screenspace/UIScreenspace.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number3_MirrorReflection.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number3_MirrorReflection/Blue.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number3_MirrorReflection/Blue.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number3_MirrorReflection/Mirror.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number3_MirrorReflection/Mirror.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number3_MirrorReflection/MirrorMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number3_MirrorReflection/MirrorMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number3_MirrorReflection/MirrorReflection.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number3_MirrorReflection/MirrorReflection.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number3_MirrorReflection/MirrorScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number3_MirrorReflection/MirrorScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number3_MirrorReflection/Orange.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number3_MirrorReflection/Orange.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number3_MirrorReflection/Red.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number3_MirrorReflection/Red.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/JoepieShaderScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/JoepieShaderScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/JoepieShaderWobble.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/JoepieShaderWobble.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/Joepie_1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/Joepie_1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/Joepie_2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/Joepie_2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/Joepie_3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/Joepie_3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/Joepie_Laptop_1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/Joepie_Laptop_1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/Joepie_Laptop_2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/Joepie_Laptop_2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/Joepie_Laptop_3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/Joepie_Laptop_3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/Standard_1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/Standard_1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/Standard_2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/Standard_2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/Standard_3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/Standard_3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/Standard_Laptop_1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/Standard_Laptop_1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/Standard_Laptop_2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/Standard_Laptop_2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/Standard_Laptop_3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number4_JoepieShaderWobble/Standard_Laptop_3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number5_Skybox.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number5_Skybox/Horizontal Skybox.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number5_Skybox/Horizontal Skybox.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number5_Skybox/SkyboxScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number5_Skybox/SkyboxScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number5_Skybox/Skybox_Orange.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number5_Skybox/Skybox_Orange.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number5_Skybox/Skybox_Sky.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Number5_Skybox/Skybox_Sky.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/TestShader.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/TestShader.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Toon-Test.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Toon-Test.shader.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,15 +177,15 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Dialog.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DialogTool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/Movable.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Managers/EventManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Editor/DialogTool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/Pickupable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/KitchenSequence.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Managers/DialogManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/DialogTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/SoundTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractionDetection.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Managers/EventManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Managers/DialogManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1oc3bth2r4flW2DCjCNV0vxifDD" />
@@ -191,7 +263,7 @@
       <workItem from="1617131751904" duration="594000" />
       <workItem from="1617300797514" duration="4646000" />
       <workItem from="1617371258887" duration="4173000" />
-      <workItem from="1617805097781" duration="3321000" />
+      <workItem from="1617805097781" duration="4872000" />
     </task>
     <servers />
   </component>

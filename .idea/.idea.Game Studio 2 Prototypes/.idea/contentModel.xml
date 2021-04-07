@@ -667,26 +667,7 @@
         <e p="Shaders" t="Include">
           <e p="B&amp;W.shader" t="Include" />
           <e p="Color Masker.shader" t="Include" />
-          <e p="Flora.shader" t="Include" />
-          <e p="Grass.shader" t="Include" />
-          <e p="Ground.shader" t="Include" />
-          <e p="Number2_Screenspace" t="Include">
-            <e p="ScreenspaceObject.shader" t="Include" />
-            <e p="UIScreenspace.shader" t="Include" />
-          </e>
-          <e p="Number3_MirrorReflection" t="Include">
-            <e p="Mirror.shader" t="Include" />
-            <e p="MirrorReflection.cs" t="Include" />
-          </e>
-          <e p="Number4_JoepieShaderWobble" t="Include">
-            <e p="JoepieShaderWobble.shader" t="Include" />
-          </e>
-          <e p="Number5_Skybox" t="Include">
-            <e p="Horizontal Skybox.shader" t="Include" />
-          </e>
           <e p="Test-Outline.shader" t="Include" />
-          <e p="TestShader.shader" t="Include" />
-          <e p="Toon-Test.shader" t="Include" />
           <e p="ToonTestShader.shader" t="Include" />
           <e p="TVPostPros.shader" t="Include" />
           <e p="TvScreen.shader" t="Include" />

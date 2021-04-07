@@ -9,7 +9,6 @@ public class InteractionDetection : MonoBehaviour
     public Vector3 offsetFromCenter;
     public Vector3 scale;
     
-    private Camera _cam;
     private bool _mHitDetect;
     private RaycastHit _mHit;
     private InteractableObject[] _currentInteractable;
@@ -17,7 +16,6 @@ public class InteractionDetection : MonoBehaviour
 
     void Start()
     {
-        _cam = Camera.main;
         _interactableActive = false;
     }
 

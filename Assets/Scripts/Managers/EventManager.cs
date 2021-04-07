@@ -94,6 +94,17 @@ public class DialogTriggered : GameEvent
 	}
 }
 
+public class SoundTriggered : GameEvent
+{
+	public string[] dialog;
+	public float[] timers;
+	public SoundTriggered( string[] txt, float[] timers)
+	{
+		dialog = txt;
+		this.timers = timers;
+	}
+}
+
 public class InteractionTriggered : GameEvent
 {
 	public string name;
