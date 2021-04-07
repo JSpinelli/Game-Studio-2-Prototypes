@@ -9,44 +9,6 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="First Person Drifter Controller" t="Include">
-          <e p="info.txt" t="Include" />
-          <e p="Scripts" t="Include">
-            <e p="FirstPersonDrifter.cs" t="Include" />
-            <e p="LockMouse.cs" t="Include" />
-            <e p="MouseLook.cs" t="Include" />
-            <e p="Optional" t="Include">
-              <e p="CameraFadeOnStart.cs" t="Include" />
-              <e p="CameraZoom.cs" t="Include" />
-              <e p="CheckIfBelowLevel.cs" t="Include" />
-              <e p="HeadBob.cs" t="Include" />
-              <e p="PauseMenu.cs" t="Include" />
-            </e>
-            <e p="Utils" t="Include">
-              <e p="CameraFade.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="OutlineEffect" t="Include">
-          <e p="OutlineEffect" t="Include">
-            <e p="LinkedSet.cs" t="Include" />
-            <e p="Outline.cs" t="Include" />
-            <e p="OutlineEffect.cs" t="Include" />
-            <e p="Resources" t="Include">
-              <e p="OutlineBufferShader.shader" t="Include" />
-              <e p="OutlineShader.shader" t="Include" />
-            </e>
-          </e>
-          <e p="OutlineEffect.asmdef" t="Include" />
-          <e p="Samples" t="Include">
-            <e p="Demo" t="Include">
-              <e p="MaterialSwitcher.cs" t="Include" />
-              <e p="OutlineAnimation.cs" t="Include" />
-              <e p="Rotate.cs" t="Include" />
-              <e p="Toggle.cs" t="Include" />
-            </e>
-          </e>
-        </e>
         <e p="Plugins" t="Include">
           <e p="Breakable Windows" t="Include">
             <e p="Scripts" t="Include">
@@ -216,6 +178,24 @@
             <e p="Script" t="Include">
               <e p="FreeCam.cs" t="Include" />
               <e p="ScrollUVWater.cs" t="Include" />
+            </e>
+          </e>
+          <e p="First Person Drifter Controller" t="Include">
+            <e p="info.txt" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="FirstPersonDrifter.cs" t="Include" />
+              <e p="LockMouse.cs" t="Include" />
+              <e p="MouseLook.cs" t="Include" />
+              <e p="Optional" t="Include">
+                <e p="CameraFadeOnStart.cs" t="Include" />
+                <e p="CameraZoom.cs" t="Include" />
+                <e p="CheckIfBelowLevel.cs" t="Include" />
+                <e p="HeadBob.cs" t="Include" />
+                <e p="PauseMenu.cs" t="Include" />
+              </e>
+              <e p="Utils" t="Include">
+                <e p="CameraFade.cs" t="Include" />
+              </e>
             </e>
           </e>
           <e p="RealtimeCSG" t="Include">
@@ -564,8 +544,6 @@
               </e>
             </e>
           </e>
-        </e>
-        <e p="Prefabs" t="Include">
           <e p="TV" t="Include">
             <e p="ReadMe.txt" t="Include" />
           </e>
@@ -661,6 +639,15 @@
             <e p="PPSwapper.cs" t="Include" />
             <e p="RotateSkyBox.cs" t="Include" />
           </e>
+          <e p="OutlineEffect" t="Include">
+            <e p="LinkedSet.cs" t="Include" />
+            <e p="Outline.cs" t="Include" />
+            <e p="OutlineEffect.cs" t="Include" />
+            <e p="Resources" t="Include">
+              <e p="OutlineBufferShader.shader" t="Include" />
+              <e p="OutlineShader.shader" t="Include" />
+            </e>
+          </e>
           <e p="PostProcessing.cs" t="Include" />
           <e p="SaveData.cs" t="Include" />
         </e>
@@ -668,7 +655,6 @@
           <e p="B&amp;W.shader" t="Include" />
           <e p="Color Masker.shader" t="Include" />
           <e p="Test-Outline.shader" t="Include" />
-          <e p="ToonTestShader.shader" t="Include" />
           <e p="TVPostPros.shader" t="Include" />
           <e p="TvScreen.shader" t="Include" />
         </e>
@@ -706,7 +692,6 @@
       </e>
       <e p="Game Studio 2 Prototypes.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
-      <e p="OEBIF.csproj" t="IncludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />
     </e>

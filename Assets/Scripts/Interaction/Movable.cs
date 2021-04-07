@@ -9,7 +9,6 @@ public class Movable : InteractableObject
     public Vector3 newPosition;
 
     private Vector3 _originalRotation;
-    private Vector3 _originalPosition;
 
     public AudioSource sound;
 
@@ -18,7 +17,7 @@ public class Movable : InteractableObject
     private new void Start()
     {
         base.Start();
-        _originalPosition = gameObject.transform.position;
+        _originalRotation = transform.rotation.eulerAngles;
     }
 
     public override bool CanInteract()

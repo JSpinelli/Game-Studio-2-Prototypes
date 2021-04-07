@@ -13,8 +13,6 @@ public class GameManager : MonoBehaviour
 
     public Transform playerPos;
 
-    private bool babySpawned = false;
-
     public GameObject begginingObjects;
     public GameObject doorBellRinging;
     public GameObject babyPickedUp;
