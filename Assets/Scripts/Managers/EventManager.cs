@@ -103,3 +103,12 @@ public class InteractionTriggered : GameEvent
 	}
 }
 
+public class ObjectPickedUp : GameEvent
+{
+	public GameObject objectToMove;
+	public ObjectPickedUp(GameObject objectToMove)
+	{
+		this.objectToMove = objectToMove;
+	}
+}
+
