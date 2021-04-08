@@ -182,7 +182,7 @@ Material:
     - _Opacity: 1
     - _Oper: 8
     - _OutlineExtrudeMethod: 0
-    - _OutlineWidth: 50
+    - _OutlineWidth: 20
     - _OutlineWidthAffectedByViewDistance: 0
     - _OutlineZPostionInCamera: 0
     - _OverallShadowColorPower: 1

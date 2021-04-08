@@ -120,7 +120,7 @@ PrefabInstance:
     - target: {fileID: 4952877140673689546, guid: 724828b84e1bc1742a66000312bcd1f1,
         type: 3}
       propertyPath: ControlMesh.Generation
-      value: 462
+      value: 676
       objectReference: {fileID: 0}
     - target: {fileID: 4952877140673689546, guid: 724828b84e1bc1742a66000312bcd1f1,
         type: 3}
@@ -347,6 +347,36 @@ PrefabInstance:
       propertyPath: ControlMesh.Vertices.Array.data[7].z
       value: -0.728
       objectReference: {fileID: 0}
+    - target: {fileID: 4952877140673689546, guid: 724828b84e1bc1742a66000312bcd1f1,
+        type: 3}
+      propertyPath: Shape.TexGens.Array.data[0].RenderMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: b6dc9e13b29293a47abf12b82b4b8f7a, type: 2}
+    - target: {fileID: 4952877140673689546, guid: 724828b84e1bc1742a66000312bcd1f1,
+        type: 3}
+      propertyPath: Shape.TexGens.Array.data[1].RenderMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: b6dc9e13b29293a47abf12b82b4b8f7a, type: 2}
+    - target: {fileID: 4952877140673689546, guid: 724828b84e1bc1742a66000312bcd1f1,
+        type: 3}
+      propertyPath: Shape.TexGens.Array.data[2].RenderMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: b6dc9e13b29293a47abf12b82b4b8f7a, type: 2}
+    - target: {fileID: 4952877140673689546, guid: 724828b84e1bc1742a66000312bcd1f1,
+        type: 3}
+      propertyPath: Shape.TexGens.Array.data[3].RenderMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: b6dc9e13b29293a47abf12b82b4b8f7a, type: 2}
+    - target: {fileID: 4952877140673689546, guid: 724828b84e1bc1742a66000312bcd1f1,
+        type: 3}
+      propertyPath: Shape.TexGens.Array.data[4].RenderMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: b6dc9e13b29293a47abf12b82b4b8f7a, type: 2}
+    - target: {fileID: 4952877140673689546, guid: 724828b84e1bc1742a66000312bcd1f1,
+        type: 3}
+      propertyPath: Shape.TexGens.Array.data[5].RenderMaterial
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4952877141647972179, guid: 724828b84e1bc1742a66000312bcd1f1,
         type: 3}
       propertyPath: m_Name
@@ -410,7 +440,37 @@ PrefabInstance:
     - target: {fileID: 4952877142237197201, guid: 724828b84e1bc1742a66000312bcd1f1,
         type: 3}
       propertyPath: ControlMesh.Generation
-      value: 474
+      value: 688
+      objectReference: {fileID: 0}
+    - target: {fileID: 4952877142237197201, guid: 724828b84e1bc1742a66000312bcd1f1,
+        type: 3}
+      propertyPath: Shape.TexGens.Array.data[0].RenderMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: b6dc9e13b29293a47abf12b82b4b8f7a, type: 2}
+    - target: {fileID: 4952877142237197201, guid: 724828b84e1bc1742a66000312bcd1f1,
+        type: 3}
+      propertyPath: Shape.TexGens.Array.data[1].RenderMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: b6dc9e13b29293a47abf12b82b4b8f7a, type: 2}
+    - target: {fileID: 4952877142237197201, guid: 724828b84e1bc1742a66000312bcd1f1,
+        type: 3}
+      propertyPath: Shape.TexGens.Array.data[2].RenderMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: b6dc9e13b29293a47abf12b82b4b8f7a, type: 2}
+    - target: {fileID: 4952877142237197201, guid: 724828b84e1bc1742a66000312bcd1f1,
+        type: 3}
+      propertyPath: Shape.TexGens.Array.data[3].RenderMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: b6dc9e13b29293a47abf12b82b4b8f7a, type: 2}
+    - target: {fileID: 4952877142237197201, guid: 724828b84e1bc1742a66000312bcd1f1,
+        type: 3}
+      propertyPath: Shape.TexGens.Array.data[4].RenderMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4952877142237197201, guid: 724828b84e1bc1742a66000312bcd1f1,
+        type: 3}
+      propertyPath: Shape.TexGens.Array.data[5].RenderMaterial
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 724828b84e1bc1742a66000312bcd1f1, type: 3}
