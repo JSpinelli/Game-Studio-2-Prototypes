@@ -23,5 +23,16 @@ public static class Services
         }
         set => _eventManager = value;
     }
+    
+    private static KitchenSequence _kitchenSequence;
+    public static KitchenSequence KitchenSequence
+    {
+        get
+        {
+            Debug.Assert(_kitchenSequence != null);
+            return _kitchenSequence;
+        }
+        set => _kitchenSequence = value;
+    }
 
 }

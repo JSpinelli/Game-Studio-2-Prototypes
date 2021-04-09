@@ -1,8 +1,12 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class KitchenSequence : MonoBehaviour
 {
+    public Transform player;
+    public Transform placeForPickedUpObjects;
+    
     public Dialog[] sequence;
     public Dialog[] fails;
 
@@ -15,7 +19,7 @@ public class KitchenSequence : MonoBehaviour
     public GameObject[] objectsForPuzzle1;
     public GameObject[] objectsForPuzzle2;
     public GameObject[] objectsForPuzzle3;
-    
+
     public string[] puzzle1Solution;
     public string[] puzzle2Solution;
     public string[] puzzle3Solution;
@@ -23,17 +27,46 @@ public class KitchenSequence : MonoBehaviour
     private int failCounter;
     private int sequenceCounter;
 
+    private string[] currentPuzzle;
+
+    private List<GameObject> objectsInBlender;
+
     public GameObject oldKitchen;
     public GameObject newKitchen;
+
+    private GameObject objectOnHand;
+    public bool objectInHand = false;
 
     public void StartSequence()
     {
         SetObjects();
-        oldKitchen.SetActive(false);
-        newKitchen.SetActive(true);
+        Services.EventManager.Register<ObjectPickedUp>(OnObjectPickedUp);
+        Services.KitchenSequence = this;
+        // oldKitchen.SetActive(false);
+        // newKitchen.SetActive(true);
         failCounter = 0;
         sequenceCounter = 0;
+        puzzleStarted = true;
+        objectsInBlender = new List<GameObject>();
+        currentPuzzle = null;
+        if (puzzleStarted && !puzzle1Complete)
+            currentPuzzle = puzzle1Solution;
+        if (puzzleStarted && puzzle1Complete && !puzzle2Complete)
+            currentPuzzle = puzzle2Solution;
+        if (puzzleStarted && puzzle1Complete && puzzle2Complete && !puzzle3Complete)
+            currentPuzzle = puzzle3Solution;
     }
+    
+    public void OnObjectPickedUp(GameEvent gameEvent)
+    {
+        objectOnHand = ((ObjectPickedUp) gameEvent).objectToMove;
+        objectOnHand.transform.parent = player;
+        
+        objectOnHand.transform.position = placeForPickedUpObjects.position;
+        objectOnHand.transform.rotation = placeForPickedUpObjects.rotation;
+        objectInHand = true;
+    }
+
 
     private void SetObjects()
     {
@@ -63,15 +96,20 @@ public class KitchenSequence : MonoBehaviour
         sequenceCounter++;
     }
 
-    public void CheckObject(Pickupable obj)
+    public void PutObject()
     {
-        string[] currentPuzzle = null;
-        if (puzzleStarted && !puzzle1Complete)
-            currentPuzzle = puzzle1Solution;
-        if (puzzleStarted && puzzle1Complete && !puzzle2Complete)
-            currentPuzzle = puzzle2Solution;
-        if (puzzleStarted && puzzle1Complete && puzzle2Complete && !puzzle3Complete)
-            currentPuzzle = puzzle3Solution;
+        objectsInBlender.Add(objectOnHand);
+        objectOnHand.SetActive(false);
+        objectOnHand = null;
+        objectInHand = false;
+        if (objectsInBlender.Count == currentPuzzle.Length)
+        {
+            CheckObjects();
+        }
+    }
+
+    public void CheckObjects()
+    {
 
         if (currentPuzzle == null)
         {
@@ -79,13 +117,25 @@ public class KitchenSequence : MonoBehaviour
             return;
         }
 
-        if (currentPuzzle.Any((name) => { return name == obj.name; }))
+        bool succesSum = true;
+        foreach (var obj in objectsInBlender)
         {
-            Debug.Log("Success");
+            succesSum = succesSum && currentPuzzle.Any((name) => { return name == obj.name; });
+        }
+
+        if (succesSum)
+        {
+            Debug.Log("Puzzle Completed");
+            PlaySequence();
         }
         else
         {
-            obj.Reset();
+            PlayFail();
+            foreach (var obj in objectsInBlender)
+            {
+                obj.GetComponent<Pickupable>().Reset();
+            }
+            
         }
     }
 }
