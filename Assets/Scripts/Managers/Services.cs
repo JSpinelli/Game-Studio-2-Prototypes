@@ -33,6 +33,17 @@ public static class Services
             return _kitchenSequence;
         }
         set => _kitchenSequence = value;
+    }    
+    
+    private static InputManager _inputManager;
+    public static InputManager InputManager
+    {
+        get
+        {
+            Debug.Assert(_inputManager != null);
+            return _inputManager;
+        }
+        set => _inputManager = value;
     }
 
 }

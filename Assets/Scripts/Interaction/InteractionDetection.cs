@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,6 +18,9 @@ public class InteractionDetection : MonoBehaviour
     void Start()
     {
         _interactableActive = false;
+        List<Action> actions = new List<Action>();
+        actions.Add(OnInteract);
+        Services.InputManager.actionMapping.Add("Interact",actions);
     }
 
     void FixedUpdate()
@@ -65,10 +69,9 @@ public class InteractionDetection : MonoBehaviour
             }
         }
     }
-
-    private void Update()
+    private void OnInteract()
     {
-        if (_interactableActive && Input.GetKeyDown(KeyCode.E))
+        if (_interactableActive)
         {
             foreach (var interactable in _currentInteractable)
             {
