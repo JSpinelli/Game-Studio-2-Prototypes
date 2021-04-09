@@ -23,9 +23,14 @@ public class KitchenSequence : MonoBehaviour
     private int failCounter;
     private int sequenceCounter;
 
-    private void Start()
+    public GameObject oldKitchen;
+    public GameObject newKitchen;
+
+    public void StartSequence()
     {
         SetObjects();
+        oldKitchen.SetActive(false);
+        newKitchen.SetActive(true);
         failCounter = 0;
         sequenceCounter = 0;
     }

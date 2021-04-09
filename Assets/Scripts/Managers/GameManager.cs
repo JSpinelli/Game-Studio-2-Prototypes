@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     public GameObject doorBellRinging;
     public GameObject babyPickedUp;
 
+    public KitchenSequence kitchenSequence;
+
     private float _borednessTimer;
 
     public TextAsset savedData;
@@ -170,11 +172,12 @@ public class GameManager : MonoBehaviour
 
         if (inter.name == "BabyOutside")
         {
-            _babyActive = true;
+            //_babyActive = true;
             BabyOutside.SetActive(false);
             BabyInArms.SetActive(true);
             doorBellRinging.SetActive(false);
             babyPickedUp.SetActive(true);
+            kitchenSequence.StartSequence();
         }
     }
 
