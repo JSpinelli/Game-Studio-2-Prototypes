@@ -27,10 +27,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactRadius: 1.69
   interactSpherePosition: {x: 0, y: 0.2, z: 2.09}
-  outline: {fileID: 0}
+  outline: {fileID: 6562633754662234577}
   dialogs:
   - {fileID: 11400000, guid: cc0b3ade97b09c447afe930b319dc274, type: 2}
   - {fileID: 11400000, guid: 5f8a48c345cf88843b3db3d4cab46dbe, type: 2}
+--- !u!114 &6562633754662234577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46858052527257963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!65 &893701705188235973
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54,9 +68,9 @@ GameObject:
   m_Component:
   - component: {fileID: 893701704159187429}
   - component: {fileID: 893701704159187427}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Piano Object
-  m_TagString: Interactable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -180,6 +194,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piano (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d6a05337b6da94c6c9ca5a3a3ede4b9a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6a05337b6da94c6c9ca5a3a3ede4b9a, type: 3}
 --- !u!1 &46858053661949446 stripped
@@ -280,6 +299,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piano
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d6a05337b6da94c6c9ca5a3a3ede4b9a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d6a05337b6da94c6c9ca5a3a3ede4b9a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6a05337b6da94c6c9ca5a3a3ede4b9a, type: 3}
