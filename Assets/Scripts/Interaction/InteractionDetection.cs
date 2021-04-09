@@ -18,9 +18,7 @@ public class InteractionDetection : MonoBehaviour
     void Start()
     {
         _interactableActive = false;
-        List<Action> actions = new List<Action>();
-        actions.Add(OnInteract);
-        Services.InputManager.actionMapping.Add("Interact",actions);
+        Services.InputManager.PushAction("Interact",OnInteract);
     }
 
     void FixedUpdate()

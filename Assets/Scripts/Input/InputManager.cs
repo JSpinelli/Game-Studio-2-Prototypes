@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
-    public Dictionary<string, List<Action>> actionMapping;
+    public Dictionary<string, Stack<Action>> actionMapping;
 
     public string[] activeKeys;
     public string[] correspondingAction;
@@ -13,7 +13,7 @@ public class InputManager : MonoBehaviour
     private void Awake()
     {
         Services.InputManager = this;
-        actionMapping = new Dictionary<string, List<Action>>();
+        actionMapping = new Dictionary<string, Stack<Action>>();
     }
 
     // Update is called once per frame
@@ -23,17 +23,36 @@ public class InputManager : MonoBehaviour
         {
             if (Input.GetKeyDown(activeKeys[i]))
             {
-                List<Action> actionsToTrigger;
+                Stack<Action> actionsToTrigger;
                 if (actionMapping.TryGetValue(correspondingAction[i], out actionsToTrigger))
-                    foreach (var action in actionsToTrigger)
-                    {
-                        action.Invoke();
-                    }
+                {
+                    actionsToTrigger.Peek().Invoke();
+                }
             }
         }
-        foreach (var key in activeKeys)
-        {
+    }
 
+    public void PushAction(string action, Action a)
+    {
+        Stack<Action> actions;
+        if (!actionMapping.TryGetValue(action,out actions))
+        {
+            actions = new Stack<Action>();
+            actions.Push(a);
+            actionMapping.Add(action,actions);
+        }
+        else
+        {
+            actions.Push(a);
+        }
+    }
+
+    public void PopAction(string action)
+    {
+        Stack<Action> actions;
+        if (actionMapping.TryGetValue(action,out actions))
+        {
+            actions.Pop();
         }
     }
 }

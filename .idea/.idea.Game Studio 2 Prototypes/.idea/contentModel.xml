@@ -651,6 +651,7 @@
               <e p="OutlineShader.shader" t="Include" />
             </e>
           </e>
+          <e p="PauseMenu.cs" t="Include" />
           <e p="PostProcessing.cs" t="Include" />
           <e p="SaveData.cs" t="Include" />
         </e>
