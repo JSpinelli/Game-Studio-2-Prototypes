@@ -13,6 +13,7 @@ public class PauseMenu : MonoBehaviour
     {
         Services.InputManager.PushAction("Pause",OnResume);
         Services.InputManager.PushAction("Interact",OnSelect);
+        Services.InputManager.PushRangeAction(MoveCursor);
         Time.timeScale = 0;
     }
 
@@ -21,10 +22,15 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
         Services.InputManager.PopAction("Pause");
         Services.InputManager.PopAction("Interact");
+        Services.InputManager.PopRangeAction();
     }    
     
     void OnSelect()
     {
         Debug.Log("Selected OPTION");
+    }
+
+    void MoveCursor(float x,float y)
+    {
     }
 }

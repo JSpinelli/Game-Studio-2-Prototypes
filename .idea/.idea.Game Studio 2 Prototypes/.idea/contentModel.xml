@@ -606,6 +606,7 @@
           </e>
           <e p="Input" t="Include">
             <e p="InputManager.cs" t="Include" />
+            <e p="PlayerManager.cs" t="Include" />
           </e>
           <e p="Interaction" t="Include">
             <e p="ColliderDialogTrigger.cs" t="Include" />
