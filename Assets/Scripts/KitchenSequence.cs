@@ -182,7 +182,7 @@ public class KitchenSequence : MonoBehaviour
         else
         {
             _fillerTimerCounter = 0;
-            PlayFiller();
+            //PlayFiller();
         }
     }
 }
