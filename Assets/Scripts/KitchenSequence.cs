@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -9,6 +10,10 @@ public class KitchenSequence : MonoBehaviour
     
     public Dialog[] sequence;
     public Dialog[] fails;
+    public Dialog[] filler;
+
+    public float fillerTimer;
+    private float _fillerTimerCounter;
 
     public bool puzzleStarted = false;
 
@@ -24,12 +29,13 @@ public class KitchenSequence : MonoBehaviour
     public string[] puzzle2Solution;
     public string[] puzzle3Solution;
 
-    private int failCounter;
-    private int sequenceCounter;
+    private int _failCounter;
+    private int _sequenceCounter;
+    private int _fillerCounter;
 
-    private string[] currentPuzzle;
+    private string[] _currentPuzzle;
 
-    private List<GameObject> objectsInBlender;
+    private List<GameObject> _objectsInBlender;
 
     public GameObject oldKitchen;
     public GameObject newKitchen;
@@ -39,22 +45,29 @@ public class KitchenSequence : MonoBehaviour
 
     public void StartSequence()
     {
-        SetObjects();
+        
         Services.EventManager.Register<ObjectPickedUp>(OnObjectPickedUp);
         Services.KitchenSequence = this;
         // oldKitchen.SetActive(false);
         // newKitchen.SetActive(true);
-        failCounter = 0;
-        sequenceCounter = 0;
+        
+        _failCounter = 0;
+        _sequenceCounter = 0;
+        _fillerCounter = 0;
+        _fillerTimerCounter = 0;
+        
         puzzleStarted = true;
-        objectsInBlender = new List<GameObject>();
-        currentPuzzle = null;
+        _objectsInBlender = new List<GameObject>();
+        _currentPuzzle = null;
+        
         if (puzzleStarted && !puzzle1Complete)
-            currentPuzzle = puzzle1Solution;
+            _currentPuzzle = puzzle1Solution;
         if (puzzleStarted && puzzle1Complete && !puzzle2Complete)
-            currentPuzzle = puzzle2Solution;
+            _currentPuzzle = puzzle2Solution;
         if (puzzleStarted && puzzle1Complete && puzzle2Complete && !puzzle3Complete)
-            currentPuzzle = puzzle3Solution;
+            _currentPuzzle = puzzle3Solution;
+        
+        SetObjects();
     }
     
     public void OnObjectPickedUp(GameEvent gameEvent)
@@ -72,37 +85,43 @@ public class KitchenSequence : MonoBehaviour
     {
         foreach (var obj in objectsForPuzzle1)
         {
-            obj.SetActive(puzzleStarted);
+            obj.SetActive(puzzleStarted && !puzzle1Complete);
         }
         foreach (var obj in objectsForPuzzle2)
         {
-            obj.SetActive(puzzle1Complete);
+            obj.SetActive(puzzle1Complete && !puzzle2Complete);
         }
         foreach (var obj in objectsForPuzzle3)
         {
-            obj.SetActive(puzzle2Complete);
+            obj.SetActive(puzzle2Complete && !puzzle3Complete);
         }
     }
 
     private void PlayFail()
     {
-        Services.EventManager.Fire( new DialogTriggered(fails[failCounter].line, fails[failCounter].screenTime, fails[failCounter].clip));
-        failCounter++;
+        Services.EventManager.Fire( new DialogTriggered(fails[_failCounter].line, fails[_failCounter].screenTime, fails[_failCounter].clip));
+        _failCounter++;
     }    
     
     private void PlaySequence()
     {
-        Services.EventManager.Fire( new DialogTriggered(sequence[sequenceCounter].line, sequence[sequenceCounter].screenTime, sequence[sequenceCounter].clip));
-        sequenceCounter++;
+        Services.EventManager.Fire( new DialogTriggered(sequence[_sequenceCounter].line, sequence[_sequenceCounter].screenTime, sequence[_sequenceCounter].clip));
+        _sequenceCounter++;
+    }
+    
+    private void PlayFiller()
+    {
+        Services.EventManager.Fire( new DialogTriggered(filler[_fillerCounter].line, filler[_fillerCounter].screenTime, filler[_fillerCounter].clip));
+        _fillerCounter++;
     }
 
     public void PutObject()
     {
-        objectsInBlender.Add(objectOnHand);
+        _objectsInBlender.Add(objectOnHand);
         objectOnHand.SetActive(false);
         objectOnHand = null;
         objectInHand = false;
-        if (objectsInBlender.Count == currentPuzzle.Length)
+        if (_objectsInBlender.Count == _currentPuzzle.Length)
         {
             CheckObjects();
         }
@@ -111,31 +130,59 @@ public class KitchenSequence : MonoBehaviour
     public void CheckObjects()
     {
 
-        if (currentPuzzle == null)
+        if (_currentPuzzle == null)
         {
             Debug.LogWarning("Checking against empty puzzle");
             return;
         }
 
-        bool succesSum = true;
-        foreach (var obj in objectsInBlender)
+        bool successesSum = true;
+        foreach (var obj in _objectsInBlender)
         {
-            succesSum = succesSum && currentPuzzle.Any((name) => { return name == obj.name; });
+            successesSum = successesSum && _currentPuzzle.Any((s) => s == obj.name);
         }
-
-        if (succesSum)
+        if (successesSum)
         {
             Debug.Log("Puzzle Completed");
-            PlaySequence();
+            //PlaySequence();
+            if (puzzleStarted && !puzzle1Complete)
+            {
+                puzzle1Complete = true;
+                _currentPuzzle = puzzle2Solution;
+            }else if (puzzleStarted && puzzle1Complete && !puzzle2Complete)
+            {
+                puzzle2Complete = true;
+                _currentPuzzle = puzzle3Solution;
+            } else if (puzzleStarted && puzzle1Complete && puzzle2Complete && !puzzle3Complete)
+            {
+                puzzle3Complete = true;
+                // END OF SCENE
+            }
+            SetObjects();
         }
         else
         {
-            PlayFail();
-            foreach (var obj in objectsInBlender)
+            Debug.Log("Puzzle Failed");
+            //PlayFail();
+            foreach (var obj in _objectsInBlender)
             {
                 obj.GetComponent<Pickupable>().Reset();
             }
-            
+        }
+        _objectsInBlender.Clear();
+    }
+
+    private void Update()
+    {
+        if (!puzzleStarted) return;
+        if (fillerTimer > _fillerTimerCounter)
+        {
+            _fillerTimerCounter += Time.deltaTime;
+        }
+        else
+        {
+            _fillerTimerCounter = 0;
+            PlayFiller();
         }
     }
 }

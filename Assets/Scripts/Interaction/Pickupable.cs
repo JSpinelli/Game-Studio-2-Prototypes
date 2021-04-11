@@ -43,10 +43,12 @@ public class Pickupable : InteractableObject
 
     public void Reset()
     {
+        Debug.Log("Who Dares SUMMON ME?");
         gameObject.transform.parent = originalParent;
         gameObject.transform.position = initialPosition;
         gameObject.transform.rotation = initialRotation;
         gameObject.layer = LayerMask.NameToLayer("Interactable");
+        gameObject.SetActive(true);
         isOnHand = false;
     }
 }
