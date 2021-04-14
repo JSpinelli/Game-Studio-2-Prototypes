@@ -43,13 +43,16 @@ public class KitchenSequence : MonoBehaviour
     private GameObject objectOnHand;
     public bool objectInHand = false;
 
+    public GameObject house;
+    public GameObject wall;
+    public GameObject outsideLights;
     public void StartSequence()
     {
         
         Services.EventManager.Register<ObjectPickedUp>(OnObjectPickedUp);
         Services.KitchenSequence = this;
-        // oldKitchen.SetActive(false);
-        // newKitchen.SetActive(true);
+        oldKitchen.SetActive(false);
+        newKitchen.SetActive(true);
         
         _failCounter = 0;
         _sequenceCounter = 0;
@@ -69,7 +72,14 @@ public class KitchenSequence : MonoBehaviour
         
         SetObjects();
     }
-    
+
+    private void OnTriggerEnter(Collider other)
+    {
+        house.SetActive(false);
+        wall.SetActive(true);
+        outsideLights.SetActive(true);
+    }
+
     public void OnObjectPickedUp(GameEvent gameEvent)
     {
         objectOnHand = ((ObjectPickedUp) gameEvent).objectToMove;

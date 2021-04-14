@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public float spookyTickRate;
     public PostProcessProfile profile;
 
-    public bool startWithBaby = false;
+    public bool startInKitchenSequence = false;
 
     public GameObject begginingObjects;
     public GameObject doorBellRinging;
@@ -63,14 +63,13 @@ public class GameManager : MonoBehaviour
         }
 
         _borednessTimer = 0;
-        if (!startWithBaby)
+        if (!startInKitchenSequence)
         {
             BabyOutside.SetActive(false);
             BabyInArms.SetActive(false);
             begginingObjects.SetActive(true);
             doorBellRinging.SetActive(false);
             babyPickedUp.SetActive(false);
-            kitchenSequence.StartSequence();
         }
         else
         {
@@ -80,6 +79,7 @@ public class GameManager : MonoBehaviour
             begginingObjects.SetActive(false);
             doorBellRinging.SetActive(false);
             babyPickedUp.SetActive(false);
+            kitchenSequence.StartSequence();
         }
     }
 

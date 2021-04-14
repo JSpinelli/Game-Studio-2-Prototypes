@@ -7,13 +7,14 @@ public class DialogManager : MonoBehaviour
 {
     public AudioSource source;
     public TextMeshProUGUI dialogBox;
-    public float textOnScreenTime;
 
     private int currentPrio = 0;
 
     private void Start()
     {
         Services.EventManager.Register<DialogTriggered>(OnDialogTriggered);
+        Services.EventManager.Register<SoundTriggered>(OnSoundTriggered);
+        dialogBox.text = "";
     }
 
     private void OnDialogTriggered(GameEvent e)
@@ -32,6 +33,8 @@ public class DialogManager : MonoBehaviour
         SoundTriggered dialogInfo = (SoundTriggered) e;
         if (dialogInfo.dialog.Length > 0)
         {
+            dialogInfo.audioSource.clip = dialogInfo.soundClip;
+            dialogInfo.audioSource.Play();
             StartCoroutine(Countdown(dialogInfo.dialog,dialogInfo.timers,1));
         }
     }
@@ -42,7 +45,7 @@ public class DialogManager : MonoBehaviour
         int oldPriority = currentPrio;
         foreach (var text in textToDisplay)
         {
-            if (currentPrio < priority)
+            if (currentPrio <= priority)
             {
                 currentPrio = priority;
                 dialogBox.text = text;

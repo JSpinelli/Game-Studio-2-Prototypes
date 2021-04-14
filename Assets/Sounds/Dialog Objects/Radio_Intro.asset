@@ -15,5 +15,10 @@ MonoBehaviour:
   clip: {fileID: 8300000, guid: e2582d48fdc2141198640708bbb8886e, type: 3}
   screenTime:
   - 5
+  - 5
+  - 5
   line:
   - Welcome back to the standard hour
+  - I'm your host Charles Kleman broadcasting live from a studio near you
+  - Todays marks our fifteen year aniversayr as the number three radio station this
+    side of the country

@@ -98,10 +98,14 @@ public class SoundTriggered : GameEvent
 {
 	public string[] dialog;
 	public float[] timers;
-	public SoundTriggered( string[] txt, float[] timers)
+	public AudioClip soundClip;
+	public AudioSource audioSource;
+	public SoundTriggered( string[] txt, float[] timers,AudioClip sound, AudioSource audioSource = null)
 	{
 		dialog = txt;
 		this.timers = timers;
+		soundClip = sound;
+		this.audioSource = audioSource;
 	}
 }
 

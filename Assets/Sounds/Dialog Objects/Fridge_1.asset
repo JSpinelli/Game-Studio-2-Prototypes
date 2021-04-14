@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: Fridge_1
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 80dac3e46467d426686d08ad56706558, type: 3}
-  screenTime: []
-  line: []
+  screenTime:
+  - 3
+  line:
+  - I should get more food

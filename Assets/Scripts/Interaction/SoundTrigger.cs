@@ -7,6 +7,7 @@ public class SoundTrigger : InteractableObject
     public AudioSource source;
     public bool InteractWillTurnOff = false;
     private bool _interacted = false;
+    public Dialog clip;
 
     private new void Start()
     {
@@ -28,7 +29,8 @@ public class SoundTrigger : InteractableObject
         }
         else
         {
-            source.Play();
+            Services.EventManager.Fire(new SoundTriggered(clip.line,clip.screenTime,clip.clip,source));
+            //source.Play();
         }
         Services.EventManager.Fire(new InteractionTriggered(gameObject.name));
         _interacted = true;
