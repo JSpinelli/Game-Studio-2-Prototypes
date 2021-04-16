@@ -14,12 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: c7aa1cf373cb743c49c0cda377b8c3be, type: 3}
   screenTime:
-  - 5
+  - 5.5
   - 5
   - 2
-  - 3
+  - 5
+  - 5
+  - 5
+  - 4
   line:
   - Hey..It's me again. Just checking to see how you are doing
   - I finished packing the other day...hehe... about time right?
-  - 
-  - I know you still need time
+  - ...
+  - Look... I know you still need time
+  - Just let me know if you are taking care of yourself...
+  - You haven't been returning my calls...and I'm worried about you
+  - Call me back when you get this... all right?

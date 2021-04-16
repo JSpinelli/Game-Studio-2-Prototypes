@@ -24,8 +24,12 @@ public class DialogManager : MonoBehaviour
         {
             StartCoroutine(Countdown(dialogInfo.dialog,dialogInfo.timers,2));
         }
-        source.clip = dialogInfo.soundClip;
-        source.Play();
+
+        if (dialogInfo.soundClip)
+        {
+            source.clip = dialogInfo.soundClip;
+            source.Play();
+        }
     }
 
     private void OnSoundTriggered(GameEvent e)

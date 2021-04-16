@@ -93,6 +93,7 @@ public class KitchenSequence : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (!other.tag.Equals("Player")) return;
         if (puzzleStarted) return;
         house.SetActive(false);
         wall.SetActive(true);
@@ -192,6 +193,7 @@ public class KitchenSequence : MonoBehaviour
         {
             Debug.Log("Puzzle Completed");
             //PlaySequence();
+            PlayClap();
             if (puzzleStarted && !puzzle1Complete)
             {
                 puzzle1Complete = true;
@@ -211,6 +213,7 @@ public class KitchenSequence : MonoBehaviour
         {
             Debug.Log("Puzzle Failed");
             //PlayFail();
+            PlayLaughter();
             foreach (var obj in _objectsInBlender)
             {
                 obj.GetComponent<Pickupable>().Reset();
