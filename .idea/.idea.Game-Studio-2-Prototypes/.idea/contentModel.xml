@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\RivaWang\AppData\local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\RivaWang\AppData\local\JetBrains\Rider2020.3\resharper-host\local\Transient\Rider\v203\SolutionCaches\_Game-Studio-2-Prototypes.551898647.00" t="ExcludeRecursive" />
-    <e p="D:\NYU\研一冬季\Game Studio II\Game-Studio-2-Prototypes" t="IncludeRecursive">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
@@ -570,6 +568,57 @@
             <e p="readme.txt" t="Include" />
           </e>
         </e>
+        <e p="RealToon" t="Include">
+          <e p="Change - Fix Log.txt" t="Include" />
+          <e p="Editor" t="Include">
+            <e p="RealToonShaderGUI.cs" t="Include" />
+            <e p="RealToonShaderGUI_Lite.cs" t="Include" />
+            <e p="RT_Welcome.cs" t="Include" />
+          </e>
+          <e p="For VRoid users please read.txt" t="Include" />
+          <e p="ReadMe - Important - Guide.txt" t="Include" />
+          <e p="RealToon Shader Packages" t="Include">
+            <e p="SRP (LWRP - URP - HDRP)" t="Include">
+              <e p="HDRP" t="Include">
+                <e p="Please read before you unpack or import.txt" t="Include" />
+                <e p="RealToon HDRP (Quick Guide).txt" t="Include" />
+              </e>
+              <e p="LWRP" t="Include">
+                <e p="Please read before you unpack or import.txt" t="Include" />
+              </e>
+              <e p="URP" t="Include">
+                <e p="Please read before you unpack or import.txt" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="RealToon Shaders" t="Include">
+            <e p="Version 5" t="Include">
+              <e p="Default" t="Include">
+                <e p="D_Default.shader" t="Include" />
+                <e p="D_Fade_Transparency.shader" t="Include" />
+                <e p="D_Refraction.shader" t="Include" />
+              </e>
+              <e p="Lite" t="Include">
+                <e p="L_Default.shader" t="Include" />
+                <e p="L_Fade_Transparency.shader" t="Include" />
+              </e>
+              <e p="Tessellation" t="Include">
+                <e p="T_Default.shader" t="Include" />
+                <e p="T_Fade_Transparency.shader" t="Include" />
+                <e p="T_Refraction.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="RealToon Tools" t="Include">
+            <e p="CustomShadowResolution.cs" t="Include" />
+            <e p="FrameByFrameRendering" t="Include">
+              <e p="FrameByFrameRendering_Default.cs" t="Include" />
+              <e p="FrameByFrameRendering_Manual.cs" t="Include" />
+            </e>
+            <e p="SmoothObjectNormalHelper.cs" t="Include" />
+          </e>
+          <e p="What's New.txt" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
           <e p="Dialog.cs" t="Include" />
           <e p="Editor" t="Include">
@@ -584,6 +633,7 @@
             <e p="Pickupable.cs" t="Include" />
             <e p="SoundTrigger.cs" t="Include" />
           </e>
+          <e p="KitchenSequence.cs" t="Include" />
           <e p="Managers" t="Include">
             <e p="DialogManager.cs" t="Include" />
             <e p="EventManager.cs" t="Include" />
@@ -667,7 +717,10 @@
       <e p="obj" t="ExcludeRecursive" />
       <e p="OEBIF.csproj" t="IncludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
-      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Temp/bin" t="ExcludeRecursive" />
     </e>
+    <e p="$APPLICATION_CONFIG_DIR$/scratches" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.3/resharper-host/local/Transient/Rider/v203/SolutionCaches/_Game-Studio-2-Prototypes.-2084320379.00" t="ExcludeRecursive" />
   </component>
 </project>
