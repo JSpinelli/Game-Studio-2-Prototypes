@@ -46,6 +46,13 @@ public class KitchenSequence : MonoBehaviour
     public GameObject house;
     public GameObject wall;
     public GameObject outsideLights;
+
+    public AudioSource stageSounds;
+
+    public AudioClip laughter;
+    public AudioClip boo;
+    public AudioClip wow;
+    public AudioClip clap;
     public void StartSequence()
     {
         
@@ -53,7 +60,43 @@ public class KitchenSequence : MonoBehaviour
         Services.KitchenSequence = this;
         oldKitchen.SetActive(false);
         newKitchen.SetActive(true);
-        
+        house.SetActive(true);
+        wall.SetActive(false);
+        outsideLights.SetActive(false);
+        puzzleStarted = false;
+    }
+
+    private void PlayLaughter()
+    {
+        stageSounds.clip = laughter;
+        stageSounds.Play();
+    }
+
+    private void PlayBoos()
+    {
+        stageSounds.clip = boo;
+        stageSounds.Play();
+    }
+    
+    private void PlayWow()
+    {
+        stageSounds.clip = wow;
+        stageSounds.Play();
+    }
+    
+    private void PlayClap()
+    {
+        stageSounds.clip = clap;
+        stageSounds.Play();
+    }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (puzzleStarted) return;
+        house.SetActive(false);
+        wall.SetActive(true);
+        outsideLights.SetActive(true);
         _failCounter = 0;
         _sequenceCounter = 0;
         _fillerCounter = 0;
@@ -71,13 +114,7 @@ public class KitchenSequence : MonoBehaviour
             _currentPuzzle = puzzle3Solution;
         
         SetObjects();
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        house.SetActive(false);
-        wall.SetActive(true);
-        outsideLights.SetActive(true);
+        PlayLaughter();
     }
 
     public void OnObjectPickedUp(GameEvent gameEvent)
