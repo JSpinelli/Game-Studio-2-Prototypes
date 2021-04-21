@@ -46,6 +46,20 @@ MonoBehaviour:
   Version: 1
   owner: {fileID: 838211243712561402}
   helperSurfaces: []
+--- !u!64 &6381425390484634350
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3384771362719907960}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7089046924603747390, guid: 368bd6e8527f7cf42a3fe7dd2a2e24b3, type: 3}
 --- !u!1 &4949467986321853813
 GameObject:
   m_ObjectHideFlags: 0
@@ -789,20 +803,6 @@ MonoBehaviour:
   OperationType: 0
   passThrough: 0
   HandleAsOne: 1
---- !u!64 &6381425390484634350
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3384771362719907960}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7089046924603747390, guid: 368bd6e8527f7cf42a3fe7dd2a2e24b3, type: 3}
 --- !u!1001 &7252679055838883850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -865,11 +865,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1766448826562402990, guid: 368bd6e8527f7cf42a3fe7dd2a2e24b3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d77713c493564c048b3a69063216b255, type: 2}
     - target: {fileID: 919132149155446097, guid: 368bd6e8527f7cf42a3fe7dd2a2e24b3,
         type: 3}
       propertyPath: m_Name
       value: Dividing Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 2009100066301390710, guid: 368bd6e8527f7cf42a3fe7dd2a2e24b3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 236f82f025f07474c8d7052af2247824, type: 2}
     m_RemovedComponents:
     - {fileID: -2097853376120743890, guid: 368bd6e8527f7cf42a3fe7dd2a2e24b3, type: 3}
     - {fileID: -6557113166318811182, guid: 368bd6e8527f7cf42a3fe7dd2a2e24b3, type: 3}
