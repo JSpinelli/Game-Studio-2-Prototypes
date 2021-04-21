@@ -252,7 +252,7 @@ MonoBehaviour:
     - Translation: {x: -147.43304, y: 8.62201e-10}
       Scale: {x: 1, y: 1}
       RotationAngle: -0
-      RenderMaterial: {fileID: 2100000, guid: f22de1a328efa3548944d8a2b03951b6, type: 2}
+      RenderMaterial: {fileID: 2100000, guid: 236f82f025f07474c8d7052af2247824, type: 2}
       PhysicsMaterial: {fileID: 0}
       SmoothingGroup: 0
     - Translation: {x: -147.43304, y: 8.62201e-10}
@@ -708,20 +708,6 @@ MonoBehaviour:
     - EdgeIndices: 07000000060000000500000004000000
       TexGenIndex: 5
     Generation: 270
---- !u!64 &395618874186935075
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7971540422625110003}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7089046924603747390, guid: 56280b29f8d71724ab3178f576a40812, type: 3}
 --- !u!1 &3024897148501231358
 GameObject:
   m_ObjectHideFlags: 0
@@ -825,7 +811,7 @@ GameObject:
   - component: {fileID: 6541810333433337890}
   - component: {fileID: 4846993652061292733}
   - component: {fileID: 2490819487186358114}
-  - component: {fileID: 3574233444785714895}
+  - component: {fileID: 4260667133654076737}
   m_Layer: 0
   m_Name: CSG Structure
   m_TagString: Untagged
@@ -844,6 +830,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 257082506083613738}
   - {fileID: 4867972499379726784}
   - {fileID: 8853860396028610221}
   - {fileID: 33766666624397613}
@@ -852,7 +839,7 @@ Transform:
   - {fileID: 5098705827040264252}
   - {fileID: 5344743367340504002}
   m_Father: {fileID: 894160013390254283}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4846993652061292733
 MonoBehaviour:
@@ -906,7 +893,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3574233444785714895
+--- !u!114 &4260667133654076737
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -920,7 +907,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Version: 1
   containedModel: {fileID: 0}
-  containedExportedModel: {fileID: 2899859275769014992}
+  containedExportedModel: {fileID: 637971288696350352}
   hiddenComponents:
   - behaviour: {fileID: 7563064619828776132}
     enabled: 1
@@ -991,7 +978,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6541810333433337890}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &9108343629988987725
 MonoBehaviour:
@@ -1038,7 +1025,7 @@ Transform:
   - {fileID: 4080400492826781928}
   - {fileID: 2256181480891932839}
   m_Father: {fileID: 894160013390254283}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4764639772635401540
 GameObject:
@@ -1069,7 +1056,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6541810333433337890}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7563064619828776132
 MonoBehaviour:
@@ -1162,7 +1149,7 @@ MonoBehaviour:
     - Translation: {x: 13.998783, y: 0.0000057201064}
       Scale: {x: -1, y: 1}
       RotationAngle: 0
-      RenderMaterial: {fileID: 2100000, guid: ca37785d773692b47bd7339c9dd802ce, type: 2}
+      RenderMaterial: {fileID: 2100000, guid: af0c08d27a190ad41b1b90e72c715bb0, type: 2}
       PhysicsMaterial: {fileID: 0}
       SmoothingGroup: 0
     - Translation: {x: 0, y: 0}
@@ -1174,7 +1161,7 @@ MonoBehaviour:
     - Translation: {x: 0, y: 0}
       Scale: {x: 1, y: 1}
       RotationAngle: 0
-      RenderMaterial: {fileID: 2100000, guid: b6dc9e13b29293a47abf12b82b4b8f7a, type: 2}
+      RenderMaterial: {fileID: 2100000, guid: af0c08d27a190ad41b1b90e72c715bb0, type: 2}
       PhysicsMaterial: {fileID: 0}
       SmoothingGroup: 0
     TexGenFlags: 010000000100000001000000010000000100000001000000
@@ -1329,7 +1316,7 @@ Transform:
   m_Children:
   - {fileID: 974326622299583163}
   m_Father: {fileID: 6541810333433337890}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5597838112246844514
 GameObject:
@@ -1360,7 +1347,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6541810333433337890}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &602283123676651258
 MonoBehaviour:
@@ -1441,7 +1428,7 @@ MonoBehaviour:
     - Translation: {x: 0, y: 0}
       Scale: {x: 1, y: 1}
       RotationAngle: 0
-      RenderMaterial: {fileID: 2100000, guid: ca37785d773692b47bd7339c9dd802ce, type: 2}
+      RenderMaterial: {fileID: 2100000, guid: 236f82f025f07474c8d7052af2247824, type: 2}
       PhysicsMaterial: {fileID: 0}
       SmoothingGroup: 0
     - Translation: {x: 3.999979, y: 0}
@@ -1619,12 +1606,25 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5350074875775945911}
-  - {fileID: 2555104533787521130}
   - {fileID: 6541810333433337890}
   - {fileID: 5935492511136752028}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &4904430489647625499
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5639703981007383475}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7089046924603747390, guid: 56280b29f8d71724ab3178f576a40812, type: 3}
 --- !u!1 &6420027653009448936
 GameObject:
   m_ObjectHideFlags: 0
@@ -1657,7 +1657,7 @@ Transform:
   - {fileID: 4530990322542438836}
   - {fileID: 1786787809502805399}
   m_Father: {fileID: 6541810333433337890}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5261322155510305032
 MonoBehaviour:
@@ -1707,7 +1707,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6541810333433337890}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8665640828153122575
 MonoBehaviour:
@@ -1794,19 +1794,19 @@ MonoBehaviour:
     - Translation: {x: -13.999437, y: -0.00000057472}
       Scale: {x: -1, y: 1}
       RotationAngle: 0
-      RenderMaterial: {fileID: 2100000, guid: ca37785d773692b47bd7339c9dd802ce, type: 2}
+      RenderMaterial: {fileID: 2100000, guid: 8e48be9fe9365d849a270cf85487be3b, type: 2}
       PhysicsMaterial: {fileID: 0}
       SmoothingGroup: 0
     - Translation: {x: 13.998783, y: 0.0000057201064}
       Scale: {x: -1, y: 1}
       RotationAngle: 0
-      RenderMaterial: {fileID: 2100000, guid: ca37785d773692b47bd7339c9dd802ce, type: 2}
+      RenderMaterial: {fileID: 2100000, guid: 218df2282b02f4648ae937f42ad63aca, type: 2}
       PhysicsMaterial: {fileID: 0}
       SmoothingGroup: 0
     - Translation: {x: 0, y: 0}
       Scale: {x: 1, y: 1}
       RotationAngle: 0
-      RenderMaterial: {fileID: 2100000, guid: 0db91ed440db24a40abde1d6c3028765, type: 2}
+      RenderMaterial: {fileID: 2100000, guid: 236f82f025f07474c8d7052af2247824, type: 2}
       PhysicsMaterial: {fileID: 0}
       SmoothingGroup: 0
     - Translation: {x: 0, y: 0}
@@ -1969,7 +1969,7 @@ Transform:
   - {fileID: 8304898210428652014}
   - {fileID: 8304898209639824665}
   m_Father: {fileID: 6541810333433337890}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8304898209639824670
 GameObject:
@@ -2075,7 +2075,7 @@ MonoBehaviour:
     - Translation: {x: -62.940758, y: -0.00000010993679}
       Scale: {x: -1, y: 1}
       RotationAngle: -0
-      RenderMaterial: {fileID: 2100000, guid: 42136f9fb0c923547810b501c8ff10be, type: 2}
+      RenderMaterial: {fileID: 2100000, guid: 236f82f025f07474c8d7052af2247824, type: 2}
       PhysicsMaterial: {fileID: 0}
       SmoothingGroup: 0
     - Translation: {x: 0, y: 0}
@@ -2093,7 +2093,7 @@ MonoBehaviour:
     - Translation: {x: -121.04404, y: -0.0000000025736142}
       Scale: {x: 1, y: 1}
       RotationAngle: 0
-      RenderMaterial: {fileID: 2100000, guid: f22de1a328efa3548944d8a2b03951b6, type: 2}
+      RenderMaterial: {fileID: 2100000, guid: 236f82f025f07474c8d7052af2247824, type: 2}
       PhysicsMaterial: {fileID: 0}
       SmoothingGroup: 0
     - Translation: {x: 0, y: 0}
@@ -2365,7 +2365,7 @@ MonoBehaviour:
     - Translation: {x: 0, y: 0}
       Scale: {x: 1, y: 1}
       RotationAngle: 0
-      RenderMaterial: {fileID: 2100000, guid: 42136f9fb0c923547810b501c8ff10be, type: 2}
+      RenderMaterial: {fileID: 2100000, guid: 236f82f025f07474c8d7052af2247824, type: 2}
       PhysicsMaterial: {fileID: 0}
       SmoothingGroup: 0
     - Translation: {x: 62, y: 0}
@@ -2389,7 +2389,7 @@ MonoBehaviour:
     - Translation: {x: 0, y: 0}
       Scale: {x: 1, y: 1}
       RotationAngle: 0
-      RenderMaterial: {fileID: 0}
+      RenderMaterial: {fileID: 2100000, guid: 236f82f025f07474c8d7052af2247824, type: 2}
       PhysicsMaterial: {fileID: 0}
       SmoothingGroup: 0
     - Translation: {x: 0, y: 0}
@@ -2667,13 +2667,13 @@ MonoBehaviour:
     - Translation: {x: -62.940758, y: -0.00000010993679}
       Scale: {x: -1, y: 1}
       RotationAngle: -0
-      RenderMaterial: {fileID: 2100000, guid: 42136f9fb0c923547810b501c8ff10be, type: 2}
+      RenderMaterial: {fileID: 2100000, guid: 236f82f025f07474c8d7052af2247824, type: 2}
       PhysicsMaterial: {fileID: 0}
       SmoothingGroup: 0
     - Translation: {x: 0, y: 0}
       Scale: {x: 1, y: 1}
       RotationAngle: 0
-      RenderMaterial: {fileID: 2100000, guid: f22de1a328efa3548944d8a2b03951b6, type: 2}
+      RenderMaterial: {fileID: 2100000, guid: 236f82f025f07474c8d7052af2247824, type: 2}
       PhysicsMaterial: {fileID: 0}
       SmoothingGroup: 0
     - Translation: {x: -61.941257, y: -0.00000015372392}
@@ -2933,19 +2933,19 @@ MonoBehaviour:
     - Translation: {x: -10, y: 0}
       Scale: {x: 1, y: 1}
       RotationAngle: 0
-      RenderMaterial: {fileID: 2100000, guid: 42136f9fb0c923547810b501c8ff10be, type: 2}
+      RenderMaterial: {fileID: 2100000, guid: 236f82f025f07474c8d7052af2247824, type: 2}
       PhysicsMaterial: {fileID: 0}
       SmoothingGroup: 0
     - Translation: {x: -27, y: 0}
       Scale: {x: 1, y: 1}
       RotationAngle: 0
-      RenderMaterial: {fileID: 2100000, guid: ca37785d773692b47bd7339c9dd802ce, type: 2}
+      RenderMaterial: {fileID: 2100000, guid: 218df2282b02f4648ae937f42ad63aca, type: 2}
       PhysicsMaterial: {fileID: 0}
       SmoothingGroup: 0
     - Translation: {x: -55, y: 0}
       Scale: {x: 1, y: 1}
       RotationAngle: 0
-      RenderMaterial: {fileID: 2100000, guid: 42136f9fb0c923547810b501c8ff10be, type: 2}
+      RenderMaterial: {fileID: 2100000, guid: 8e48be9fe9365d849a270cf85487be3b, type: 2}
       PhysicsMaterial: {fileID: 0}
       SmoothingGroup: 0
     - Translation: {x: 0, y: 0}
@@ -3201,25 +3201,25 @@ MonoBehaviour:
     - Translation: {x: -45, y: 0}
       Scale: {x: 1, y: 1}
       RotationAngle: 0
-      RenderMaterial: {fileID: 2100000, guid: f22de1a328efa3548944d8a2b03951b6, type: 2}
+      RenderMaterial: {fileID: 2100000, guid: 236f82f025f07474c8d7052af2247824, type: 2}
       PhysicsMaterial: {fileID: 0}
       SmoothingGroup: 0
     - Translation: {x: 0, y: 0}
       Scale: {x: 1, y: 1}
       RotationAngle: 0
-      RenderMaterial: {fileID: 2100000, guid: ca37785d773692b47bd7339c9dd802ce, type: 2}
+      RenderMaterial: {fileID: 2100000, guid: 236f82f025f07474c8d7052af2247824, type: 2}
       PhysicsMaterial: {fileID: 0}
       SmoothingGroup: 0
     - Translation: {x: 0, y: 0}
       Scale: {x: 1, y: 1}
       RotationAngle: 0
-      RenderMaterial: {fileID: 2100000, guid: 42136f9fb0c923547810b501c8ff10be, type: 2}
+      RenderMaterial: {fileID: 2100000, guid: 236f82f025f07474c8d7052af2247824, type: 2}
       PhysicsMaterial: {fileID: 0}
       SmoothingGroup: 0
     - Translation: {x: -24, y: 0}
       Scale: {x: 1, y: 1}
       RotationAngle: 0
-      RenderMaterial: {fileID: 2100000, guid: 42136f9fb0c923547810b501c8ff10be, type: 2}
+      RenderMaterial: {fileID: 2100000, guid: 236f82f025f07474c8d7052af2247824, type: 2}
       PhysicsMaterial: {fileID: 0}
       SmoothingGroup: 0
     - Translation: {x: 0, y: 0}
@@ -3385,12 +3385,12 @@ MonoBehaviour:
     - EdgeIndices: 0900000008000000070000000600000005000000
       TexGenIndex: 6
     Generation: 270
---- !u!1001 &2665910477038049153
+--- !u!1001 &296092228486028225
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 894160013390254283}
+    m_TransformParent: {fileID: 6541810333433337890}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 56280b29f8d71724ab3178f576a40812,
         type: 3}
@@ -3430,7 +3430,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 56280b29f8d71724ab3178f576a40812,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 56280b29f8d71724ab3178f576a40812,
         type: 3}
@@ -3447,32 +3447,52 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2576173215068965107, guid: 56280b29f8d71724ab3178f576a40812,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 236f82f025f07474c8d7052af2247824, type: 2}
+    - target: {fileID: -104309751215661688, guid: 56280b29f8d71724ab3178f576a40812,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: af0c08d27a190ad41b1b90e72c715bb0, type: 2}
+    - target: {fileID: 329597377764031761, guid: 56280b29f8d71724ab3178f576a40812,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 236f82f025f07474c8d7052af2247824, type: 2}
     - target: {fileID: 919132149155446097, guid: 56280b29f8d71724ab3178f576a40812,
         type: 3}
       propertyPath: m_Name
       value: Entry Hallway Structure
       objectReference: {fileID: 0}
+    - target: {fileID: 7218655472758584900, guid: 56280b29f8d71724ab3178f576a40812,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 236f82f025f07474c8d7052af2247824, type: 2}
     m_RemovedComponents:
     - {fileID: -2097853376120743890, guid: 56280b29f8d71724ab3178f576a40812, type: 3}
     - {fileID: -6557113166318811182, guid: 56280b29f8d71724ab3178f576a40812, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 56280b29f8d71724ab3178f576a40812, type: 3}
---- !u!1 &2899859275769014992 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 56280b29f8d71724ab3178f576a40812,
-    type: 3}
-  m_PrefabInstance: {fileID: 2665910477038049153}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2555104533787521130 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56280b29f8d71724ab3178f576a40812,
-    type: 3}
-  m_PrefabInstance: {fileID: 2665910477038049153}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7971540422625110003 stripped
+--- !u!1 &5639703981007383475 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5359194168803782770, guid: 56280b29f8d71724ab3178f576a40812,
     type: 3}
-  m_PrefabInstance: {fileID: 2665910477038049153}
+  m_PrefabInstance: {fileID: 296092228486028225}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &257082506083613738 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56280b29f8d71724ab3178f576a40812,
+    type: 3}
+  m_PrefabInstance: {fileID: 296092228486028225}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &637971288696350352 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 56280b29f8d71724ab3178f576a40812,
+    type: 3}
+  m_PrefabInstance: {fileID: 296092228486028225}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5864743546458364619
 PrefabInstance:
@@ -3481,6 +3501,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 894160013390254283}
     m_Modifications:
+    - target: {fileID: 1702203937864374167, guid: f4f13be3025ec9f4fa83217c3927d2c9,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 236f82f025f07474c8d7052af2247824, type: 2}
     - target: {fileID: 1971602392800843379, guid: f4f13be3025ec9f4fa83217c3927d2c9,
         type: 3}
       propertyPath: m_Name
