@@ -2,39 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0543311-8c26-4bf6-b4d7-382aa6cce3fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Objects Material/Box Material.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Objects Material/Box Material.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractableItems/TV.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractableItems/TV.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Bell_ringing.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Bell_ringing.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/BusinessCards.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/BusinessCards.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Single Portrait.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Single Portrait.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Tv_dialog.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Tv_dialog.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/Cardboard_boxes_1_BaseColor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/Cardboard_boxes_1_BaseColor.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/Radio-clock-diffuse3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/Radio-clock-diffuse3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/alarmClock.blend" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/alarmClock.blend.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/boxes.blend" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/boxes.blend.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CardsPhotosRecipes/SinglePhoto.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CardsPhotosRecipes/SinglePhoto.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractableItems/Alarm.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractableItems/Alarm.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractableItems/Cards.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractableItems/Cards.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractableItems/Portrait.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractableItems/Portrait.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rooms/Bedroom.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Rooms/Bedroom.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rooms/Den.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Rooms/Den.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rooms/Kitchen.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Rooms/Kitchen.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BigFurniturePack/Models/Materials/wood_3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BigFurniturePack/Models/Materials/wood_3.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/ColliderDialogTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/ColliderDialogTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenSequence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KitchenSequence.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/DialogManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/DialogManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Message_1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Message_1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialogue Sound Files/Radio Host/Scene 1.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,6 +164,7 @@
       <workItem from="1618150169962" duration="3239000" />
       <workItem from="1618412076333" duration="4681000" />
       <workItem from="1618580159677" duration="4002000" />
+      <workItem from="1619017178453" duration="610000" />
     </task>
     <servers />
   </component>
