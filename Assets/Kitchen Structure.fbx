@@ -10,11 +10,11 @@ FBXHeaderExtension:  {
 		Version: 1000
 		Year: 2021
 		Month: 4
-		Day: 17
-		Hour: 6
-		Minute: 57
-		Second: 51
-		Millisecond: 951
+		Day: 21
+		Hour: 13
+		Minute: 20
+		Second: 24
+		Millisecond: 686
 	}
 	Creator: "FBX Unity Export version 1.1.1 (Originally created for the Unity Asset, Building Crafter)"
 	SceneInfo: "SceneInfo::GlobalInfo", "UserData" {
@@ -30,8 +30,8 @@ FBXHeaderExtension:  {
 			Comment: ""
 		}
 		Properties70:  {
-			P: "DocumentUrl", "KString", "Url", "", "D:/NYU/研一冬季/Game Studio II/Game-Studio-2-Prototypes/AssetsAssets/Kitchen Structure.fbx.fbx"
-			P: "SrcDocumentUrl", "KString", "Url", "", "D:/NYU/研一冬季/Game Studio II/Game-Studio-2-Prototypes/AssetsAssets/Kitchen Structure.fbx.fbx"
+			P: "DocumentUrl", "KString", "Url", "", "D:/Projects Unity/Game Studio 2 Prototypes/AssetsAssets/Kitchen Structure.fbx.fbx"
+			P: "SrcDocumentUrl", "KString", "Url", "", "D:/Projects Unity/Game Studio 2 Prototypes/AssetsAssets/Kitchen Structure.fbx.fbx"
 			P: "Original", "Compound", "", ""
 			P: "Original|ApplicationVendor", "KString", "", "", ""
 			P: "Original|ApplicationName", "KString", "", "", ""
@@ -225,7 +225,7 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	Model: 4743970474005135520, "Model::Kitchen Structure", "Null" {
+	Model: 4976275037509262906, "Model::Kitchen Structure", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationOrder", "enum", "", "",4
@@ -241,7 +241,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Model: 5038930083009849964, "Model::Black Mesh (1)", "Mesh" {
+	Model: 5168763374563494138, "Model::Black Mesh (1)", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationOrder", "enum", "", "",4
@@ -257,7 +257,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Geometry: 5426111034080153071, "Geometry::", "Mesh" {
+	Geometry: 5021411739725987225, "Geometry::", "Mesh" {
 		Vertices: *132 {
 			a: -4.054405,-2.999298,-7.000019,5.04847,-3.999298,-7.000015,5.04847,-2.999298,-7.000015,-4.054449,-3.999298,-7.000019,-5.054451,-2.999298,6.999969,-5.054451,-3.999298,6.999969,-5.054451,-3.999298,-7.000021,-5.054451,-2.999298,-7.000021,5.04847,-2.999298,-7.000015,5.04847,-3.999298,-7.000015,5.04847,-3.999298,6.000041,5.04847,-2.999298,6.00004,-4.054449,-3.999298,-7.000019,-4.054449,-3.999298,6.000041,5.04847,-3.999298,-7.000015,5.04847,-3.999298,6.000041,-5.054449,-3.999296,7.000041,-5.054405,-2.999298,7.000039,-5.05415,2.999296,7.000031,-5.05415,3.000704,7.000031,5.042469,3.000704,7.000031,5.054451,3.000704,7.000031,5.054451,-3.999296,7.000041,5.054451,-3.999296,7.000041,5.054451,3.000704,7.000031,5.054451,3.000704,6.000031,5.054451,-3.999296,6.000041,5.054451,-3.999296,7.000041,5.04847,-3.999296,6.000041,-5.054449,-3.999296,7.000041,-4.054449,-3.999296,6.000041,5.054451,-3.999296,6.000041,5.042469,3.000704,7.000031,5.042469,3.000704,6.000031,5.054451,3.000704,6.000031,5.054451,3.000704,7.000031,-4.05415,2.999296,6.000032,-5.054405,-2.999298,7.000039,-4.054405,-2.999298,6.00004,-5.05415,2.999296,7.000031,5.042469,2.999296,6.000031,5.042469,2.999296,-7.000015,-4.05415,2.999296,6.000032,-4.05415,2.999296,-7.000019
 		} 
@@ -343,7 +343,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 4615753040958163209, "Model::FloorMtr_2 Mesh (1)", "Mesh" {
+	Model: 5743911040048013659, "Model::FloorMtr_2 Mesh (1)", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationOrder", "enum", "", "",4
@@ -359,7 +359,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Geometry: 5580226536317250531, "Geometry::", "Mesh" {
+	Geometry: 5373520666275600458, "Geometry::", "Mesh" {
 		Vertices: *36 {
 			a: -4.054405,-2.999298,6.00004,5.04847,-2.999298,-7.000015,5.04847,-2.999298,6.00004,-4.054405,-2.999298,-7.000019,5.054451,3.000704,6.000031,5.042469,3.000704,6.000031,5.054451,-3.999296,6.000041,-4.054405,-2.999298,6.00004,5.04847,-2.999298,6.00004,5.042469,2.999296,6.000031,5.04847,-3.999296,6.000041,-4.05415,2.999296,6.000032
 		} 
@@ -445,7 +445,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 5366961782510799502, "Model::no-material Mesh (1) COLLIDER", "Mesh" {
+	Model: 5633057415272204657, "Model::no-material Mesh (1) COLLIDER", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationOrder", "enum", "", "",4
@@ -461,7 +461,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Geometry: 4881662493891336666, "Geometry::", "Mesh" {
+	Geometry: 5245432660039566816, "Geometry::", "Mesh" {
 		Vertices: *324 {
 			a: -4.054405,-2.999298,-7.000019,5.04847,-3.999298,-7.000015,5.04847,-2.999298,-7.000015,-4.054449,-3.999298,-7.000019,-5.054451,-2.999298,6.999969,-5.054451,-3.999298,6.999969,-5.054451,-3.999298,-7.000021,-5.054451,-2.999298,-7.000021,5.04847,-2.999298,-7.000015,5.04847,-3.999298,-7.000015,5.04847,-3.999298,6.000041,5.04847,-2.999298,6.00004,-4.054405,-2.999298,6.00004,5.04847,-2.999298,-7.000015,5.04847,-2.999298,6.00004,-4.054405,-2.999298,-7.000019,-4.054449,-3.999298,-7.000019,-4.054449,-3.999298,6.000041,5.04847,-3.999298,-7.000015,5.04847,-3.999298,6.000041,5.054451,3.000704,6.000031,5.042469,3.000704,6.000031,5.054451,-3.999296,6.000041,-4.054405,-2.999298,6.00004,5.04847,-2.999298,6.00004,5.042469,2.999296,6.000031,5.04847,-3.999296,6.000041,-4.05415,2.999296,6.000032,-5.054449,-3.999296,7.000041,-5.054405,-2.999298,7.000039,-5.05415,2.999296,7.000031,-5.05415,3.000704,7.000031,5.042469,3.000704,7.000031,5.054451,3.000704,7.000031,5.054451,-3.999296,7.000041,5.054451,-3.999296,7.000041,5.054451,3.000704,7.000031,5.054451,3.000704,6.000031,5.054451,-3.999296,6.000041,5.054451,-3.999296,7.000041,5.04847,-3.999296,6.000041,-5.054449,-3.999296,7.000041,-4.054449,-3.999296,6.000041,5.054451,-3.999296,6.000041,5.042469,3.000704,7.000031,5.042469,3.000704,6.000031,5.054451,3.000704,6.000031,5.054451,3.000704,7.000031,-4.05415,2.999296,6.000032,-5.054405,-2.999298,7.000039,-4.054405,-2.999298,6.00004,-5.05415,2.999296,7.000031,-5.05415,2.999296,-7.00004,-5.05415,2.999296,6.999959,-5.054405,-2.999298,6.999967,-5.054405,-2.999298,-7.000032,-5.05415,3.000704,-7.00004,-5.05415,2.999296,-7.00004,-5.054405,-2.999298,-7.000032,-5.054449,-3.999296,-7.000031,-4.054449,-3.999296,-7.000031,-4.054405,-2.999298,-7.000032,-4.05415,2.999296,-7.00004,-4.05415,3.000704,-7.00004,-5.05415,2.999296,6.999959,-4.05415,2.999296,5.999959,-4.054407,-2.999298,5.999967,-5.054405,-2.999298,6.999967,-4.05415,2.999296,5.999959,-4.05415,2.999296,-7.00004,-4.054405,-2.999298,-7.000032,-4.054407,-2.999298,5.999967,-4.054449,-3.999296,-7.000031,-5.054449,-3.999296,-7.000031,-5.054449,-3.999296,6.999969,-4.054449,-3.999296,5.999969,5.042469,3.000704,6.999985,-5.054451,3.000704,6.999969,-5.054451,3.999296,6.999969,5.042469,3.999296,6.999985,-5.054451,3.000704,-7.000021,-4.054108,3.999296,-7.000019,-5.054451,3.999296,-7.000021,-4.05415,3.000704,-7.000019,5.042469,2.999296,-7.000015,5.042469,3.999296,-7.000015,-4.05415,2.999296,-7.000019,-5.054451,2.999296,-7.000021,-5.054451,3.000704,-7.000021,-5.054451,3.999296,-7.000021,-5.054451,3.999296,6.999969,-5.054451,3.000704,6.999969,-5.054451,2.999296,6.999969,5.042469,2.999296,6.000031,5.042469,3.000704,6.000031,5.042469,3.999296,-7.000015,5.042469,2.999296,-7.000015,5.042469,3.000704,6.999985,5.042469,3.999296,6.999985,-5.054451,3.999296,6.999969,-5.054451,3.999296,-7.000021,-4.054108,3.999296,-7.000019,5.042469,3.999296,-7.000015,5.042469,3.999296,6.999985,5.042469,2.999296,6.000031,5.042469,2.999296,-7.000015,-4.05415,2.999296,6.000032,-4.05415,2.999296,-7.000019
 		} 
@@ -512,7 +512,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 4843407320810267292, "Model::mtr_wall_2 Mesh (1)", "Mesh" {
+	Model: 4932168521918609454, "Model::mtr_wall_2 Mesh (1)", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationOrder", "enum", "", "",4
@@ -528,7 +528,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Geometry: 5549938166692171271, "Geometry::", "Mesh" {
+	Geometry: 5631756637254040998, "Geometry::", "Mesh" {
 		Vertices: *57 {
 			a: -5.05415,2.999296,-7.00004,-5.05415,2.999296,6.999959,-5.054405,-2.999298,6.999967,-5.054405,-2.999298,-7.000032,5.042469,3.000704,6.999985,-5.054451,3.000704,6.999969,-5.054451,3.999296,6.999969,5.042469,3.999296,6.999985,-5.054451,2.999296,-7.000021,-5.054451,3.000704,-7.000021,-5.054451,3.999296,-7.000021,-5.054451,3.999296,6.999969,-5.054451,3.000704,6.999969,-5.054451,2.999296,6.999969,-5.054451,3.999296,6.999969,-5.054451,3.999296,-7.000021,-4.054108,3.999296,-7.000019,5.042469,3.999296,-7.000015,5.042469,3.999296,6.999985
 		} 
@@ -614,7 +614,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 5098305599299057190, "Model::Wall Mesh (1)", "Mesh" {
+	Model: 5574646447285841150, "Model::Wall Mesh (1)", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationOrder", "enum", "", "",4
@@ -630,7 +630,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Geometry: 5089302949260375604, "Geometry::", "Mesh" {
+	Geometry: 4948767215657780218, "Geometry::", "Mesh" {
 		Vertices: *87 {
 			a: -5.05415,3.000704,-7.00004,-5.05415,2.999296,-7.00004,-5.054405,-2.999298,-7.000032,-5.054449,-3.999296,-7.000031,-4.054449,-3.999296,-7.000031,-4.054405,-2.999298,-7.000032,-4.05415,2.999296,-7.00004,-4.05415,3.000704,-7.00004,-5.05415,2.999296,6.999959,-4.05415,2.999296,5.999959,-4.054407,-2.999298,5.999967,-5.054405,-2.999298,6.999967,-4.054449,-3.999296,-7.000031,-5.054449,-3.999296,-7.000031,-5.054449,-3.999296,6.999969,-4.054449,-3.999296,5.999969,-5.054451,3.000704,-7.000021,-4.054108,3.999296,-7.000019,-5.054451,3.999296,-7.000021,-4.05415,3.000704,-7.000019,5.042469,2.999296,-7.000015,5.042469,3.999296,-7.000015,-4.05415,2.999296,-7.000019,5.042469,2.999296,6.000031,5.042469,3.000704,6.000031,5.042469,3.999296,-7.000015,5.042469,2.999296,-7.000015,5.042469,3.000704,6.999985,5.042469,3.999296,6.999985
 		} 
@@ -716,7 +716,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 4693638806677481912, "Model::White Mesh (1)", "Mesh" {
+	Model: 5569456417645338223, "Model::White_M Mesh (1)", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationOrder", "enum", "", "",4
@@ -732,7 +732,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Geometry: 5644233763496668380, "Geometry::", "Mesh" {
+	Geometry: 5363328620199971306, "Geometry::", "Mesh" {
 		Vertices: *12 {
 			a: -4.05415,2.999296,5.999959,-4.05415,2.999296,-7.00004,-4.054405,-2.999298,-7.000032,-4.054407,-2.999298,5.999967
 		} 
@@ -819,7 +819,7 @@ Objects:  {
 		}
 	}
 
-	Material: 22412, "Material::Black", "" {
+	Material: 27986, "Material::Black", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -831,7 +831,7 @@ Objects:  {
 		}
 	}
 
-	Material: 15960, "Material::FloorMtr_2", "" {
+	Material: 27950, "Material::FloorMtr_2", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -842,7 +842,7 @@ Objects:  {
 			P: "EmissiveFactor", "Number", "", "A",0.7381037
 		}
 	}
-	Texture: 5694411034688223893, "Texture::FloorMtr_2", "" {
+	Texture: 5698108596516468813, "Texture::FloorMtr_2", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::FloorMtr_2"
@@ -859,7 +859,7 @@ Objects:  {
 		Cropping: 0,0,0,0
 	}
 
-	Texture: 5303261809557646485, "Texture::FloorMtr_2", "" {
+	Texture: 4989135285360184185, "Texture::FloorMtr_2", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::FloorMtr_2"
@@ -877,7 +877,7 @@ Objects:  {
 	}
 
 
-	Material: 20650, "Material::mtr_wall_2", "" {
+	Material: 20308, "Material::mtr_wall_2", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -888,7 +888,7 @@ Objects:  {
 			P: "EmissiveFactor", "Number", "", "A",1
 		}
 	}
-	Texture: 4972164651493860358, "Texture::mtr_wall_2", "" {
+	Texture: 5267743646395447470, "Texture::mtr_wall_2", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::mtr_wall_2"
@@ -906,7 +906,7 @@ Objects:  {
 	}
 
 
-	Material: 20198, "Material::Wall", "" {
+	Material: 20306, "Material::Wall", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -917,7 +917,7 @@ Objects:  {
 			P: "EmissiveFactor", "Number", "", "A",1
 		}
 	}
-	Texture: 4967246539229836691, "Texture::Wall", "" {
+	Texture: 4774614200815947659, "Texture::Wall", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::Wall"
@@ -935,19 +935,34 @@ Objects:  {
 	}
 
 
-	Material: 15760, "Material::White", "" {
+	Material: 27984, "Material::White_M", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
 		Properties70:  {
 			P: "Diffuse", "Vector3D", "Vector", "",1,1,1
 			P: "DiffuseColor", "Color", "", "A",1,1,1
-			P: "Emissive", "Vector3D", "Vector", "",0,0,0
-			P: "EmissiveFactor", "Number", "", "A",1
 		}
+	}
+	Texture: 5239548249448041798, "Texture::White_M", "" {
+		Type: "TextureVideoClip"
+		Version: 202
+		TextureName: "Texture::White_M"
+		Properties70:  {
+			P: "CurrentTextureBlendMode", "enum", "", "",0
+			P: "UVSet", "KString", "", "", "map1"
+			P: "UseMaterial", "bool", "", "",1
+		}
+		Media: "Video::White_M"
+		FileName: "Assets/Textures/Basic Textures/white.png"
+		ModelUVTranslation: 0,0
+		ModelUVScaling: 1,1
+		Texture_Alpha_Source: "None"
+		Cropping: 0,0,0,0
 	}
 
-	Material: 86728, "Material::specialSurface_collider", "" {
+
+	Material: 134308, "Material::specialSurface_collider", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -956,7 +971,7 @@ Objects:  {
 			P: "DiffuseColor", "Color", "", "A",1,1,1
 		}
 	}
-	Texture: 5317756988202150126, "Texture::specialSurface_collider", "" {
+	Texture: 4780128973333382815, "Texture::specialSurface_collider", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::specialSurface_collider"
@@ -980,80 +995,84 @@ Objects:  {
 Connections:  {
 	
 	;Model::Kitchen Structure, Model::RootNode
-	C: "OO",4743970474005135520,0
+	C: "OO",4976275037509262906,0
 
-	;Model::<Renderable generated -1231794>(Clone), Model::USING PARENT
-	C: "OO",5038930083009849964,4743970474005135520
+	;Model::<Renderable generated -134144>(Clone), Model::USING PARENT
+	C: "OO",5168763374563494138,4976275037509262906
 
-	;Geometry::, Model::<Renderable generated -1231794>(Clone)
-	C: "OO",5426111034080153071,5038930083009849964
+	;Geometry::, Model::<Renderable generated -134144>(Clone)
+	C: "OO",5021411739725987225,5168763374563494138
 
-	;Material::Black, Model::<Renderable generated -1231794>(Clone)
-	C: "OO",22412,5038930083009849964
+	;Material::Black, Model::<Renderable generated -134144>(Clone)
+	C: "OO",27986,5168763374563494138
 
-	;Model::<Renderable generated -1231802>(Clone), Model::USING PARENT
-	C: "OO",4615753040958163209,4743970474005135520
+	;Model::<Renderable generated -134152>(Clone), Model::USING PARENT
+	C: "OO",5743911040048013659,4976275037509262906
 
-	;Geometry::, Model::<Renderable generated -1231802>(Clone)
-	C: "OO",5580226536317250531,4615753040958163209
+	;Geometry::, Model::<Renderable generated -134152>(Clone)
+	C: "OO",5373520666275600458,5743911040048013659
 
-	;Material::FloorMtr_2, Model::<Renderable generated -1231802>(Clone)
-	C: "OO",15960,4615753040958163209
+	;Material::FloorMtr_2, Model::<Renderable generated -134152>(Clone)
+	C: "OO",27950,5743911040048013659
 
-	;Model::<Collider generated -1231810>(Clone), Model::USING PARENT
-	C: "OO",5366961782510799502,4743970474005135520
+	;Model::<Collider generated -134160>(Clone), Model::USING PARENT
+	C: "OO",5633057415272204657,4976275037509262906
 
-	;Geometry::, Model::<Collider generated -1231810>(Clone)
-	C: "OO",4881662493891336666,5366961782510799502
+	;Geometry::, Model::<Collider generated -134160>(Clone)
+	C: "OO",5245432660039566816,5633057415272204657
 
-	;Material::specialSurface_collider, Model::<Collider generated -1231810>(Clone)
-	C: "OO",86728,5366961782510799502
+	;Material::specialSurface_collider, Model::<Collider generated -134160>(Clone)
+	C: "OO",134308,5633057415272204657
 
-	;Model::<Renderable generated -1231820>(Clone), Model::USING PARENT
-	C: "OO",4843407320810267292,4743970474005135520
+	;Model::<Renderable generated -134176>(Clone), Model::USING PARENT
+	C: "OO",4932168521918609454,4976275037509262906
 
-	;Geometry::, Model::<Renderable generated -1231820>(Clone)
-	C: "OO",5549938166692171271,4843407320810267292
+	;Geometry::, Model::<Renderable generated -134176>(Clone)
+	C: "OO",5631756637254040998,4932168521918609454
 
-	;Material::mtr_wall_2, Model::<Renderable generated -1231820>(Clone)
-	C: "OO",20650,4843407320810267292
+	;Material::mtr_wall_2, Model::<Renderable generated -134176>(Clone)
+	C: "OO",20308,4932168521918609454
 
-	;Model::<Renderable generated -1231828>(Clone), Model::USING PARENT
-	C: "OO",5098305599299057190,4743970474005135520
+	;Model::<Renderable generated -134184>(Clone), Model::USING PARENT
+	C: "OO",5574646447285841150,4976275037509262906
 
-	;Geometry::, Model::<Renderable generated -1231828>(Clone)
-	C: "OO",5089302949260375604,5098305599299057190
+	;Geometry::, Model::<Renderable generated -134184>(Clone)
+	C: "OO",4948767215657780218,5574646447285841150
 
-	;Material::Wall, Model::<Renderable generated -1231828>(Clone)
-	C: "OO",20198,5098305599299057190
+	;Material::Wall, Model::<Renderable generated -134184>(Clone)
+	C: "OO",20306,5574646447285841150
 
-	;Model::<Renderable generated -1231836>(Clone), Model::USING PARENT
-	C: "OO",4693638806677481912,4743970474005135520
+	;Model::<Renderable generated -134192>(Clone), Model::USING PARENT
+	C: "OO",5569456417645338223,4976275037509262906
 
-	;Geometry::, Model::<Renderable generated -1231836>(Clone)
-	C: "OO",5644233763496668380,4693638806677481912
+	;Geometry::, Model::<Renderable generated -134192>(Clone)
+	C: "OO",5363328620199971306,5569456417645338223
 
-	;Material::White, Model::<Renderable generated -1231836>(Clone)
-	C: "OO",15760,4693638806677481912
+	;Material::White_M, Model::<Renderable generated -134192>(Clone)
+	C: "OO",27984,5569456417645338223
 
 	;Texture::TexturesCom_Wood_ParquetStrip_1K_albedo_7, Material::FloorMtr_2"
-	C: "OP",5694411034688223893,15960, "DiffuseColor"
+	C: "OP",5698108596516468813,27950, "DiffuseColor"
 
 
 	;Texture::TexturesCom_Wood_ParquetStrip_1K_normal, Material::FloorMtr_2"
-	C: "OP",5303261809557646485,15960, "NormalMap"
+	C: "OP",4989135285360184185,27950, "NormalMap"
 
 
 	;Texture::arroway.de_concrete45_d100, Material::mtr_wall_2"
-	C: "OP",4972164651493860358,20650, "DiffuseColor"
+	C: "OP",5267743646395447470,20308, "DiffuseColor"
 
 
 	;Texture::Wall, Material::Wall"
-	C: "OP",4967246539229836691,20198, "DiffuseColor"
+	C: "OP",4774614200815947659,20306, "DiffuseColor"
+
+
+	;Texture::white, Material::White_M"
+	C: "OP",5239548249448041798,27984, "DiffuseColor"
 
 
 	;Texture::collider, Material::specialSurface_collider"
-	C: "OP",5317756988202150126,86728, "DiffuseColor"
+	C: "OP",4780128973333382815,134308, "DiffuseColor"
 
 
 }
