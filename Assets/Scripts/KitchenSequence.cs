@@ -8,7 +8,13 @@ public class KitchenSequence : MonoBehaviour
     public Transform player;
     public Transform placeForPickedUpObjects;
     
-    public Dialog[] sequence;
+    public Dialog[] initialSequence;
+
+    public Dialog[] firstPuzzleSolved;
+    public Dialog[] firstPuzzleSolvedpart2;
+
+    public Dialog[] secondPuzzleSolved;
+    
     public Dialog[] fails;
     public Dialog[] filler;
 
@@ -48,6 +54,8 @@ public class KitchenSequence : MonoBehaviour
     public GameObject outsideLights;
 
     public AudioSource stageSounds;
+    public AudioSource host;
+    public AudioSource pc;
 
     public AudioClip laughter;
     public AudioClip boo;
@@ -151,9 +159,21 @@ public class KitchenSequence : MonoBehaviour
         _failCounter++;
     }    
     
-    private void PlaySequence()
+    private void PlayFirstSequence()
     {
-        Services.EventManager.Fire( new DialogTriggered(sequence[_sequenceCounter].line, sequence[_sequenceCounter].screenTime, sequence[_sequenceCounter].clip));
+        AudioSource origin = null;
+        if (initialSequence[_sequenceCounter].source == "PC")
+        {
+        }
+        if (initialSequence[_sequenceCounter].source == "Audience")
+        {
+        }
+        if (initialSequence[_sequenceCounter].source == "RadioHost")
+        {
+            origin = host;
+        }
+
+        Services.EventManager.Fire( new DialogTriggered(initialSequence[_sequenceCounter].line, initialSequence[_sequenceCounter].screenTime, initialSequence[_sequenceCounter].clip, origin));
         _sequenceCounter++;
     }
     
@@ -192,7 +212,6 @@ public class KitchenSequence : MonoBehaviour
         if (successesSum)
         {
             Debug.Log("Puzzle Completed");
-            //PlaySequence();
             PlayClap();
             if (puzzleStarted && !puzzle1Complete)
             {
@@ -212,7 +231,7 @@ public class KitchenSequence : MonoBehaviour
         else
         {
             Debug.Log("Puzzle Failed");
-            //PlayFail();
+            PlayFail();
             PlayLaughter();
             foreach (var obj in _objectsInBlender)
             {
