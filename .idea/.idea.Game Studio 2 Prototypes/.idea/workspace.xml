@@ -2,155 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0543311-8c26-4bf6-b4d7-382aa6cce3fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Audience.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Audience/Cooking_Audience_1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Audience/Cooking_Audience_1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Audience/Cooking_Audience_2.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Audience/Cooking_Audience_2.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Audience/Cooking_Audience_3.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Audience/Cooking_Audience_3.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Baby.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Baby/Cooking Show.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Baby/Cooking Show/Cooking_Baby_1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Baby/Cooking Show/Cooking_Baby_1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Baby/Cooking Show/Cooking_Baby_2.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Baby/Cooking Show/Cooking_Baby_2.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Baby/Cooking Show/Cooking_Baby_3.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Baby/Cooking Show/Cooking_Baby_3.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Baby/Cooking Show/Cooking_Baby_4.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Baby/Cooking Show/Cooking_Baby_4.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Baby/Cooking Show/Cooking_Baby_5.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Baby/Cooking Show/Cooking_Baby_5.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/Bell_ringing.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/Bell_ringing.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/BusinessCards.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/BusinessCards.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/Fridge_1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/Fridge_1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/Fridge_2.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/Fridge_2.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/Message_1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/Message_1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/Morning_already.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/Morning_already.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/Piano1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/Piano1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/Piano2.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/Piano2.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/Radio_Intro.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/Radio_Intro.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/Single Portrait.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/Single Portrait.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/Tv_dialog.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/Tv_dialog.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Cooking Show.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Cooking Show/First Sequence.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Cooking Show/First Sequence/Cooking_PC_1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Cooking Show/First Sequence/Cooking_PC_1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Cooking Show/First Sequence/Cooking_PC_2.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Cooking Show/First Sequence/Cooking_PC_2.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Cooking Show/First Sequence/Cooking_PC_3.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Cooking Show/First Sequence/Cooking_PC_3.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Cooking Show/First Sequence/Cooking_PC_4.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Cooking Show/First Sequence/Cooking_PC_4.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Cooking Show/First Sequence/Cooking_PC_5.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Cooking Show/First Sequence/Cooking_PC_5.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Cooking Show/Second Sequence.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Cooking Show/Second Sequence/Cooking_PC_6.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Cooking Show/Second Sequence/Cooking_PC_6.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Cooking Show/Second Sequence/Cooking_PC_7.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Cooking Show/Second Sequence/Cooking_PC_7.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Cooking Show/Second Sequence/Cooking_PC_8.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Cooking Show/Second Sequence/Cooking_PC_8.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Cooking Show/Third Sequence.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Cooking Show/Third Sequence/Cooking_PC_10.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Cooking Show/Third Sequence/Cooking_PC_10.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Cooking Show/Third Sequence/Cooking_PC_11.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Cooking Show/Third Sequence/Cooking_PC_11.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Cooking Show/Third Sequence/Cooking_PC_9.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Cooking Show/Third Sequence/Cooking_PC_9.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/First Sequence.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/First Sequence/Cooking_Radio_1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/First Sequence/Cooking_Radio_1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/First Sequence/Cooking_Radio_2.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/First Sequence/Cooking_Radio_2.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/First Sequence/Cooking_Radio_3.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/First Sequence/Cooking_Radio_3.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/First Sequence/Cooking_Radio_4.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/First Sequence/Cooking_Radio_4.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/First Sequence/Cooking_Radio_5.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/First Sequence/Cooking_Radio_5.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/First Sequence/Cooking_Radio_6.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/First Sequence/Cooking_Radio_6.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/First Sequence/Cooking_Radio_7.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/First Sequence/Cooking_Radio_7.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/First Sequence/Cooking_Radio_8.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/First Sequence/Cooking_Radio_8.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/First Sequence/Cooking_Radio_9.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/First Sequence/Cooking_Radio_9.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Second Sequence.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Second Sequence/Cooking_Radio_10.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Second Sequence/Cooking_Radio_10.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Second Sequence/Cooking_Radio_11.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Second Sequence/Cooking_Radio_11.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Second Sequence/Cooking_Radio_12.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Second Sequence/Cooking_Radio_12.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Second Sequence/Cooking_Radio_13.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Second Sequence/Cooking_Radio_13.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Second Sequence/Cooking_Radio_14.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Second Sequence/Cooking_Radio_14.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Second Sequence/Cooking_Radio_15.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Second Sequence/Cooking_Radio_15.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Second Sequence/Cooking_Radio_16.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Second Sequence/Cooking_Radio_16.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Second Sequence/Cooking_Radio_17.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Second Sequence/Cooking_Radio_17.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Third Sequence.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Third Sequence/Cooking_Radio_18.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Third Sequence/Cooking_Radio_18.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Third Sequence/Cooking_Radio_19.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Third Sequence/Cooking_Radio_19.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Third Sequence/Cooking_Radio_20.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Third Sequence/Cooking_Radio_20.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Third Sequence/Cooking_Radio_21.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Third Sequence/Cooking_Radio_21.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Third Sequence/Cooking_Radio_22.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Third Sequence/Cooking_Radio_22.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Background/Audience/Audience_Aww.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Background/Audience/Audience_Aww.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Background/Audience/Audience_Boo2.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Background/Audience/Audience_Boo2.mp3.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Entry Hallway Structure.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Entry Hallway Structure.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rooms/Base House.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Rooms/Base House.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rooms/Den.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Rooms/Den.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rooms/EntryHallway.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Rooms/EntryHallway.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialog.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenSequence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KitchenSequence.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/EventManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/EventManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Bell_ringing.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Bell_ringing.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/BusinessCards.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/BusinessCards.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Fridge_1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Fridge_1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Fridge_2.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Fridge_2.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Message_1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Message_1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Morning_already.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Morning_already.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Piano1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Piano1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Piano2.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Piano2.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio_Intro.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio_Intro.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Single Portrait.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Single Portrait.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Tv_dialog.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Tv_dialog.asset.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -312,6 +170,7 @@
       <workItem from="1618580159677" duration="4002000" />
       <workItem from="1619017178453" duration="610000" />
       <workItem from="1619129241314" duration="4374000" />
+      <workItem from="1619185315767" duration="2184000" />
     </task>
     <servers />
   </component>
