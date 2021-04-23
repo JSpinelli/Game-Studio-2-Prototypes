@@ -2736,7 +2736,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c436d9a2467fb70429094b92f324263f, type: 2}
+  - {fileID: 2100000, guid: ce625d1e9e7622c4c95b19bbd3734ed0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2855,7 +2855,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c436d9a2467fb70429094b92f324263f, type: 2}
+  - {fileID: 2100000, guid: ce625d1e9e7622c4c95b19bbd3734ed0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10817,6 +10817,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kitchen Structure
       objectReference: {fileID: 0}
+    - target: {fileID: 2277927412178321056, guid: 8ba358d580bc39449a4c8c859f5017d6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8479d528fdb641947817fc24d5a5f464, type: 2}
     m_RemovedComponents:
     - {fileID: -2097853376120743890, guid: 8ba358d580bc39449a4c8c859f5017d6, type: 3}
     - {fileID: -6557113166318811182, guid: 8ba358d580bc39449a4c8c859f5017d6, type: 3}

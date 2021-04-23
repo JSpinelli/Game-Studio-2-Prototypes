@@ -132,7 +132,7 @@ Material:
     - _GIFlatShade: 0
     - _GIShadeThreshold: 0
     - _GlossColorPower: 10
-    - _GlossIntensity: 0.19
+    - _GlossIntensity: 0.18
     - _GlossMapScale: 1
     - _GlossSoftness: 1
     - _GlossTextureFollowLight: 0
@@ -214,7 +214,7 @@ Material:
     - _SelfShadowAffectedByLightShadowStrength: 0
     - _SelfShadowColorPower: 1
     - _SelfShadowHardness: 1
-    - _SelfShadowIntensity: 1
+    - _SelfShadowIntensity: 0
     - _SelfShadowRealTimeShadowColorPower: 1
     - _SelfShadowRealtimeShadowIntensity: 1
     - _SelfShadowShadowTAtViewDirection: 0
@@ -222,7 +222,7 @@ Material:
     - _ShadowColorTexturePower: 0
     - _ShadowHardness: 0
     - _ShadowTColorPower: 1
-    - _ShadowTHardness: 0.79
+    - _ShadowTHardness: 1
     - _ShadowTIntensity: 1
     - _ShadowTLightThreshold: 30
     - _ShadowTShadowThreshold: 0.2
