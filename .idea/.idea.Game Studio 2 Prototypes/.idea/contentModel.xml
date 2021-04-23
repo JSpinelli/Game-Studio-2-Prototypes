@@ -654,6 +654,7 @@
           </e>
           <e p="PauseMenu.cs" t="Include" />
           <e p="PostProcessing.cs" t="Include" />
+          <e p="RadioHostMovement.cs" t="Include" />
           <e p="SaveData.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">

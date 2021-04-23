@@ -58,6 +58,8 @@ public class KitchenSequence : MonoBehaviour
     public AudioSource stageSounds;
     public AudioSource host;
     public AudioSource pc;
+    public AudioSource baby;
+    
 
     public AudioClip laughter;
     public AudioClip boo;
@@ -174,6 +176,10 @@ public class KitchenSequence : MonoBehaviour
         {
             origin = host;
         }
+        if (dialog.source == "Baby")
+        {
+            origin = baby;
+        }
 
         return origin;
     }
@@ -183,11 +189,13 @@ public class KitchenSequence : MonoBehaviour
         isPlayingSequence = true;
         foreach (Dialog dialog in sequence)
         {
-            Services.EventManager.Fire( new DialogTriggered(dialog.line, dialog.screenTime, dialog.clip,GetCorrectSource(dialog)));
-            yield return new WaitForSeconds(dialog.clip.length);
-            yield return new WaitForSeconds(timeBetweenResponses);
+            if (dialog.clip != null)
+            {
+                Services.EventManager.Fire( new DialogTriggered(dialog.line, dialog.screenTime, dialog.clip,GetCorrectSource(dialog)));
+                yield return new WaitForSeconds(dialog.clip.length);
+                yield return new WaitForSeconds(timeBetweenResponses);
+            }
         }
-
         isPlayingSequence = false;
         afterSequence.Invoke();
     }
@@ -271,7 +279,7 @@ public class KitchenSequence : MonoBehaviour
         else
         {
             _fillerTimerCounter = 0;
-            PlayFiller();
+            //PlayFiller();
         }
     }
 }

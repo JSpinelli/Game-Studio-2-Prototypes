@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0543311-8c26-4bf6-b4d7-382aa6cce3fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Background/Audience/Audience_Aww.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Background/Audience/Audience_Aww.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Background/Audience/Audience_Boo2.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Background/Audience/Audience_Boo2.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RadioHostMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/House Materials/Bedrrom Materials/Bedroom_mtr 30.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Objects Material/Fridge Recipes.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenSequence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KitchenSequence.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/DialogManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/DialogManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +31,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction/DialogTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction/InteractableObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction/Deposit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RadioHostMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction/InteractionDetection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction/Movable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction/SoundTrigger.cs" root0="FORCE_HIGHLIGHTING" />
@@ -80,11 +82,12 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/SoundTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/OutlineEffect/OutlineEffect.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Managers/DialogManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/ColliderDialogTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Dialog.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Managers/EventManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/KitchenSequence.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RadioHostMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Managers/DialogManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1oc3bth2r4flW2DCjCNV0vxifDD" />
@@ -170,7 +173,7 @@
       <workItem from="1618580159677" duration="4002000" />
       <workItem from="1619017178453" duration="610000" />
       <workItem from="1619129241314" duration="4374000" />
-      <workItem from="1619185315767" duration="2184000" />
+      <workItem from="1619185315767" duration="4571000" />
     </task>
     <servers />
   </component>
