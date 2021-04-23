@@ -54,6 +54,7 @@ public class KitchenSequence : MonoBehaviour
     public GameObject house;
     public GameObject wall;
     public GameObject outsideLights;
+    public GameObject stageColliders;
 
     public AudioSource stageSounds;
     public AudioSource host;
@@ -74,7 +75,6 @@ public class KitchenSequence : MonoBehaviour
         newKitchen.SetActive(true);
         house.SetActive(true);
         wall.SetActive(false);
-        outsideLights.SetActive(false);
         puzzleStarted = false;
     }
 
@@ -109,11 +109,13 @@ public class KitchenSequence : MonoBehaviour
         if (puzzleStarted) return;
         house.SetActive(false);
         wall.SetActive(true);
-        outsideLights.SetActive(true);
         _failCounter = 0;
         _fillerCounter = 0;
         _fillerTimerCounter = 0;
-        
+    }
+
+    public void StartScene()
+    {
         puzzleStarted = true;
         _objectsInBlender = new List<GameObject>();
         _currentPuzzle = null;
@@ -125,6 +127,8 @@ public class KitchenSequence : MonoBehaviour
         if (puzzleStarted && puzzle1Complete && puzzle2Complete && !puzzle3Complete)
             _currentPuzzle = puzzle3Solution;
         
+        stageColliders.SetActive(true);
+        outsideLights.SetActive(false);
         StartCoroutine(PlaySequence(initialSequence, SetObjects));
     }
 
