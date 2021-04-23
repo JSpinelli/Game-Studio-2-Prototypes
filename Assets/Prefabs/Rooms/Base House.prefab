@@ -943,6 +943,11 @@ PrefabInstance:
       propertyPath: Shape.TexGens.Array.data[3].RenderMaterial
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 998609200310525232, guid: 1ddf17b1ed1a1a147ae0b04173a6646d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: df3f80240a521834bbc9c99fd99bb9cd, type: 2}
     - target: {fileID: 1337058453741624141, guid: 1ddf17b1ed1a1a147ae0b04173a6646d,
         type: 3}
       propertyPath: SharedMesh

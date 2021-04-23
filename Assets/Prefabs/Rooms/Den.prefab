@@ -6594,6 +6594,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6813987515559676813, guid: 739d988cdddf08541b768ad723ec802a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8479d528fdb641947817fc24d5a5f464, type: 2}
     - target: {fileID: -104309751215661688, guid: 739d988cdddf08541b768ad723ec802a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -6604,6 +6609,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Den Structure
       objectReference: {fileID: 0}
+    - target: {fileID: 2009100066301390710, guid: 739d988cdddf08541b768ad723ec802a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: af0c08d27a190ad41b1b90e72c715bb0, type: 2}
     m_RemovedComponents:
     - {fileID: -2097853376120743890, guid: 739d988cdddf08541b768ad723ec802a, type: 3}
     - {fileID: -6557113166318811182, guid: 739d988cdddf08541b768ad723ec802a, type: 3}
