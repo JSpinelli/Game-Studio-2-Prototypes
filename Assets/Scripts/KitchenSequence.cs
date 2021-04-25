@@ -121,6 +121,7 @@ public class KitchenSequence : MonoBehaviour
 
     public void StartScene()
     {
+        Services.gameManager.BabyInArms.SetActive(false);
         puzzleStarted = true;
         _objectsInBlender = new List<GameObject>();
         _currentPuzzle = null;
