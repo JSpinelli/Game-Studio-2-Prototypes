@@ -5,16 +5,14 @@ using UnityEngine;
 
 public class ColliderDialogTrigger : MonoBehaviour
 {
-    public AudioClip[] clipToTrigger;
-    public string[] subtitle;
-    public float[] timers;
-    
+    public Dialog dialog;
+
     private bool triggered = false;
 
     private void OnTriggerEnter(Collider other)
     {
         if (triggered) return;
-        Services.EventManager.Fire(new DialogTriggered(subtitle,timers, clipToTrigger[0]));
+        Services.EventManager.Fire(new DialogTriggered(dialog.line,dialog.screenTime, dialog.clip));
         triggered = true;
     }
 }

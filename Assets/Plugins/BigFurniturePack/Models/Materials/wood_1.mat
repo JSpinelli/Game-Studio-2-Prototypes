@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: wood_1
-  m_Shader: {fileID: 4800000, guid: d12428961551799408aa97256fd770c3, type: 3}
+  m_Shader: {fileID: 4800000, guid: c73d0a68c32425f44990e420368ddda6, type: 3}
   m_ShaderKeywords: N_F_O_ON N_F_RELGI_ON N_F_SS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -71,6 +71,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _MaskTransparency:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -110,7 +114,7 @@ Material:
     m_Floats:
     - _AlphaBaseCutout: 1
     - _BumpScale: 1
-    - _Compa: 4
+    - _Compa: 8
     - _CustomLightDirectionFollowObjectRotation: 0
     - _CustomLightDirectionIntensity: 0
     - _Cutoff: 0.5
@@ -121,13 +125,13 @@ Material:
     - _DoubleSidedOutline: 1
     - _DstBlend: 0
     - _DynamicNoisyOutline: 0
-    - _EnableTextureTransparent: 0
+    - _EnableTextureTransparent: 1
     - _EnvironmentalLightingIntensity: 1
     - _FarDistanceMaxWidth: 10
     - _GIFlatShade: 0
     - _GIShadeThreshold: 0
     - _GlossColorPower: 10
-    - _GlossIntensity: 1
+    - _GlossIntensity: 0.9
     - _GlossMapScale: 1
     - _GlossSoftness: 0
     - _GlossTextureFollowLight: 0
@@ -155,6 +159,7 @@ Material:
     - _N_F_FR: 0
     - _N_F_GLO: 0
     - _N_F_GLOT: 0
+    - _N_F_HCS: 0
     - _N_F_HDLS: 0
     - _N_F_HPSS: 0
     - _N_F_MC: 0
@@ -174,9 +179,10 @@ Material:
     - _NoisyOutlineIntensity: 0
     - _NormalMapIntensity: 1
     - _OcclusionStrength: 1
-    - _Oper: 0
+    - _Opacity: 1
+    - _Oper: 8
     - _OutlineExtrudeMethod: 0
-    - _OutlineWidth: 0.5
+    - _OutlineWidth: 20
     - _OutlineWidthAffectedByViewDistance: 0
     - _OutlineZPostionInCamera: 0
     - _OverallShadowColorPower: 1
@@ -186,6 +192,7 @@ Material:
     - _PointLightSVD: 0
     - _PointSpotlightIntensity: 0.45
     - _RELG: 1
+    - _ReduceOutlineBackFace: 0
     - _ReduceShadowPointLight: 0
     - _ReduceShadowSpotDirectionalLight: 10
     - _RefMetallic: 0
@@ -204,11 +211,13 @@ Material:
     - _SelfLitIntensity: 0
     - _SelfLitPower: 2
     - _SelfShadowAffectedByLightShadowStrength: 0
+    - _SelfShadowColorPower: 1
     - _SelfShadowHardness: 1
+    - _SelfShadowIntensity: 0.25
     - _SelfShadowRealTimeShadowColorPower: 1
     - _SelfShadowRealtimeShadowIntensity: 1
     - _SelfShadowShadowTAtViewDirection: 0
-    - _SelfShadowThreshold: 0.85
+    - _SelfShadowThreshold: 1
     - _ShadowColorTexturePower: 0
     - _ShadowHardness: 0
     - _ShadowTColorPower: 1
@@ -226,6 +235,7 @@ Material:
     - _SrcBlend: 1
     - _TEXMCOLINT: 1
     - _TexturePatternStyle: 0
+    - _TransparentThreshold: 0
     - _UVSec: 0
     - _UseSecondaryCutout: 0
     - _VertexColorBlueAffectOutlineWitdh: 0
@@ -238,13 +248,14 @@ Material:
     - _CustomLightDirection: {r: 0, g: 0, b: 10, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _GlossColor: {r: 1, g: 1, b: 1, a: 1}
-    - _HighlightColor: {r: 1, g: 1, b: 1, a: 1}
-    - _MainColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
+    - _HighlightColor: {r: 1, g: 1, b: 1, a: 0}
+    - _MainColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 0}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _OutlineOffset: {r: 0, g: 0, b: 0, a: 1}
     - _OverallShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _RimLightColor: {r: 1, g: 1, b: 1, a: 1}
     - _SelfLitColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SelfShadowColor: {r: 1, g: 1, b: 1, a: 1}
     - _SelfShadowRealTimeShadowColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowTColor: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}

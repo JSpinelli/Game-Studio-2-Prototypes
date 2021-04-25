@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,7 +10,6 @@ public class InteractionDetection : MonoBehaviour
     public Vector3 offsetFromCenter;
     public Vector3 scale;
     
-    private Camera _cam;
     private bool _mHitDetect;
     private RaycastHit _mHit;
     private InteractableObject[] _currentInteractable;
@@ -17,8 +17,8 @@ public class InteractionDetection : MonoBehaviour
 
     void Start()
     {
-        _cam = Camera.main;
         _interactableActive = false;
+        Services.InputManager.PushAction("Interact",OnInteract);
     }
 
     void FixedUpdate()
@@ -34,6 +34,7 @@ public class InteractionDetection : MonoBehaviour
             ~layerToHit);
         if (_mHitDetect && _mHit.collider.gameObject.CompareTag("Interactable"))
         {
+            Debug.Log(_mHit.collider.gameObject.name);
             if (!_interactableActive || _currentInteractable[0].name != _mHit.collider.gameObject.name)
                 _currentInteractable = _mHit.collider.gameObject.GetComponents<InteractableObject>();
             int i = 0;
@@ -46,10 +47,14 @@ public class InteractionDetection : MonoBehaviour
                     _currentInteractable[i].EnableOutline();
                     _interactableActive = true;
                 }
+                else
+                {
+                    i++;
+                }
             }
             if (i >= _currentInteractable.Length)
             {
-                _currentInteractable[i].DisableOutline();
+                _currentInteractable[i-1].DisableOutline();
                 _interactableActive = false;  
             }
         }
@@ -62,10 +67,9 @@ public class InteractionDetection : MonoBehaviour
             }
         }
     }
-
-    private void Update()
+    private void OnInteract()
     {
-        if (_interactableActive && Input.GetKeyDown(KeyCode.E))
+        if (_interactableActive)
         {
             foreach (var interactable in _currentInteractable)
             {

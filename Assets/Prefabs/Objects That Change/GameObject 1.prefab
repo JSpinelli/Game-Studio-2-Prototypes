@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6155320463843485096
 Transform:
   m_ObjectHideFlags: 0
@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e4ec077a41fa90046a7e0ad422f5de53, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -118,7 +118,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4343999451234140608}
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.70710677}
   m_LocalPosition: {x: -40.65, y: -4.382, z: -5.9479995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -126,7 +126,7 @@ Transform:
   - {fileID: 6155320463843485096}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.00001}
 --- !u!114 &4343999451234140610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,10 +141,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactRadius: 0.91
   interactSpherePosition: {x: 0, y: 0, z: 0}
-  text: []
-  timers: []
-  lines: []
-  breakdownOfLines: 
+  outline: {fileID: 0}
+  dialogs: []
 --- !u!114 &3157106599326811674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,7 +218,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e4ec077a41fa90046a7e0ad422f5de53, type: 2}
+  - {fileID: 2100000, guid: 9a21eb46837654f4f84d01d31001741d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

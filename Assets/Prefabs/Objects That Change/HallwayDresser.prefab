@@ -86,6 +86,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cabinet_2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 6cb4f5f750494f740a101f4c67f3f2c0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 6cb4f5f750494f740a101f4c67f3f2c0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -43.28

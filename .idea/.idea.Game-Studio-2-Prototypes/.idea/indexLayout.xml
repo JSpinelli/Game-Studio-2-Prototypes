@@ -11,7 +11,6 @@
       <Path>Library/PackageCache/com.unity.polybrush@1.0.2</Path>
       <Path>Library/PackageCache/com.unity.postprocessing@2.3.0</Path>
       <Path>Library/PackageCache/com.unity.probuilder@4.2.3</Path>
-      <Path>Library/PackageCache/com.unity.settings-manager@1.0.0</Path>
       <Path>Library/PackageCache/com.unity.settings-manager@1.0.3</Path>
       <Path>Library/PackageCache/com.unity.test-framework@1.1.20</Path>
       <Path>Library/PackageCache/com.unity.textmeshpro@2.1.1</Path>
@@ -24,7 +23,6 @@
       <Path>.idea</Path>
       <Path>.vscode</Path>
       <Path>Library</Path>
-      <Path>Logs</Path>
       <Path>Temp</Path>
       <Path>obj</Path>
     </explicitExcludes>

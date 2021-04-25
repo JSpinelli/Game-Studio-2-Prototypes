@@ -86,11 +86,28 @@ public class DialogTriggered : GameEvent
 	public string[] dialog;
 	public float[] timers;
 	public AudioClip soundClip;
-	public DialogTriggered( string[] txt, float[] timers, AudioClip sound)
+	public AudioSource source;
+	public DialogTriggered( string[] txt, float[] timers, AudioClip sound, AudioSource source = null)
 	{
 		dialog = txt;
 		this.timers = timers;
 		soundClip = sound;
+		this.source = source;
+	}
+}
+
+public class SoundTriggered : GameEvent
+{
+	public string[] dialog;
+	public float[] timers;
+	public AudioClip soundClip;
+	public AudioSource audioSource;
+	public SoundTriggered( string[] txt, float[] timers,AudioClip sound, AudioSource audioSource = null)
+	{
+		dialog = txt;
+		this.timers = timers;
+		soundClip = sound;
+		this.audioSource = audioSource;
 	}
 }
 

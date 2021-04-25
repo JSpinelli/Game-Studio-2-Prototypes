@@ -9,15 +9,13 @@ public class GameManager : MonoBehaviour
     public float spookyTickRate;
     public PostProcessProfile profile;
 
-    public bool startWithBaby = false;
-
-    public Transform playerPos;
-
-    private bool babySpawned = false;
+    public bool startInKitchenSequence = false;
 
     public GameObject begginingObjects;
     public GameObject doorBellRinging;
     public GameObject babyPickedUp;
+
+    public KitchenSequence kitchenSequence;
 
     private float _borednessTimer;
 
@@ -45,10 +43,9 @@ public class GameManager : MonoBehaviour
 
     public Movable[] doors;
 
-    public Transform placeForPickedUpObjects;
-
     void Awake()
     {
+        _InitializeServices();
         if (savedData)
         {
             SaveData saveData = JsonUtility.FromJson<SaveData>(savedData.text);
@@ -66,7 +63,7 @@ public class GameManager : MonoBehaviour
         }
 
         _borednessTimer = 0;
-        if (!startWithBaby)
+        if (!startInKitchenSequence)
         {
             BabyOutside.SetActive(false);
             BabyInArms.SetActive(false);
@@ -82,8 +79,8 @@ public class GameManager : MonoBehaviour
             begginingObjects.SetActive(false);
             doorBellRinging.SetActive(false);
             babyPickedUp.SetActive(false);
+            kitchenSequence.StartSequence();
         }
-        _InitializeServices();
     }
 
     void _InitializeServices()
@@ -91,7 +88,6 @@ public class GameManager : MonoBehaviour
         Services.gameManager = this;
         Services.EventManager = new EventManager();
         Services.EventManager.Register<InteractionTriggered>(AddTriggeredInteraction);
-        Services.EventManager.Register<ObjectPickedUp>(OnObjectPickedUp);
     }
 
     void Update()
@@ -172,23 +168,15 @@ public class GameManager : MonoBehaviour
 
         if (inter.name == "BabyOutside")
         {
-            _babyActive = true;
+            //_babyActive = true;
             BabyOutside.SetActive(false);
             BabyInArms.SetActive(true);
             doorBellRinging.SetActive(false);
             babyPickedUp.SetActive(true);
+            kitchenSequence.StartSequence();
         }
     }
-
-    public void OnObjectPickedUp(GameEvent gameEvent)
-    {
-        ObjectPickedUp objectPickedUp = (ObjectPickedUp) gameEvent;
-        objectPickedUp.objectToMove.transform.parent = gameObject.transform;
-        
-        objectPickedUp.objectToMove.transform.position = placeForPickedUpObjects.position;
-        objectPickedUp.objectToMove.transform.rotation = placeForPickedUpObjects.rotation;
-    }
-
+    
     public bool InteractionTriggered(string interaction)
     {
         return _triggeredInteractions.Exists((item) => item == interaction);

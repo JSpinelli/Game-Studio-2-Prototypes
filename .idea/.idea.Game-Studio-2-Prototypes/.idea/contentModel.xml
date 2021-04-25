@@ -9,44 +9,6 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="First Person Drifter Controller" t="Include">
-          <e p="info.txt" t="Include" />
-          <e p="Scripts" t="Include">
-            <e p="FirstPersonDrifter.cs" t="Include" />
-            <e p="LockMouse.cs" t="Include" />
-            <e p="MouseLook.cs" t="Include" />
-            <e p="Optional" t="Include">
-              <e p="CameraFadeOnStart.cs" t="Include" />
-              <e p="CameraZoom.cs" t="Include" />
-              <e p="CheckIfBelowLevel.cs" t="Include" />
-              <e p="HeadBob.cs" t="Include" />
-              <e p="PauseMenu.cs" t="Include" />
-            </e>
-            <e p="Utils" t="Include">
-              <e p="CameraFade.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="OutlineEffect" t="Include">
-          <e p="OutlineEffect" t="Include">
-            <e p="LinkedSet.cs" t="Include" />
-            <e p="Outline.cs" t="Include" />
-            <e p="OutlineEffect.cs" t="Include" />
-            <e p="Resources" t="Include">
-              <e p="OutlineBufferShader.shader" t="Include" />
-              <e p="OutlineShader.shader" t="Include" />
-            </e>
-          </e>
-          <e p="OutlineEffect.asmdef" t="Include" />
-          <e p="Samples" t="Include">
-            <e p="Demo" t="Include">
-              <e p="MaterialSwitcher.cs" t="Include" />
-              <e p="OutlineAnimation.cs" t="Include" />
-              <e p="Rotate.cs" t="Include" />
-              <e p="Toggle.cs" t="Include" />
-            </e>
-          </e>
-        </e>
         <e p="Plugins" t="Include">
           <e p="Breakable Windows" t="Include">
             <e p="Scripts" t="Include">
@@ -216,6 +178,24 @@
             <e p="Script" t="Include">
               <e p="FreeCam.cs" t="Include" />
               <e p="ScrollUVWater.cs" t="Include" />
+            </e>
+          </e>
+          <e p="First Person Drifter Controller" t="Include">
+            <e p="info.txt" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="FirstPersonDrifter.cs" t="Include" />
+              <e p="LockMouse.cs" t="Include" />
+              <e p="MouseLook.cs" t="Include" />
+              <e p="Optional" t="Include">
+                <e p="CameraFadeOnStart.cs" t="Include" />
+                <e p="CameraZoom.cs" t="Include" />
+                <e p="CheckIfBelowLevel.cs" t="Include" />
+                <e p="HeadBob.cs" t="Include" />
+                <e p="PauseMenu.cs" t="Include" />
+              </e>
+              <e p="Utils" t="Include">
+                <e p="CameraFade.cs" t="Include" />
+              </e>
             </e>
           </e>
           <e p="RealtimeCSG" t="Include">
@@ -564,19 +544,73 @@
               </e>
             </e>
           </e>
-        </e>
-        <e p="Prefabs" t="Include">
           <e p="TV" t="Include">
             <e p="readme.txt" t="Include" />
           </e>
+        </e>
+        <e p="RealToon" t="Include">
+          <e p="Change - Fix Log.txt" t="Include" />
+          <e p="Editor" t="Include">
+            <e p="RealToonShaderGUI.cs" t="Include" />
+            <e p="RealToonShaderGUI_Lite.cs" t="Include" />
+            <e p="RT_Welcome.cs" t="Include" />
+          </e>
+          <e p="For VRoid users please read.txt" t="Include" />
+          <e p="ReadMe - Important - Guide.txt" t="Include" />
+          <e p="RealToon Shader Packages" t="Include">
+            <e p="SRP (LWRP - URP - HDRP)" t="Include">
+              <e p="HDRP" t="Include">
+                <e p="Please read before you unpack or import.txt" t="Include" />
+                <e p="RealToon HDRP (Quick Guide).txt" t="Include" />
+              </e>
+              <e p="LWRP" t="Include">
+                <e p="Please read before you unpack or import.txt" t="Include" />
+              </e>
+              <e p="URP" t="Include">
+                <e p="Please read before you unpack or import.txt" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="RealToon Shaders" t="Include">
+            <e p="Version 5" t="Include">
+              <e p="Default" t="Include">
+                <e p="D_Default.shader" t="Include" />
+                <e p="D_Fade_Transparency.shader" t="Include" />
+                <e p="D_Refraction.shader" t="Include" />
+              </e>
+              <e p="Lite" t="Include">
+                <e p="L_Default.shader" t="Include" />
+                <e p="L_Fade_Transparency.shader" t="Include" />
+              </e>
+              <e p="Tessellation" t="Include">
+                <e p="T_Default.shader" t="Include" />
+                <e p="T_Fade_Transparency.shader" t="Include" />
+                <e p="T_Refraction.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="RealToon Tools" t="Include">
+            <e p="CustomShadowResolution.cs" t="Include" />
+            <e p="FrameByFrameRendering" t="Include">
+              <e p="FrameByFrameRendering_Default.cs" t="Include" />
+              <e p="FrameByFrameRendering_Manual.cs" t="Include" />
+            </e>
+            <e p="SmoothObjectNormalHelper.cs" t="Include" />
+          </e>
+          <e p="What's New.txt" t="Include" />
         </e>
         <e p="Scripts" t="Include">
           <e p="Dialog.cs" t="Include" />
           <e p="Editor" t="Include">
             <e p="DialogTool.cs" t="Include" />
           </e>
+          <e p="Input" t="Include">
+            <e p="InputManager.cs" t="Include" />
+            <e p="PlayerManager.cs" t="Include" />
+          </e>
           <e p="Interaction" t="Include">
             <e p="ColliderDialogTrigger.cs" t="Include" />
+            <e p="Deposit.cs" t="Include" />
             <e p="DialogTrigger.cs" t="Include" />
             <e p="InteractableObject.cs" t="Include" />
             <e p="InteractionDetection.cs" t="Include" />
@@ -584,11 +618,11 @@
             <e p="Pickupable.cs" t="Include" />
             <e p="SoundTrigger.cs" t="Include" />
           </e>
+          <e p="KitchenSequence.cs" t="Include" />
           <e p="Managers" t="Include">
             <e p="DialogManager.cs" t="Include" />
             <e p="EventManager.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
-            <e p="RadioShow.cs" t="Include" />
             <e p="RoomManager.cs" t="Include" />
             <e p="Services.cs" t="Include" />
           </e>
@@ -609,29 +643,67 @@
             <e p="PPSwapper.cs" t="Include" />
             <e p="RotateSkyBox.cs" t="Include" />
           </e>
+          <e p="OutlineEffect" t="Include">
+            <e p="LinkedSet.cs" t="Include" />
+            <e p="Outline.cs" t="Include" />
+            <e p="OutlineEffect.cs" t="Include" />
+            <e p="Resources" t="Include">
+              <e p="OutlineBufferShader.shader" t="Include" />
+              <e p="OutlineShader.shader" t="Include" />
+            </e>
+          </e>
+          <e p="PauseMenu.cs" t="Include" />
+          <e p="PostProcessing.cs" t="Include" />
           <e p="SaveData.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">
-          <e p="Number2_Screenspace" t="Include">
-            <e p="ScreenspaceObject.shader" t="Include" />
-            <e p="UIScreenspace.shader" t="Include" />
-          </e>
-          <e p="Number3_MirrorReflection" t="Include">
-            <e p="Mirror.shader" t="Include" />
-            <e p="MirrorReflection.cs" t="Include" />
-          </e>
-          <e p="Number4_JoepieShaderWobble" t="Include">
-            <e p="JoepieShaderWobble.shader" t="Include" />
-          </e>
-          <e p="Number5_Skybox" t="Include">
-            <e p="Horizontal Skybox.shader" t="Include" />
-          </e>
+          <e p="B&amp;W.shader" t="Include" />
           <e p="Test-Outline.shader" t="Include" />
-          <e p="TestShader.shader" t="Include" />
-          <e p="Toon-Test.shader" t="Include" />
-          <e p="ToonTestShader.shader" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
+          <e p="Examples &amp; Extras" t="Include">
+            <e p="Fonts" t="Include">
+              <e p="Anton OFL.txt" t="Include" />
+              <e p="Bangers - OFL.txt" t="Include" />
+              <e p="Oswald-Bold - OFL.txt" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="Benchmark01.cs" t="Include" />
+              <e p="Benchmark01_UGUI.cs" t="Include" />
+              <e p="Benchmark02.cs" t="Include" />
+              <e p="Benchmark03.cs" t="Include" />
+              <e p="Benchmark04.cs" t="Include" />
+              <e p="CameraController.cs" t="Include" />
+              <e p="ChatController.cs" t="Include" />
+              <e p="DropdownSample.cs" t="Include" />
+              <e p="EnvMapAnimator.cs" t="Include" />
+              <e p="ObjectSpin.cs" t="Include" />
+              <e p="ShaderPropAnimator.cs" t="Include" />
+              <e p="SimpleScript.cs" t="Include" />
+              <e p="SkewTextExample.cs" t="Include" />
+              <e p="TeleType.cs" t="Include" />
+              <e p="TextConsoleSimulator.cs" t="Include" />
+              <e p="TextMeshProFloatingText.cs" t="Include" />
+              <e p="TextMeshSpawner.cs" t="Include" />
+              <e p="TMP_DigitValidator.cs" t="Include" />
+              <e p="TMP_ExampleScript_01.cs" t="Include" />
+              <e p="TMP_FrameRateCounter.cs" t="Include" />
+              <e p="TMP_PhoneNumberValidator.cs" t="Include" />
+              <e p="TMP_TextEventCheck.cs" t="Include" />
+              <e p="TMP_TextEventHandler.cs" t="Include" />
+              <e p="TMP_TextInfoDebugTool.cs" t="Include" />
+              <e p="TMP_TextSelector_A.cs" t="Include" />
+              <e p="TMP_TextSelector_B.cs" t="Include" />
+              <e p="TMP_UiFrameRateCounter.cs" t="Include" />
+              <e p="TMPro_InstructionOverlay.cs" t="Include" />
+              <e p="VertexColorCycler.cs" t="Include" />
+              <e p="VertexJitter.cs" t="Include" />
+              <e p="VertexShakeA.cs" t="Include" />
+              <e p="VertexShakeB.cs" t="Include" />
+              <e p="VertexZoom.cs" t="Include" />
+              <e p="WarpTextExample.cs" t="Include" />
+            </e>
+          </e>
           <e p="Fonts" t="Include">
             <e p="LiberationSans - OFL.txt" t="Include" />
           </e>
@@ -665,7 +737,6 @@
       </e>
       <e p="Game-Studio-2-Prototypes.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
-      <e p="OEBIF.csproj" t="IncludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />
     </e>
