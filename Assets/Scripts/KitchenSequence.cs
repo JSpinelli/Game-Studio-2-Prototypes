@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -7,13 +8,15 @@ public class KitchenSequence : MonoBehaviour
 {
     public Transform player;
     public Transform placeForPickedUpObjects;
+
+    public float timeBetweenResponses = 1;
     
     public Dialog[] initialSequence;
-
     public Dialog[] firstPuzzleSolved;
     public Dialog[] firstPuzzleSolvedpart2;
-
     public Dialog[] secondPuzzleSolved;
+
+    private bool isPlayingSequence = false;
     
     public Dialog[] fails;
     public Dialog[] filler;
@@ -36,7 +39,6 @@ public class KitchenSequence : MonoBehaviour
     public string[] puzzle3Solution;
 
     private int _failCounter;
-    private int _sequenceCounter;
     private int _fillerCounter;
 
     private string[] _currentPuzzle;
@@ -52,10 +54,13 @@ public class KitchenSequence : MonoBehaviour
     public GameObject house;
     public GameObject wall;
     public GameObject outsideLights;
+    public GameObject stageColliders;
 
     public AudioSource stageSounds;
     public AudioSource host;
     public AudioSource pc;
+    public AudioSource baby;
+    
 
     public AudioClip laughter;
     public AudioClip boo;
@@ -70,7 +75,6 @@ public class KitchenSequence : MonoBehaviour
         newKitchen.SetActive(true);
         house.SetActive(true);
         wall.SetActive(false);
-        outsideLights.SetActive(false);
         puzzleStarted = false;
     }
 
@@ -105,12 +109,13 @@ public class KitchenSequence : MonoBehaviour
         if (puzzleStarted) return;
         house.SetActive(false);
         wall.SetActive(true);
-        outsideLights.SetActive(true);
         _failCounter = 0;
-        _sequenceCounter = 0;
         _fillerCounter = 0;
         _fillerTimerCounter = 0;
-        
+    }
+
+    public void StartScene()
+    {
         puzzleStarted = true;
         _objectsInBlender = new List<GameObject>();
         _currentPuzzle = null;
@@ -122,8 +127,9 @@ public class KitchenSequence : MonoBehaviour
         if (puzzleStarted && puzzle1Complete && puzzle2Complete && !puzzle3Complete)
             _currentPuzzle = puzzle3Solution;
         
-        SetObjects();
-        PlayLaughter();
+        stageColliders.SetActive(true);
+        outsideLights.SetActive(false);
+        StartCoroutine(PlaySequence(initialSequence, SetObjects));
     }
 
     public void OnObjectPickedUp(GameEvent gameEvent)
@@ -157,24 +163,45 @@ public class KitchenSequence : MonoBehaviour
     {
         Services.EventManager.Fire( new DialogTriggered(fails[_failCounter].line, fails[_failCounter].screenTime, fails[_failCounter].clip));
         _failCounter++;
-    }    
-    
-    private void PlayFirstSequence()
+    }
+
+    private AudioSource GetCorrectSource(Dialog dialog)
     {
         AudioSource origin = null;
-        if (initialSequence[_sequenceCounter].source == "PC")
+        if (dialog.source == "PC")
         {
+            origin = pc;
         }
-        if (initialSequence[_sequenceCounter].source == "Audience")
+        if (dialog.source == "Audience")
         {
+            origin = stageSounds;
         }
-        if (initialSequence[_sequenceCounter].source == "RadioHost")
+        if (dialog.source == "RadioHost")
         {
             origin = host;
         }
+        if (dialog.source == "Baby")
+        {
+            origin = baby;
+        }
 
-        Services.EventManager.Fire( new DialogTriggered(initialSequence[_sequenceCounter].line, initialSequence[_sequenceCounter].screenTime, initialSequence[_sequenceCounter].clip, origin));
-        _sequenceCounter++;
+        return origin;
+    }
+
+    private IEnumerator PlaySequence(Dialog[] sequence, Action afterSequence)
+    {
+        isPlayingSequence = true;
+        foreach (Dialog dialog in sequence)
+        {
+            if (dialog.clip != null)
+            {
+                Services.EventManager.Fire( new DialogTriggered(dialog.line, dialog.screenTime, dialog.clip,GetCorrectSource(dialog)));
+                yield return new WaitForSeconds(dialog.clip.length);
+                yield return new WaitForSeconds(timeBetweenResponses);
+            }
+        }
+        isPlayingSequence = false;
+        afterSequence.Invoke();
     }
     
     private void PlayFiller()
@@ -195,6 +222,11 @@ public class KitchenSequence : MonoBehaviour
         }
     }
 
+    private void MoveMonster()
+    {
+        StartCoroutine(PlaySequence(firstPuzzleSolvedpart2, SetObjects));
+    }
+
     public void CheckObjects()
     {
 
@@ -211,22 +243,22 @@ public class KitchenSequence : MonoBehaviour
         }
         if (successesSum)
         {
-            Debug.Log("Puzzle Completed");
             PlayClap();
             if (puzzleStarted && !puzzle1Complete)
             {
                 puzzle1Complete = true;
                 _currentPuzzle = puzzle2Solution;
+                StartCoroutine(PlaySequence(firstPuzzleSolved, MoveMonster));
             }else if (puzzleStarted && puzzle1Complete && !puzzle2Complete)
             {
                 puzzle2Complete = true;
                 _currentPuzzle = puzzle3Solution;
+                StartCoroutine(PlaySequence(secondPuzzleSolved, SetObjects));
             } else if (puzzleStarted && puzzle1Complete && puzzle2Complete && !puzzle3Complete)
             {
                 puzzle3Complete = true;
                 // END OF SCENE
             }
-            SetObjects();
         }
         else
         {

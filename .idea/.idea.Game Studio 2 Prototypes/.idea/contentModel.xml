@@ -611,6 +611,7 @@
           <e p="Interaction" t="Include">
             <e p="ColliderDialogTrigger.cs" t="Include" />
             <e p="Deposit.cs" t="Include" />
+            <e p="DepositChair.cs" t="Include" />
             <e p="DialogTrigger.cs" t="Include" />
             <e p="InteractableObject.cs" t="Include" />
             <e p="InteractionDetection.cs" t="Include" />
@@ -654,6 +655,7 @@
           </e>
           <e p="PauseMenu.cs" t="Include" />
           <e p="PostProcessing.cs" t="Include" />
+          <e p="RadioHostMovement.cs" t="Include" />
           <e p="SaveData.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">
