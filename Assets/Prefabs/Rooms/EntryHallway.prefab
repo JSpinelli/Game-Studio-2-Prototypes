@@ -3457,6 +3457,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Entry Hallway Structure
       objectReference: {fileID: 0}
+    - target: {fileID: 7218655472758584900, guid: 56280b29f8d71724ab3178f576a40812,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 236f82f025f07474c8d7052af2247824, type: 2}
     m_RemovedComponents:
     - {fileID: -2097853376120743890, guid: 56280b29f8d71724ab3178f576a40812, type: 3}
     - {fileID: -6557113166318811182, guid: 56280b29f8d71724ab3178f576a40812, type: 3}
