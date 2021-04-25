@@ -27,8 +27,8 @@ public class DialogManager : MonoBehaviour
 
         if (dialogInfo.soundClip)
         {
-            source.clip = dialogInfo.soundClip;
-            source.Play();
+            dialogInfo.source.clip = dialogInfo.soundClip;
+            dialogInfo.source.Play();
         }
     }
 
