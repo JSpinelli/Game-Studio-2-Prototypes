@@ -43,6 +43,8 @@ public class GameManager : MonoBehaviour
 
     public Movable[] doors;
 
+    public Dialog babyPickedUpLine;
+
     void Awake()
     {
         _InitializeServices();
@@ -96,28 +98,28 @@ public class GameManager : MonoBehaviour
         {
             OnSave();
         }
-        if (_babyActive)
-        {
-            if (_borednessTimer < spookyTickRate)
-            {
-                _borednessTimer += Time.deltaTime;
-            }
-            else
-            {
-                _borednessTimer = 0;
-                _spookyLevel += spookyIncreasePerTick;
-                Services.EventManager.Fire(new SpookyMeterChange(_spookyLevel));
-            }
-
-            if (_spookyLevel > 100)
-            {
-                CloseDoors();
-                _spookySpike = true;
-                _spookyLevel = 0;
-                StartCoroutine(GrainEffect(3));
-                Services.EventManager.Fire(new SpookyMeterChange(_spookyLevel));
-            }
-        }
+        // if (_babyActive)
+        // {
+        //     if (_borednessTimer < spookyTickRate)
+        //     {
+        //         _borednessTimer += Time.deltaTime;
+        //     }
+        //     else
+        //     {
+        //         _borednessTimer = 0;
+        //         _spookyLevel += spookyIncreasePerTick;
+        //         Services.EventManager.Fire(new SpookyMeterChange(_spookyLevel));
+        //     }
+        //
+        //     if (_spookyLevel > 100)
+        //     {
+        //         CloseDoors();
+        //         _spookySpike = true;
+        //         _spookyLevel = 0;
+        //         StartCoroutine(GrainEffect(3));
+        //         Services.EventManager.Fire(new SpookyMeterChange(_spookyLevel));
+        //     }
+        // }
         if ( !_babyActive && _interactionCount > InteractionTreshold)
         {
             if (DoorBellTimer > _doorBellTimer)
@@ -168,12 +170,12 @@ public class GameManager : MonoBehaviour
 
         if (inter.name == "BabyOutside")
         {
-            //_babyActive = true;
+            _babyActive = true;
             BabyOutside.SetActive(false);
             BabyInArms.SetActive(true);
             doorBellRinging.SetActive(false);
             babyPickedUp.SetActive(true);
-            kitchenSequence.StartSequence();
+            StartCoroutine(BabyEffect(3));
         }
     }
     
@@ -192,11 +194,19 @@ public class GameManager : MonoBehaviour
         return _spookySpike;
     }
     
-    private IEnumerator GrainEffect(float t)
+    private IEnumerator BabyEffect(float t)
     {
         Grain gr = profile.GetSetting<Grain>();
+        Bloom bloom = profile.GetSetting<Bloom>();
+        ChromaticAberration cAb = profile.GetSetting<ChromaticAberration>();
         gr.active = true;
+        bloom.active = true;
+        cAb.active = true;
         yield return new WaitForSeconds(t);
         gr.active = false;
+        bloom.active = false;
+        cAb.active = false;
+        kitchenSequence.StartSequence();
+        Services.EventManager.Fire(new DialogTriggered(babyPickedUpLine.line,babyPickedUpLine.screenTime, babyPickedUpLine.clip));
     }
 }
