@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Cooking_Baby_3
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: e812be2fb325e314d80edcc21c31839d, type: 3}
-  screenTime: []
-  line: []
+  screenTime:
+  - 4.8
+  line:
+  - mmmm delicious
   source: Baby

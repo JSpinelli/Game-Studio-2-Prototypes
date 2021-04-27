@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Cooking_Baby_1
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: d1edfb65321dea84b9ef565a975d8c35, type: 3}
-  screenTime: []
-  line: []
+  screenTime:
+  - 5
+  line:
+  - (horribly voiced crying)
   source: Baby

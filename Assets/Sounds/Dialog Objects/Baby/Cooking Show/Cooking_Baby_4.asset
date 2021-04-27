@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Cooking_Baby_4
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: feea9680f4b5a5a47b3e8ea6a2faa764, type: 3}
-  screenTime: []
-  line: []
+  screenTime:
+  - 5.5
+  line:
+  - I will consume all life
   source: Baby

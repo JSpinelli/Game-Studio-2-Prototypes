@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Cooking_Radio_9
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 5cce7f4c7e0de4df1ba649c00731643d, type: 3}
-  screenTime: []
-  line: []
+  screenTime:
+  - 4.8
+  line:
+  - Your time starts now Ms Lee, get blending
   source: RadioHost

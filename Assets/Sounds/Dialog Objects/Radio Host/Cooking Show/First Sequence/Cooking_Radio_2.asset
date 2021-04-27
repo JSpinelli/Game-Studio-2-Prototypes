@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Cooking_Radio_2
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 8aba970d8afe041d99094fb18d03035f, type: 3}
-  screenTime: []
-  line: []
+  screenTime:
+  - 6
+  line:
+  - Today we are joined by Lily Lee a former executive coming to us from a remote
+    location
   source: RadioHost
