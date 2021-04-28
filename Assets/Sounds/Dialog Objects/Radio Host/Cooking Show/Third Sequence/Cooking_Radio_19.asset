@@ -13,6 +13,12 @@ MonoBehaviour:
   m_Name: Cooking_Radio_19
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 648b26805a6764d02b6286c729bf0378, type: 3}
-  screenTime: []
-  line: []
+  screenTime:
+  - 2.1
+  - 3
+  - 3
+  line:
+  - Trying to weasel out early
+  - You really shouldn't break commitments like that
+  - People might get hurt
   source: RadioHost
