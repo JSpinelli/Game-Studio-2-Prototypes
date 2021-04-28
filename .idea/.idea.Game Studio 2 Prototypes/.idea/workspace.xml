@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0543311-8c26-4bf6-b4d7-382aa6cce3fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/BlenderTest.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/BlenderTest.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/bbforunity Variant.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/bbforunity Variant.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Objects Material/Materials/bbface_2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Objects Material/Materials/bbface_2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Objects Material/bb clothes.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Objects Material/bb clothes.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractableItems/BabyChair.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractableItems/BabyChair.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractableItems/Blender.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractableItems/Blender.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.polybrush/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.polybrush/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
