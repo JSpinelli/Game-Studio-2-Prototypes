@@ -1,44 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0543311-8c26-4bf6-b4d7-382aa6cce3fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Empty.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Empty.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/Pick_baby_up.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/Pick_baby_up.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/See_baby.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/See_baby.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/monrning_2.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/PC/Begginign/monrning_2.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialogue Sound Files/Baby.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialogue Sound Files/Baby/cooking_baby_consume_all_life.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialogue Sound Files/Baby/cooking_baby_consume_all_life.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialogue Sound Files/Baby/cooking_baby_delicious.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialogue Sound Files/Baby/cooking_baby_delicious.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialogue Sound Files/Baby/cooking_baby_juicy.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialogue Sound Files/Baby/cooking_baby_juicy.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialogue Sound Files/Baby/cooking_baby_wah1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialogue Sound Files/Baby/cooking_baby_wah1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialogue Sound Files/Baby/cooking_baby_yes.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialogue Sound Files/Baby/cooking_baby_yes.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialogue Sound Files/PC/Opening Scene/meetsBaby3.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialogue Sound Files/PC/Opening Scene/meetsBaby3.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Entry Hallway Structure.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Entry Hallway Structure.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Postprocesing Profiles/Gloomy.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Postprocesing Profiles/Gloomy.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractableItems/Alarm.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractableItems/Alarm.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractableItems/Blender.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractableItems/Blender.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractionDetection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractionDetection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/DialogManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/DialogManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Baby/Cooking Show/Cooking_Baby_1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Baby/Cooking Show/Cooking_Baby_1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Baby/Cooking Show/Cooking_Baby_2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Baby/Cooking Show/Cooking_Baby_2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Baby/Cooking Show/Cooking_Baby_3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Baby/Cooking Show/Cooking_Baby_3.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Baby/Cooking Show/Cooking_Baby_4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Baby/Cooking Show/Cooking_Baby_4.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Baby/Cooking Show/Cooking_Baby_5.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Baby/Cooking Show/Cooking_Baby_5.asset" afterDir="false" />
-    </list>
+    <list default="true" id="c0543311-8c26-4bf6-b4d7-382aa6cce3fd" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -205,7 +168,7 @@
       <workItem from="1619129241314" duration="4374000" />
       <workItem from="1619185315767" duration="6360000" />
       <workItem from="1619386826559" duration="2268000" />
-      <workItem from="1619546266921" duration="4032000" />
+      <workItem from="1619546266921" duration="4624000" />
     </task>
     <servers />
   </component>
