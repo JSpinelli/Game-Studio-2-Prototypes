@@ -134,6 +134,7 @@ MonoBehaviour:
   - {fileID: -8705384725151007519}
   - {fileID: -2185541643255981739}
   - {fileID: -6219865366659806203}
+  - {fileID: 5927234800340868075}
 --- !u!114 &1570045670462002930
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1517,6 +1518,32 @@ MonoBehaviour:
   opacity:
     overrideState: 0
     value: 1
+--- !u!114 &5927234800340868075
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6050e2d5de785ce4d931e4dbdbf2d755, type: 3}
+  m_Name: ChromaticAberration
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  spectralLut:
+    overrideState: 0
+    value: {fileID: 0}
+    defaultState: 1
+  intensity:
+    overrideState: 1
+    value: 1
+  fastMode:
+    overrideState: 0
+    value: 0
 --- !u!114 &7997887915159526091
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1535,13 +1562,13 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 10.82
+    value: 12.04
   threshold:
     overrideState: 1
-    value: 1.8
+    value: 0.96
   softKnee:
     overrideState: 1
-    value: 0.5
+    value: 1
   clamp:
     overrideState: 0
     value: 65472

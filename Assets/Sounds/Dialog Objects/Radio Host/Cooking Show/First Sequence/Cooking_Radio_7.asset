@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Cooking_Radio_7
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 3a9bbef496fab428eb06f1076c1556a8, type: 3}
-  screenTime: []
-  line: []
+  screenTime:
+  - 3.5
+  - 4.5
+  line:
+  - "For your first challenge Ms Lee, we\u2019re going to start off easy"
+  - The crowd wants a green smoothie, make us a delicious detox!
   source: RadioHost
