@@ -34,7 +34,7 @@ public class InteractionDetection : MonoBehaviour
             ~layerToHit);
         if (_mHitDetect && _mHit.collider.gameObject.CompareTag("Interactable"))
         {
-            Debug.Log(_mHit.collider.gameObject.name);
+            //Debug.Log(_mHit.collider.gameObject.name);
             if (!_interactableActive || _currentInteractable[0].name != _mHit.collider.gameObject.name)
                 _currentInteractable = _mHit.collider.gameObject.GetComponents<InteractableObject>();
             int i = 0;

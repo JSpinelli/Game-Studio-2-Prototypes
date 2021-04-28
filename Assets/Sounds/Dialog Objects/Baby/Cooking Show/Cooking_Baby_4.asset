@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ebb4ee20b401f549bf8ec7ebf51e673, type: 3}
   m_Name: Cooking_Baby_4
   m_EditorClassIdentifier: 
-  clip: {fileID: 0}
-  screenTime: []
-  line: []
+  clip: {fileID: 8300000, guid: feea9680f4b5a5a47b3e8ea6a2faa764, type: 3}
+  screenTime:
+  - 5.5
+  line:
+  - I will consume all life
   source: Baby
