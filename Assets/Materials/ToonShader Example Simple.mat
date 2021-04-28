@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ToonShader Example
+  m_Name: ToonShader Example Simple
   m_Shader: {fileID: 4800000, guid: c73d0a68c32425f44990e420368ddda6, type: 3}
   m_ShaderKeywords: N_F_GLO_ON N_F_NM_ON N_F_O_ON N_F_RELGI_ON N_F_SS_ON N_F_STIAL_ON
     N_F_STIS_ON N_F_ST_ON _ _EMISSIVE_SIMPLE
