@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ebb4ee20b401f549bf8ec7ebf51e673, type: 3}
   m_Name: Cooking_Radio_22
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 00f381971be084c98ad34cccb61b4a2f, type: 3}
-  screenTime: []
-  line: []
+  clip: {fileID: 8300000, guid: 5659dceb6b4e842a49cfaff361f648fd, type: 3}
+  screenTime:
+  - 3.5
+  line:
+  - 'That''s it. Simple right? Goodluck. '
   source: RadioHost

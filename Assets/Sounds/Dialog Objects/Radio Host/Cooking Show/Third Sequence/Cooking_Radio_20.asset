@@ -13,6 +13,12 @@ MonoBehaviour:
   m_Name: Cooking_Radio_20
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 53f64895526bc40f4aa0e693b8d6b66d, type: 3}
-  screenTime: []
-  line: []
+  screenTime:
+  - 5.5
+  - 3.2
+  - 1.3
+  line:
+  - In fact Ms Lee for this last challenge were going to do something a little different
+  - A first time occurence here on the Standard Hour
+  - Are ya ready folks?
   source: RadioHost
