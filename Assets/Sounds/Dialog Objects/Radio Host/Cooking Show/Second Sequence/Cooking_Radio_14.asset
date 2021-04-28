@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Cooking_Radio_14
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 20b69aca776fc4005844b9123593a76a, type: 3}
-  screenTime: []
-  line: []
+  screenTime:
+  - 2.8
+  line:
+  - It's time for round 2!
   source: RadioHost

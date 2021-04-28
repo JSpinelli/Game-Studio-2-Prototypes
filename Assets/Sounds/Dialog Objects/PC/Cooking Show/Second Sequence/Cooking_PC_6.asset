@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Cooking_PC_6
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: cf70beec2f19c40bc9b530d00fe45b8b, type: 3}
-  screenTime: []
-  line: []
+  screenTime:
+  - 2.3
+  line:
+  - Can someone just tell me what's going on?!
   source: PC
