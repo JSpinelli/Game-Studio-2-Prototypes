@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Cooking_Radio_17
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 211ae2b4db77142fb975642fec88e04c, type: 3}
-  screenTime: []
-  line: []
+  screenTime:
+  - 3.1
+  - 3.5
+  line:
+  - Pig! All the worst parts
+  - Get to it Ms Lee. I think the baby is getting hungry
   source: RadioHost
