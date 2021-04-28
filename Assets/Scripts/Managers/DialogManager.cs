@@ -22,13 +22,21 @@ public class DialogManager : MonoBehaviour
         DialogTriggered dialogInfo = (DialogTriggered) e;
         if (dialogInfo.dialog.Length > 0)
         {
-            StartCoroutine(Countdown(dialogInfo.dialog,dialogInfo.timers,2));
+            StartCoroutine(Countdown(dialogInfo.dialog, dialogInfo.timers, 2));
         }
 
         if (dialogInfo.soundClip)
         {
-            dialogInfo.source.clip = dialogInfo.soundClip;
-            dialogInfo.source.Play();
+            if (dialogInfo.source == null)
+            {
+                source.clip = dialogInfo.soundClip;
+                source.Play();
+            }
+            else
+            {
+                dialogInfo.source.clip = dialogInfo.soundClip;
+                dialogInfo.source.Play();
+            }
         }
     }
 
@@ -39,11 +47,11 @@ public class DialogManager : MonoBehaviour
         {
             dialogInfo.audioSource.clip = dialogInfo.soundClip;
             dialogInfo.audioSource.Play();
-            StartCoroutine(Countdown(dialogInfo.dialog,dialogInfo.timers,1));
+            StartCoroutine(Countdown(dialogInfo.dialog, dialogInfo.timers, 1));
         }
     }
 
-    private IEnumerator Countdown(string[] textToDisplay , float[] timer, int priority)
+    private IEnumerator Countdown(string[] textToDisplay, float[] timer, int priority)
     {
         int timerIndex = 0;
         int oldPriority = currentPrio;
@@ -54,6 +62,7 @@ public class DialogManager : MonoBehaviour
                 currentPrio = priority;
                 dialogBox.text = text;
             }
+
             yield return new WaitForSeconds(timer[timerIndex]);
             timerIndex++;
         }
