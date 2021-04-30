@@ -45,6 +45,8 @@ public class GameManager : MonoBehaviour
 
     public Dialog babyPickedUpLine;
 
+    public int outlineColor;
+
     void Awake()
     {
         _InitializeServices();
@@ -156,6 +158,11 @@ public class GameManager : MonoBehaviour
         {
             door.Reset(true);
         }
+    }
+
+    public void GrainEffect()
+    {
+        
     }
 
     public void AddTriggeredInteraction(GameEvent interaction)

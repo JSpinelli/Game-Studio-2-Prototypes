@@ -31,7 +31,7 @@ public class Pickupable : InteractableObject
 
     public override bool CanInteract()
     {
-        return !isOnHand;
+        return !Services.gameManager.kitchenSequence.objectInHand;
     }
 
     public override void OnInteract()

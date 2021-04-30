@@ -232,7 +232,7 @@ namespace cakeslice
 								{
 									if (outline.eraseRenderer && g.color == outlineEraseMaterial.color)
 										m = g;
-									else if (!outline.eraseRenderer && g.color == GetMaterialFromID(outline.color).color)
+									else if (!outline.eraseRenderer && g.color == GetMaterialFromID(Services.gameManager.outlineColor).color)
 										m = g;
 								}
 							}
@@ -242,7 +242,7 @@ namespace cakeslice
 								if (outline.eraseRenderer)
 									m = new Material(outlineEraseMaterial);
 								else
-									m = new Material(GetMaterialFromID(outline.color));
+									m = new Material(GetMaterialFromID(Services.gameManager.outlineColor));
 
 								m.mainTexture = outline.SharedMaterials[v].mainTexture;
 								materialBuffer.Add(m);
@@ -253,7 +253,7 @@ namespace cakeslice
 							if (outline.eraseRenderer)
 								m = outlineEraseMaterial;
 							else
-								m = GetMaterialFromID(outline.color);
+								m = GetMaterialFromID(Services.gameManager.outlineColor);
 						}
 
 						if (backfaceCulling)

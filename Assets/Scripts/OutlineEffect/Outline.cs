@@ -37,7 +37,7 @@ namespace cakeslice
 		public SkinnedMeshRenderer SkinnedMeshRenderer { get; private set; }
 		public MeshFilter MeshFilter { get; private set; }
 
-		public int color;
+		private int color;
 		public bool eraseRenderer;
 
 		private void Awake()

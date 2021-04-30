@@ -60,6 +60,8 @@ public class KitchenSequence : MonoBehaviour
     public AudioSource host;
     public AudioSource pc;
     public AudioSource baby;
+
+    public AudioSource footsteps;
     
 
     public AudioClip laughter;
@@ -135,6 +137,7 @@ public class KitchenSequence : MonoBehaviour
         
         stageColliders.SetActive(true);
         outsideLights.SetActive(false);
+        footsteps.Play();
         StartCoroutine(PlaySequence(initialSequence, SetObjects));
     }
 
@@ -169,6 +172,11 @@ public class KitchenSequence : MonoBehaviour
     {
         Services.EventManager.Fire( new DialogTriggered(fails[_failCounter].line, fails[_failCounter].screenTime, fails[_failCounter].clip));
         _failCounter++;
+        if (_failCounter == fails.Length)
+        {
+            _failCounter = 0;
+            
+        }
     }
 
     private AudioSource GetCorrectSource(Dialog dialog)
@@ -236,7 +244,7 @@ public class KitchenSequence : MonoBehaviour
     private void SetPuzzle3()
     {
         table.SetActive(false);
-        blender.SetActive(true);
+        blender.SetActive(false);
         cauldron.SetActive(true);
         SetObjects();
     }
@@ -278,7 +286,6 @@ public class KitchenSequence : MonoBehaviour
         {
             Debug.Log("Puzzle Failed");
             PlayFail();
-            PlayLaughter();
             foreach (var obj in _objectsInBlender)
             {
                 obj.GetComponent<Pickupable>().Reset();

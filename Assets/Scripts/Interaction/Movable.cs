@@ -14,6 +14,8 @@ public class Movable : InteractableObject
 
     private bool _moved = false;
 
+    private bool canInteract = true;
+
     private new void Start()
     {
         base.Start();
@@ -22,7 +24,7 @@ public class Movable : InteractableObject
 
     public override bool CanInteract()
     {
-        return true;
+        return canInteract;
     }
 
     public override void OnInteract()
@@ -41,8 +43,11 @@ public class Movable : InteractableObject
 
     public void Reset(bool triggerSound)
     {
-        _moved = false;
-        transform.Rotate(_originalRotation);
+        canInteract = false;
+        if (_moved)
+        {
+            transform.Rotate(-newRotation);
+        }
         if (triggerSound && sound) sound.Play();
     }
 }

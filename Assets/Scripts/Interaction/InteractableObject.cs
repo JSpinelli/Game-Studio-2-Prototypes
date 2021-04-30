@@ -7,13 +7,17 @@ public abstract class InteractableObject : MonoBehaviour
     public float interactRadius;
     public Vector3 interactSpherePosition;
     private SphereCollider _interactCollider;
+    public Collider collider;
     public Outline outline;
     public void Start()
     {
-        _interactCollider = gameObject.AddComponent<SphereCollider>();
-        _interactCollider.center = interactSpherePosition; // the center must be in local coordinates
-        _interactCollider.radius = interactRadius;
-        _interactCollider.isTrigger = true;
+        if (collider == null)
+        {
+            _interactCollider = gameObject.AddComponent<SphereCollider>();
+            _interactCollider.center = interactSpherePosition; // the center must be in local coordinates
+            _interactCollider.radius = interactRadius;
+            _interactCollider.isTrigger = true;
+        }
         if (outline) outline.enabled = false;
     }
     

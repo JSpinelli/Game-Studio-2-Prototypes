@@ -277,6 +277,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1463029207862558346}
   - component: {fileID: 592201215189336348}
+  - component: {fileID: 2112451125290088559}
   m_Layer: 9
   m_Name: Hinge
   m_TagString: Interactable
@@ -313,10 +314,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactRadius: 0.08
   interactSpherePosition: {x: 0, y: 1, z: 0.48}
+  collider: {fileID: 2112451125290088559}
   outline: {fileID: 9074390362158962465}
   newRotation: {x: 0, y: -90, z: 0}
   newPosition: {x: 0, y: 0, z: 0}
   sound: {fileID: 1631022571976478404}
+--- !u!65 &2112451125290088559
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4995828994232822980}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0, y: 1.8875389, z: 0.756796}
+  m_Center: {x: 0.00046396255, y: 1.0178392, z: 0.44079375}
 --- !u!1 &7626336044057172547
 GameObject:
   m_ObjectHideFlags: 0
