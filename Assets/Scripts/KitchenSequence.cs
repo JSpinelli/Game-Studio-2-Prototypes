@@ -18,8 +18,6 @@ public class KitchenSequence : MonoBehaviour
     public Dialog[] firstPuzzleSolvedpart2;
     public Dialog[] secondPuzzleSolved;
 
-    private bool isPlayingSequence = false;
-    
     public Dialog[] fails;
     public Dialog[] filler;
 
@@ -55,7 +53,6 @@ public class KitchenSequence : MonoBehaviour
 
     public GameObject house;
     public GameObject wall;
-    public GameObject outsideLights;
     public GameObject stageColliders;
 
     public AudioSource stageSounds;
@@ -74,6 +71,9 @@ public class KitchenSequence : MonoBehaviour
     public GameObject table;
     public GameObject blender;
     public GameObject cauldron;
+
+    public GameObject lightsLeadingToStage;
+    public GameObject stageLights;
     
     public void StartSequence()
     {
@@ -82,6 +82,8 @@ public class KitchenSequence : MonoBehaviour
         Services.KitchenSequence = this;
         oldKitchen.SetActive(false);
         newKitchen.SetActive(true);
+        lightsLeadingToStage.SetActive(true);
+        stageLights.SetActive(false);
         house.SetActive(true);
         wall.SetActive(false);
         puzzleStarted = false;
@@ -129,7 +131,7 @@ public class KitchenSequence : MonoBehaviour
         puzzleStarted = true;
         _objectsInBlender = new List<GameObject>();
         _currentPuzzle = null;
-        
+
         if (puzzleStarted && !puzzle1Complete)
             _currentPuzzle = puzzle1Solution;
         if (puzzleStarted && puzzle1Complete && !puzzle2Complete)
@@ -138,7 +140,8 @@ public class KitchenSequence : MonoBehaviour
             _currentPuzzle = puzzle3Solution;
         
         stageColliders.SetActive(true);
-        outsideLights.SetActive(false);
+        lightsLeadingToStage.SetActive(false);
+        stageLights.SetActive(true);
         footsteps.Play();
         StartCoroutine(PlaySequence(initialSequence, SetObjects));
     }
@@ -213,7 +216,6 @@ public class KitchenSequence : MonoBehaviour
         }
         else
         {
-            isPlayingSequence = true;
             foreach (Dialog dialog in sequence)
             {
                 if (dialog.clip != null)
@@ -223,7 +225,6 @@ public class KitchenSequence : MonoBehaviour
                     yield return new WaitForSeconds(timeBetweenResponses);
                 }
             }
-            isPlayingSequence = false;
             afterSequence.Invoke(); 
         }
     }
