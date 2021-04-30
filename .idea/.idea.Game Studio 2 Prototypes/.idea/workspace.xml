@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0543311-8c26-4bf6-b4d7-382aa6cce3fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/JumpScare.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Fails.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Fails/Fail_1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Fails/Fail_1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Fails/Fail_2.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Fails/Fail_2.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Fails/Fail_3.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Dialog Objects/Radio Host/Cooking Show/Fails/Fail_3.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractableItems/Door Object.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractableItems/Door Object.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractableObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/Movable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/Movable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/Pickupable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/Pickupable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenSequence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KitchenSequence.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +72,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Input/PlayerManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Input/InputManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/SoundTrigger.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/OutlineEffect/OutlineEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/ColliderDialogTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Dialog.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Managers/EventManager.cs" />
@@ -103,6 +86,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractableObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/OutlineEffect/Outline.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/OutlineEffect/OutlineEffect.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1oc3bth2r4flW2DCjCNV0vxifDD" />
@@ -191,7 +175,7 @@
       <workItem from="1619185315767" duration="6360000" />
       <workItem from="1619386826559" duration="2268000" />
       <workItem from="1619546266921" duration="4624000" />
-      <workItem from="1619788234711" duration="9082000" />
+      <workItem from="1619788234711" duration="9744000" />
     </task>
     <servers />
   </component>
