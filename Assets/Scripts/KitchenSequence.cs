@@ -66,6 +66,11 @@ public class KitchenSequence : MonoBehaviour
     public AudioClip boo;
     public AudioClip wow;
     public AudioClip clap;
+
+    public GameObject table;
+    public GameObject blender;
+    public GameObject cauldron;
+    
     public void StartSequence()
     {
         
@@ -116,6 +121,7 @@ public class KitchenSequence : MonoBehaviour
 
     public void StartScene()
     {
+        Services.gameManager.BabyInArms.SetActive(false);
         puzzleStarted = true;
         _objectsInBlender = new List<GameObject>();
         _currentPuzzle = null;
@@ -227,6 +233,14 @@ public class KitchenSequence : MonoBehaviour
         StartCoroutine(PlaySequence(firstPuzzleSolvedpart2, SetObjects));
     }
 
+    private void SetPuzzle3()
+    {
+        table.SetActive(false);
+        blender.SetActive(true);
+        cauldron.SetActive(true);
+        SetObjects();
+    }
+
     public void CheckObjects()
     {
 
@@ -253,7 +267,7 @@ public class KitchenSequence : MonoBehaviour
             {
                 puzzle2Complete = true;
                 _currentPuzzle = puzzle3Solution;
-                StartCoroutine(PlaySequence(secondPuzzleSolved, SetObjects));
+                StartCoroutine(PlaySequence(secondPuzzleSolved, SetPuzzle3));
             } else if (puzzleStarted && puzzle1Complete && puzzle2Complete && !puzzle3Complete)
             {
                 puzzle3Complete = true;
