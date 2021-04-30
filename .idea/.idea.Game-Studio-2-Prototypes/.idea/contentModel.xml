@@ -9,6 +9,11 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Fonts" t="Include">
+          <e p="georgia" t="Include">
+            <e p="sharefonts.net.txt" t="Include" />
+          </e>
+        </e>
         <e p="Plugins" t="Include">
           <e p="Breakable Windows" t="Include">
             <e p="Scripts" t="Include">
@@ -195,6 +200,14 @@
               </e>
               <e p="Utils" t="Include">
                 <e p="CameraFade.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Models" t="Include">
+            <e p="poisondartfrog" t="Include">
+              <e p="ToxicFrogs" t="Include">
+                <e p="FrogController.cs" t="Include" />
+                <e p="RotateCamFrog.cs" t="Include" />
               </e>
             </e>
           </e>
@@ -611,6 +624,7 @@
           <e p="Interaction" t="Include">
             <e p="ColliderDialogTrigger.cs" t="Include" />
             <e p="Deposit.cs" t="Include" />
+            <e p="DepositChair.cs" t="Include" />
             <e p="DialogTrigger.cs" t="Include" />
             <e p="InteractableObject.cs" t="Include" />
             <e p="InteractionDetection.cs" t="Include" />
@@ -654,6 +668,7 @@
           </e>
           <e p="PauseMenu.cs" t="Include" />
           <e p="PostProcessing.cs" t="Include" />
+          <e p="RadioHostMovement.cs" t="Include" />
           <e p="SaveData.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">

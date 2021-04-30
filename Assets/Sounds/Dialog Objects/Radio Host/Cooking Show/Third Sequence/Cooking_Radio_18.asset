@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Cooking_Radio_18
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 12403f3c0d33f4b5390f855e14e8b67f, type: 3}
-  screenTime: []
-  line: []
+  screenTime:
+  - 5.2
+  line:
+  - Excellent Work Ms Lee. You're a natural pig wrangler it seems
   source: RadioHost

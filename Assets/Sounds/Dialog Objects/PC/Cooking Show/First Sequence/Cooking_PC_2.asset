@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Cooking_PC_2
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 7e7ef19ac919d44778fee3c9a562ca44, type: 3}
-  screenTime: []
-  line: []
+  screenTime:
+  - 3.5
+  line:
+  - Uhm is that just a bunch of vegetables?
   source: PC

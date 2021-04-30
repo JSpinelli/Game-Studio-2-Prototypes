@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Cooking_Radio_6
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: d581da6a9eaa843b89876d212ed053bd, type: 3}
-  screenTime: []
-  line: []
+  screenTime:
+  - 5
+  line:
+  - "You know we don\u2019t usually allow babies on set, but that little guy is so
+    cute!"
   source: RadioHost

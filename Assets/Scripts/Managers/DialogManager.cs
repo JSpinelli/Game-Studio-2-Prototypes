@@ -28,11 +28,15 @@ public class DialogManager : MonoBehaviour
         if (dialogInfo.soundClip)
         {
             if (dialogInfo.source == null)
+            {
                 source.clip = dialogInfo.soundClip;
+                source.Play();
+            }
             else
+            {
                 dialogInfo.source.clip = dialogInfo.soundClip;
-            
-            dialogInfo.source.Play();
+                dialogInfo.source.Play();
+            }
         }
     }
 

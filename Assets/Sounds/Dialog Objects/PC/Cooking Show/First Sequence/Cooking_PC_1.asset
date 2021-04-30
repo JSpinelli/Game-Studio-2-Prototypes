@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Cooking_PC_1
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: bae37824772d04ac58177d84bb4ac2a8, type: 3}
-  screenTime: []
-  line: []
+  screenTime:
+  - 2.8
+  line:
+  - "I have no idea what\u2019s going on"
   source: PC

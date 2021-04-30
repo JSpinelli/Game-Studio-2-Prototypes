@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Cooking_Radio_15
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 5a1c0eb77881149dba0cdf61a185a9c9, type: 3}
-  screenTime: []
-  line: []
+  screenTime:
+  - 3.7
+  - 1.4
+  line:
+  - For your next chellenge you'll be preparing a delicacy
+  - Andouillette
   source: RadioHost

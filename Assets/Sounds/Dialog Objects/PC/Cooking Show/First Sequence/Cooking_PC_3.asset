@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Cooking_PC_3
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: d3473fd9977fb4650a3489d51e0d77c2, type: 3}
-  screenTime: []
-  line: []
+  screenTime:
+  - 2
+  line:
+  - oh..okay
   source: PC

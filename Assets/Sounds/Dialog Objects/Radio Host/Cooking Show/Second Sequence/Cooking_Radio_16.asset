@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Cooking_Radio_16
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 6c09122c571264935a63b3c82f28ea7d, type: 3}
-  screenTime: []
-  line: []
+  screenTime:
+  - 4.7
+  line:
+  - You should know what this is. Your company is practically made of them!
   source: RadioHost
