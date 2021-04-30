@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class KitchenSequence : MonoBehaviour
 {
+    public bool skipDialog;
+    
     public Transform player;
     public Transform placeForPickedUpObjects;
 
@@ -204,18 +206,26 @@ public class KitchenSequence : MonoBehaviour
 
     private IEnumerator PlaySequence(Dialog[] sequence, Action afterSequence)
     {
-        isPlayingSequence = true;
-        foreach (Dialog dialog in sequence)
+        if (skipDialog)
         {
-            if (dialog.clip != null)
-            {
-                Services.EventManager.Fire( new DialogTriggered(dialog.line, dialog.screenTime, dialog.clip,GetCorrectSource(dialog)));
-                yield return new WaitForSeconds(dialog.clip.length);
-                yield return new WaitForSeconds(timeBetweenResponses);
-            }
+            yield return null;
+            afterSequence.Invoke();
         }
-        isPlayingSequence = false;
-        afterSequence.Invoke();
+        else
+        {
+            isPlayingSequence = true;
+            foreach (Dialog dialog in sequence)
+            {
+                if (dialog.clip != null)
+                {
+                    Services.EventManager.Fire( new DialogTriggered(dialog.line, dialog.screenTime, dialog.clip,GetCorrectSource(dialog)));
+                    yield return new WaitForSeconds(dialog.clip.length);
+                    yield return new WaitForSeconds(timeBetweenResponses);
+                }
+            }
+            isPlayingSequence = false;
+            afterSequence.Invoke(); 
+        }
     }
     
     private void PlayFiller()
