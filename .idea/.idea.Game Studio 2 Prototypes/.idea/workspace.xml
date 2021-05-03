@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0543311-8c26-4bf6-b4d7-382aa6cce3fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/EndScene.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/EndScene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/HeadTracking.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/HeadTracking.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenSequence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KitchenSequence.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +46,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/JumpScare.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/KitchenSequence.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/HeadTracking.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -92,6 +92,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/OutlineEffect/Outline.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/OutlineEffect/OutlineEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/KitchenSequence.cs" />
+      <option value="$PROJECT_DIR$/Assets/HeadTracking.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1oc3bth2r4flW2DCjCNV0vxifDD" />
@@ -182,7 +183,7 @@
       <workItem from="1619546266921" duration="4624000" />
       <workItem from="1619788234711" duration="9744000" />
       <workItem from="1619809070864" duration="1594000" />
-      <workItem from="1620063592943" duration="3952000" />
+      <workItem from="1620063592943" duration="5396000" />
     </task>
     <servers />
   </component>

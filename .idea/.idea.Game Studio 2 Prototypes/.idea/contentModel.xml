@@ -14,6 +14,7 @@
             <e p="sharefonts.net.txt" t="Include" />
           </e>
         </e>
+        <e p="HeadTracking.cs" t="Include" />
         <e p="JumpScare.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="Breakable Windows" t="Include">
