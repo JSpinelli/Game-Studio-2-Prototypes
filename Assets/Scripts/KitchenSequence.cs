@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class KitchenSequence : MonoBehaviour
 {
@@ -19,10 +20,6 @@ public class KitchenSequence : MonoBehaviour
     public Dialog[] secondPuzzleSolved;
 
     public Dialog[] fails;
-    public Dialog[] filler;
-
-    public float fillerTimer;
-    private float _fillerTimerCounter;
 
     public bool puzzleStarted = false;
 
@@ -39,7 +36,6 @@ public class KitchenSequence : MonoBehaviour
     public string[] puzzle3Solution;
 
     private int _failCounter;
-    private int _fillerCounter;
 
     private string[] _currentPuzzle;
 
@@ -62,10 +58,6 @@ public class KitchenSequence : MonoBehaviour
 
     public AudioSource footsteps;
     
-
-    public AudioClip laughter;
-    public AudioClip boo;
-    public AudioClip wow;
     public AudioClip clap;
 
     public GameObject table;
@@ -74,7 +66,16 @@ public class KitchenSequence : MonoBehaviour
 
     public GameObject lightsLeadingToStage;
     public GameObject stageLights;
+
+    public GameObject monsterOne;
+    public GameObject monsterTwo;
+    public GameObject monsterThree;
+
+    private bool _puzzleThreeTimerActive = false;
+    public float puzzleThreeTime = 30;
+    private float puzzleThreeTimer = 0;
     
+
     public void StartSequence()
     {
         
@@ -87,26 +88,12 @@ public class KitchenSequence : MonoBehaviour
         house.SetActive(true);
         wall.SetActive(false);
         puzzleStarted = false;
+        
+        monsterOne.SetActive(false);
+        monsterTwo.SetActive(false);
+        monsterThree.SetActive(false);
     }
 
-    private void PlayLaughter()
-    {
-        stageSounds.clip = laughter;
-        stageSounds.Play();
-    }
-
-    private void PlayBoos()
-    {
-        stageSounds.clip = boo;
-        stageSounds.Play();
-    }
-    
-    private void PlayWow()
-    {
-        stageSounds.clip = wow;
-        stageSounds.Play();
-    }
-    
     private void PlayClap()
     {
         stageSounds.clip = clap;
@@ -121,8 +108,6 @@ public class KitchenSequence : MonoBehaviour
         house.SetActive(false);
         wall.SetActive(true);
         _failCounter = 0;
-        _fillerCounter = 0;
-        _fillerTimerCounter = 0;
     }
 
     public void StartScene()
@@ -171,6 +156,10 @@ public class KitchenSequence : MonoBehaviour
         {
             obj.SetActive(puzzle2Complete && !puzzle3Complete);
         }
+        
+        monsterOne.SetActive(false);
+        monsterTwo.SetActive(false);
+        monsterThree.SetActive(false);
     }
 
     private void PlayFail()
@@ -229,12 +218,6 @@ public class KitchenSequence : MonoBehaviour
         }
     }
     
-    private void PlayFiller()
-    {
-        Services.EventManager.Fire( new DialogTriggered(filler[_fillerCounter].line, filler[_fillerCounter].screenTime, filler[_fillerCounter].clip));
-        _fillerCounter++;
-    }
-
     public void PutObject()
     {
         _objectsInBlender.Add(objectOnHand);
@@ -249,6 +232,7 @@ public class KitchenSequence : MonoBehaviour
 
     private void MoveMonster()
     {
+        monsterOne.SetActive(true);
         StartCoroutine(PlaySequence(firstPuzzleSolvedpart2, SetObjects));
     }
 
@@ -257,6 +241,7 @@ public class KitchenSequence : MonoBehaviour
         table.SetActive(false);
         blender.SetActive(false);
         cauldron.SetActive(true);
+        _puzzleThreeTimerActive = true;
         SetObjects();
     }
 
@@ -284,14 +269,16 @@ public class KitchenSequence : MonoBehaviour
                 StartCoroutine(PlaySequence(firstPuzzleSolved, MoveMonster));
             }else if (puzzleStarted && puzzle1Complete && !puzzle2Complete)
             {
+                monsterTwo.SetActive(true);
                 puzzle2Complete = true;
                 _currentPuzzle = puzzle3Solution;
                 StartCoroutine(PlaySequence(secondPuzzleSolved, SetPuzzle3));
-            } else if (puzzleStarted && puzzle1Complete && puzzle2Complete && !puzzle3Complete)
-            {
-                puzzle3Complete = true;
-                // END OF SCENE
-            }
+            } 
+            // else if (puzzleStarted && puzzle1Complete && puzzle2Complete && !puzzle3Complete)
+            // {
+            //     puzzle3Complete = true;
+            //     // END OF SCENE
+            // }
         }
         else
         {
@@ -305,17 +292,29 @@ public class KitchenSequence : MonoBehaviour
         _objectsInBlender.Clear();
     }
 
+    public void End()
+    {
+        monsterThree.SetActive(true);
+        StartCoroutine(EndScene(5f));
+
+    }
+    private IEnumerator EndScene(float t)
+    {
+        yield return new WaitForSeconds(t);
+        SceneManager.LoadScene("EndScene", LoadSceneMode.Single);
+    }
+
     private void Update()
     {
         if (!puzzleStarted) return;
-        if (fillerTimer > _fillerTimerCounter)
+        if (_puzzleThreeTimerActive && puzzleThreeTimer < puzzleThreeTime)
         {
-            _fillerTimerCounter += Time.deltaTime;
+            puzzleThreeTimer += Time.deltaTime;
         }
         else
         {
-            _fillerTimerCounter = 0;
-            //PlayFiller();
+            if (_puzzleThreeTimerActive)
+                End(); 
         }
     }
 }
