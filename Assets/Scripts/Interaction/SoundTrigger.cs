@@ -30,6 +30,7 @@ public class SoundTrigger : InteractableObject
         if (InteractWillTurnOff)
         {
             source.Stop();
+            _interacted = true;
         }
         else
         {
