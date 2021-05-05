@@ -76,6 +76,9 @@ public class KitchenSequence : MonoBehaviour
     private float puzzleThreeTimer = 0;
 
     private bool endActive = false;
+
+    public GameObject babyHeadOne;
+    public GameObject babyHeadTwo;
     
 
     public void StartSequence()
@@ -243,6 +246,8 @@ public class KitchenSequence : MonoBehaviour
         table.SetActive(false);
         blender.SetActive(false);
         cauldron.SetActive(true);
+        babyHeadOne.SetActive(false);
+        babyHeadOne.SetActive(true);
         _puzzleThreeTimerActive = true;
         SetObjects();
     }
