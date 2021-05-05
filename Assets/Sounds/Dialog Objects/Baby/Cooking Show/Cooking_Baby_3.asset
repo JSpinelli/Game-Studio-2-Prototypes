@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ebb4ee20b401f549bf8ec7ebf51e673, type: 3}
   m_Name: Cooking_Baby_3
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: e812be2fb325e314d80edcc21c31839d, type: 3}
+  clip: {fileID: 8300000, guid: 326b2f8d2d00e4c2d8c0b8daa1697653, type: 3}
   screenTime:
   - 4.8
   line:
