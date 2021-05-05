@@ -79,6 +79,7 @@ public class KitchenSequence : MonoBehaviour
 
     public GameObject babyHeadOne;
     public GameObject babyHeadTwo;
+    public GameObject babyHeadEvil;
 
     public GameObject audience;
     
@@ -137,6 +138,9 @@ public class KitchenSequence : MonoBehaviour
         lightsLeadingToStage.SetActive(false);
         stageLights.SetActive(true);
         footsteps.Play();
+        babyHeadOne.SetActive(true);
+        babyHeadTwo.SetActive(false);
+        babyHeadEvil.SetActive(false);
         StartCoroutine(PlaySequence(initialSequence, SetObjects));
     }
 
@@ -251,7 +255,8 @@ public class KitchenSequence : MonoBehaviour
         blender.SetActive(false);
         cauldron.SetActive(true);
         babyHeadOne.SetActive(false);
-        babyHeadTwo.SetActive(true);
+        babyHeadTwo.SetActive(false);
+        babyHeadEvil.SetActive(true);
         _puzzleThreeTimerActive = true;
         SetObjects();
     }
@@ -277,6 +282,9 @@ public class KitchenSequence : MonoBehaviour
             {
                 puzzle1Complete = true;
                 _currentPuzzle = puzzle2Solution;
+                babyHeadOne.SetActive(false);
+                babyHeadTwo.SetActive(true);
+                babyHeadEvil.SetActive(false);
                 StartCoroutine(PlaySequence(firstPuzzleSolved, MoveMonster));
             }else if (puzzleStarted && puzzle1Complete && !puzzle2Complete)
             {
@@ -310,6 +318,7 @@ public class KitchenSequence : MonoBehaviour
     public void End()
     {
         monsterThree.SetActive(true);
+        stageLights.SetActive(false);
         StartCoroutine(EndScene(5f));
 
     }

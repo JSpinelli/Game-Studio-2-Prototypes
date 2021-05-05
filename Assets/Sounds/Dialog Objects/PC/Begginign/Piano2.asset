@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 453f88f95baa343e590fa14ad481eb81, type: 3}
   screenTime:
-  - 2
+  - 2.6
   line:
-  - asd
+  - I don't remember the last time I played
   source: 
