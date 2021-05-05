@@ -74,6 +74,8 @@ public class KitchenSequence : MonoBehaviour
     private bool _puzzleThreeTimerActive = false;
     public float puzzleThreeTime = 30;
     private float puzzleThreeTimer = 0;
+
+    private bool endActive = false;
     
 
     public void StartSequence()
@@ -284,6 +286,10 @@ public class KitchenSequence : MonoBehaviour
         {
             Debug.Log("Puzzle Failed");
             PlayFail();
+            if (endActive)
+            {
+                End(); 
+            }
             foreach (var obj in _objectsInBlender)
             {
                 obj.GetComponent<Pickupable>().Reset();
@@ -314,7 +320,7 @@ public class KitchenSequence : MonoBehaviour
         else
         {
             if (_puzzleThreeTimerActive)
-                End(); 
+                endActive = true;
         }
     }
 }
