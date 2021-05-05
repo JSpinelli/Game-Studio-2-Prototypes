@@ -51,6 +51,9 @@ public class PlayerManager : MonoBehaviour
     Quaternion originalRotation;
     Quaternion camOriginalRotation;
 
+    public AudioSource footsteps;
+    public float footstepTreshold;
+
     void Start()
     {
         _myTransform = transform;
@@ -78,6 +81,17 @@ public class PlayerManager : MonoBehaviour
         _moveDirection = _myTransform.TransformDirection(_moveDirection) * _speed;
         // Apply gravity
         _moveDirection.y -= gravity * Time.deltaTime;
+        if (_moveDirection.magnitude > footstepTreshold)
+        {
+            if (!footsteps.isPlaying)
+                footsteps.Play();
+        }
+        else
+        {
+            if (footsteps.isPlaying)
+                footsteps.Stop();
+        }
+
         _controller.Move(_moveDirection * Time.deltaTime);
     }
 

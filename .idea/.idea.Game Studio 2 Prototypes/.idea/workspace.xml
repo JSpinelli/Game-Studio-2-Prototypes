@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0543311-8c26-4bf6-b4d7-382aa6cce3fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game Studio 2 Prototypes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rooms/Stage.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Rooms/Stage.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Julian Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenSequence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KitchenSequence.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StageStructure.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StageStructure.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Input/PlayerManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +70,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Managers/Services.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PauseMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Plugins/First Person Drifter Controller/Scripts/MouseLook.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Input/PlayerManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Input/InputManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/ColliderDialogTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Dialog.cs" />
@@ -92,6 +88,7 @@
       <option value="$PROJECT_DIR$/Assets/HeadTracking.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/SoundTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/KitchenSequence.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Input/PlayerManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1oc3bth2r4flW2DCjCNV0vxifDD" />
@@ -183,7 +180,7 @@
       <workItem from="1619788234711" duration="9744000" />
       <workItem from="1619809070864" duration="1594000" />
       <workItem from="1620063592943" duration="5396000" />
-      <workItem from="1620175485549" duration="4637000" />
+      <workItem from="1620175485549" duration="5467000" />
     </task>
     <servers />
   </component>
