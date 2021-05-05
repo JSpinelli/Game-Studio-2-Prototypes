@@ -79,6 +79,8 @@ public class KitchenSequence : MonoBehaviour
 
     public GameObject babyHeadOne;
     public GameObject babyHeadTwo;
+
+    public GameObject audience;
     
 
     public void StartSequence()
@@ -112,6 +114,8 @@ public class KitchenSequence : MonoBehaviour
         if (puzzleStarted) return;
         house.SetActive(false);
         wall.SetActive(true);
+        audience.SetActive(true);
+        RenderSettings.fogDensity = 0.13f;
         _failCounter = 0;
     }
 
@@ -247,7 +251,7 @@ public class KitchenSequence : MonoBehaviour
         blender.SetActive(false);
         cauldron.SetActive(true);
         babyHeadOne.SetActive(false);
-        babyHeadOne.SetActive(true);
+        babyHeadTwo.SetActive(true);
         _puzzleThreeTimerActive = true;
         SetObjects();
     }
