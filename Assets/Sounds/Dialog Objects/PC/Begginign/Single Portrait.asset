@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ebb4ee20b401f549bf8ec7ebf51e673, type: 3}
   m_Name: Single Portrait
   m_EditorClassIdentifier: 
-  clip: {fileID: 0}
+  clip: {fileID: 8300000, guid: 91944e0636f9e4446ad5816da3576450, type: 3}
   screenTime:
   - 4
   line:
-  - Single life, you don't know how much I've missed you
+  - Ah single life. It's been a while
   source: 

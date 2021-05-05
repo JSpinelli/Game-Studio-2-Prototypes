@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ebb4ee20b401f549bf8ec7ebf51e673, type: 3}
   m_Name: BusinessCards
   m_EditorClassIdentifier: 
-  clip: {fileID: 0}
+  clip: {fileID: 8300000, guid: 31941b74182b5451f9c7eabca51a6041, type: 3}
   screenTime:
   - 4
   line:
-  - I need to get rid of these business cards, I doubt I'll ever use them again
+  - I should have thrown these out ages ago. It'd be good for me
   source: 
