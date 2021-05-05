@@ -4,16 +4,17 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Rendering.PostProcessing;
 
 public class KitchenSequence : MonoBehaviour
 {
     public bool skipDialog;
-    
+
     public Transform player;
     public Transform placeForPickedUpObjects;
 
     public float timeBetweenResponses = 1;
-    
+
     public Dialog[] initialSequence;
     public Dialog[] firstPuzzleSolved;
     public Dialog[] firstPuzzleSolvedpart2;
@@ -57,7 +58,7 @@ public class KitchenSequence : MonoBehaviour
     public AudioSource baby;
 
     public AudioSource footsteps;
-    
+
     public AudioClip clap;
 
     public GameObject table;
@@ -82,11 +83,10 @@ public class KitchenSequence : MonoBehaviour
     public GameObject babyHeadEvil;
 
     public GameObject audience;
-    
+
 
     public void StartSequence()
     {
-        
         Services.EventManager.Register<ObjectPickedUp>(OnObjectPickedUp);
         Services.KitchenSequence = this;
         oldKitchen.SetActive(false);
@@ -96,7 +96,7 @@ public class KitchenSequence : MonoBehaviour
         house.SetActive(true);
         wall.SetActive(false);
         puzzleStarted = false;
-        
+
         monsterOne.SetActive(false);
         monsterTwo.SetActive(false);
         monsterThree.SetActive(false);
@@ -116,7 +116,7 @@ public class KitchenSequence : MonoBehaviour
         house.SetActive(false);
         wall.SetActive(true);
         audience.SetActive(true);
-        RenderSettings.fogDensity = 0.13f;
+        RenderSettings.fogDensity = 0.11f;
         _failCounter = 0;
     }
 
@@ -133,7 +133,7 @@ public class KitchenSequence : MonoBehaviour
             _currentPuzzle = puzzle2Solution;
         if (puzzleStarted && puzzle1Complete && puzzle2Complete && !puzzle3Complete)
             _currentPuzzle = puzzle3Solution;
-        
+
         stageColliders.SetActive(true);
         lightsLeadingToStage.SetActive(false);
         stageLights.SetActive(true);
@@ -148,7 +148,7 @@ public class KitchenSequence : MonoBehaviour
     {
         objectOnHand = ((ObjectPickedUp) gameEvent).objectToMove;
         objectOnHand.transform.parent = player;
-        
+
         objectOnHand.transform.position = placeForPickedUpObjects.position;
         objectOnHand.transform.rotation = placeForPickedUpObjects.rotation;
         objectInHand = true;
@@ -161,15 +161,17 @@ public class KitchenSequence : MonoBehaviour
         {
             obj.SetActive(puzzleStarted && !puzzle1Complete);
         }
+
         foreach (var obj in objectsForPuzzle2)
         {
             obj.SetActive(puzzle1Complete && !puzzle2Complete);
         }
+
         foreach (var obj in objectsForPuzzle3)
         {
             obj.SetActive(puzzle2Complete && !puzzle3Complete);
         }
-        
+
         monsterOne.SetActive(false);
         monsterTwo.SetActive(false);
         monsterThree.SetActive(false);
@@ -177,12 +179,12 @@ public class KitchenSequence : MonoBehaviour
 
     private void PlayFail()
     {
-        Services.EventManager.Fire( new DialogTriggered(fails[_failCounter].line, fails[_failCounter].screenTime, fails[_failCounter].clip));
+        Services.EventManager.Fire(new DialogTriggered(fails[_failCounter].line, fails[_failCounter].screenTime,
+            fails[_failCounter].clip));
         _failCounter++;
         if (_failCounter == fails.Length)
         {
             _failCounter = 0;
-            
         }
     }
 
@@ -193,14 +195,17 @@ public class KitchenSequence : MonoBehaviour
         {
             origin = pc;
         }
+
         if (dialog.source == "Audience")
         {
             origin = stageSounds;
         }
+
         if (dialog.source == "RadioHost")
         {
             origin = host;
         }
+
         if (dialog.source == "Baby")
         {
             origin = baby;
@@ -222,15 +227,17 @@ public class KitchenSequence : MonoBehaviour
             {
                 if (dialog.clip != null)
                 {
-                    Services.EventManager.Fire( new DialogTriggered(dialog.line, dialog.screenTime, dialog.clip,GetCorrectSource(dialog)));
+                    Services.EventManager.Fire(new DialogTriggered(dialog.line, dialog.screenTime, dialog.clip,
+                        GetCorrectSource(dialog)));
                     yield return new WaitForSeconds(dialog.clip.length);
                     yield return new WaitForSeconds(timeBetweenResponses);
                 }
             }
-            afterSequence.Invoke(); 
+
+            afterSequence.Invoke();
         }
     }
-    
+
     public void PutObject()
     {
         _objectsInBlender.Add(objectOnHand);
@@ -263,7 +270,6 @@ public class KitchenSequence : MonoBehaviour
 
     public void CheckObjects()
     {
-
         if (_currentPuzzle == null)
         {
             Debug.LogWarning("Checking against empty puzzle");
@@ -275,6 +281,7 @@ public class KitchenSequence : MonoBehaviour
         {
             successesSum = successesSum && _currentPuzzle.Any((s) => s == obj.name);
         }
+
         if (successesSum)
         {
             PlayClap();
@@ -286,18 +293,14 @@ public class KitchenSequence : MonoBehaviour
                 babyHeadTwo.SetActive(true);
                 babyHeadEvil.SetActive(false);
                 StartCoroutine(PlaySequence(firstPuzzleSolved, MoveMonster));
-            }else if (puzzleStarted && puzzle1Complete && !puzzle2Complete)
+            }
+            else if (puzzleStarted && puzzle1Complete && !puzzle2Complete)
             {
                 monsterTwo.SetActive(true);
                 puzzle2Complete = true;
                 _currentPuzzle = puzzle3Solution;
                 StartCoroutine(PlaySequence(secondPuzzleSolved, SetPuzzle3));
-            } 
-            // else if (puzzleStarted && puzzle1Complete && puzzle2Complete && !puzzle3Complete)
-            // {
-            //     puzzle3Complete = true;
-            //     // END OF SCENE
-            // }
+            }
         }
         else
         {
@@ -305,13 +308,15 @@ public class KitchenSequence : MonoBehaviour
             PlayFail();
             if (endActive)
             {
-                End(); 
+                End();
             }
+
             foreach (var obj in _objectsInBlender)
             {
                 obj.GetComponent<Pickupable>().Reset();
             }
         }
+
         _objectsInBlender.Clear();
     }
 
@@ -319,9 +324,10 @@ public class KitchenSequence : MonoBehaviour
     {
         monsterThree.SetActive(true);
         stageLights.SetActive(false);
+        StartCoroutine(BabyEffect(5f));
         StartCoroutine(EndScene(5f));
-
     }
+
     private IEnumerator EndScene(float t)
     {
         yield return new WaitForSeconds(t);
@@ -340,5 +346,19 @@ public class KitchenSequence : MonoBehaviour
             if (_puzzleThreeTimerActive)
                 endActive = true;
         }
+    }
+
+    private IEnumerator BabyEffect(float t)
+    {
+        Grain gr = Services.gameManager.profile.GetSetting<Grain>();
+        Bloom bloom = Services.gameManager.profile.GetSetting<Bloom>();
+        ChromaticAberration cAb = Services.gameManager.profile.GetSetting<ChromaticAberration>();
+        gr.active = true;
+        bloom.active = true;
+        cAb.active = true;
+        yield return new WaitForSeconds(t);
+        gr.active = false;
+        bloom.active = false;
+        cAb.active = false;
     }
 }
