@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+    <e p="C:\Users\RivaWang\AppData\local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\RivaWang\AppData\local\JetBrains\Rider2020.3\resharper-host\local\Transient\Rider\v203\SolutionCaches\_Game-Studio-2-Prototypes.-1320986417.00" t="ExcludeRecursive" />
+    <e p="D:\NYU\研一冬季\Game-Studio-2-Prototypes" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
@@ -12,6 +14,7 @@
             <e p="sharefonts.net.txt" t="Include" />
           </e>
         </e>
+        <e p="HeadTracking.cs" t="Include" />
         <e p="JumpScare.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="Breakable Windows" t="Include">
@@ -709,9 +712,7 @@
       <e p="Game-Studio-2-Prototypes.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
-      <e p="Temp/bin" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
     </e>
-    <e p="$PROJECT_DIR$/../Library/Caches/JetBrains/Rider2020.3/extResources" t="IncludeRecursive" />
-    <e p="$PROJECT_DIR$/../Library/Caches/JetBrains/Rider2020.3/resharper-host/local/Transient/Rider/v203/SolutionCaches/_Game-Studio-2-Prototypes.-1460978099.00" t="ExcludeRecursive" />
   </component>
 </project>
